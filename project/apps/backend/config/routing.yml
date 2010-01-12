@@ -169,15 +169,6 @@ producto_udm:
     column:              id
     with_wildcard_routes: true
 
-sf_guard_user_profile:
-  class: sfPropelRouteCollection
-  options:
-    model:               sfGuardUserProfile
-    module:              sf_guard_user_profile
-    prefix_path:         sf_guard_user_profile
-    column:              id
-    with_wildcard_routes: true
-
 # default rules
 homepage:
   url:   /
