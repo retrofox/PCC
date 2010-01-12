@@ -1,1 +1,0 @@
-<h3><?php echo __('Listado de Compras', array(), 'messages') ?></h3>
