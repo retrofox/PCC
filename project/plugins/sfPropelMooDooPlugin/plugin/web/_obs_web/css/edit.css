@@ -1,0 +1,137 @@
+	/***************************/
+    /* damian.suarez@xifox.net */
+	/* Admin Generator - Edit  */
+	/***************************/
+	#sf_admin_edit_form fieldset {
+	    margin: 3px 0;
+		border: 1px solid #AAA;
+		border-top: 1px solid #DDD;
+		border-left: 1px solid #EAEAEA;
+
+	    background: #DADADA;
+	    padding: 0;
+	    font: normal normal normal 12px / 1.2em sans-serif;
+	}
+	
+	
+	#sf_admin_edit_form fieldset h2, #sf_admin_edit_form th h2 {
+	    color: #777;
+		background: #EEF url(../images/admin-fnds.png) repeat-x left top;
+		/*border-top: 1px solid #CCC;*/
+	    border-bottom: 1px solid #CCC;
+	    margin: 0;
+	    padding: 2px 10px;
+	    font: normal normal bold 14px / 20px sans-serif;
+	}
+
+	.sf_admin_checklist {
+		list-style: none;
+		border-bottom: 1px solid #CCC;
+	}
+	
+	
+	.sf_admin_edit_help {
+		margin: 4px 0;
+		height: 23px;
+		padding: 2px 0 0 30px;
+		background: #DFDFDF url(../images/iconos/icns-vertical.png) no-repeat left -550px;
+		font: normal normal normal 12px/25px sans-serif;
+		color: #08A;
+	}
+
+	/* Clase foco de los elementos de formulario */
+	.elFocus {
+		border: 1px solid #030 !important;
+		color: #FFF !important;
+		background: #051 !important;
+	}
+
+	/* mooDoubleList */
+	.moo_double_list {
+	    height: 215px;
+	    width: 420px;
+	    padding: 5px;
+	    margin: 0 auto;
+	    background: #EEE;
+	}
+
+	.moo_double_list_associated, .moo_double_list_unassociated, .moo_double_list_actions {
+	    float: left;
+	    height: 204px;
+	    padding: 5px;
+	}
+
+	.moo_double_list_associated, .moo_double_list_unassociated {
+	    width: 180px;
+	    background: #E4E4E4;
+	}
+
+	.moo_double_list_associated h5, .moo_double_list_unassociated h5 {
+	    margin: 0;
+	    color: #024;
+	    font: normal normal bold 11px / 20px sans-serif;
+	    text-align: center;
+	    padding: 2px 0;
+	    height: 20px;
+	}
+
+	.moo_double_list_associated select, .moo_double_list_unassociated select {
+	    width: 180px;
+	    height: 180px;
+	}
+
+	.moo_double_list_actions {
+	    padding: 80px 5px 0;
+	    height: 130px;
+	    width: 25px;
+	}
+
+	.moo_double_list_actions div {
+	    width: 25px;
+		margin-bottom: 10px;
+	    height: 25px;
+	    cursor: pointer;
+	}
+
+	.moo_double_list_btn_next {
+	    background: transparent url(../images/iconos/icns-vertical.png) no-repeat 0 -1500px;
+	}
+
+	.moo_double_list_btn_previous {
+	    background: transparent url(../images/iconos/icns-vertical.png) no-repeat 0 -1450px;
+	}
+	/* end mooDoubleList */	
+	
+	
+	/* errores de formulario */
+	
+	.form-errors {
+		background: #EFEAEA;
+		color: #A22;
+		padding: 5px;
+		font: normal normal normal 12px/14px sans-serif;
+	}
+	
+	.form-error-msg {
+		margin: 4px 0;
+		height: 23px;
+		padding: 2px 0 0 30px;
+		background: #FFFAFA url(../images/iconos/icns-vertical.png) no-repeat left -950px;
+		font: normal normal normal 12px/21px sans-serif;
+		color: #F00;
+	}
+	
+	
+	.form-errors h2 {
+		margin: 5px 0;
+		padding: 0;
+		color: #C44;
+		font-weight: bolder;
+	}
+	
+	.form-errors dd {
+		color: #F00;
+		padding: 2px 5px;
+		background: #FFE;
+	}
+	/* end error de formularios */

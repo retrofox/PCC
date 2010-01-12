@@ -1,0 +1,66 @@
+/* choice with add */
+div.select_with_add {
+  position: relative;
+}
+
+div.select_with_add div.btn_add {
+  line-height: 20px;
+  border: 1px solid #DDD;
+  padding: 1px 2px;
+  color: #444;
+
+  display: inline-block;
+}
+
+div.select_with_add div.btn_add:hover {
+  background-color: #fff;
+  border-color: #CDF;
+  color: #06A;
+}
+
+div.select_with_add div.btn_add div.icn {
+  float: left;
+  margin-right: 3px;
+  width: 18px; height: 18px;
+  border: 1px solid #eee;
+}
+
+div.win_add2select, div.error_response, div.ok_list {
+  position: absolute;
+  width: 250px;
+  left: 5px; top: 5px;
+  display: none;
+  padding: 1px;
+  border: 1px solid #ccc;
+  background: #eee;
+  -moz-border-radius: 6px;
+}
+
+div.error_response {
+  padding: 2px 5px;
+  width: auto;
+  border-color: #D66;
+  background-color: #FAA;
+}
+
+div.ok_list {
+  top: -10px;
+  display: block;
+  padding: 3px 5px;
+  width: auto;
+  color: #060;
+  border-color: #6D6;
+  background-color: #EFE;
+}
+
+div.win_add2select div.icn {
+  width: 18px; height: 18px;
+  border: 1px solid #e5e5e5;
+  float: right;
+  margin: 2px 2px 0px;
+  cursor: pointer;
+}
+
+div.win_add2select div.icn:hover {
+  border-color: #99a;
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.6" version="2.0"
+         xmlns="http://pear.php.net/dtd/package-2.0"
+         xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>sfPropelMooDooPlugin</name>
+  <channel>plugins.symfony-project.org</channel>
+  <summary>symfony propel mooDoo plugin</summary>
+  <description>Geerador para Symfony</description>
+  <lead>
+    <name>Damian SUAREZ</name>
+    <user>RetroFOX</user>
+    <email>damian.suarez@xifox.net</email>
+    <active>yes</active>
+  </lead>
+  <date>2009-06-02</date>
+  <time>15:54:35</time>
+  <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <file role="data" name="README" />
+      <file role="data" name="LICENSE" />
+      <dir name="config">
+         <!-- configs -->
+         <file role="data" name="config.php" />
+      </dir>
+
+      <dir name="data">
+         <dir name="generator">
+             <dir name="sfPropelModule">
+                 <dir name="mooDooAdmin">
+                     <dir name="parts">
+                        <file role="data" name="actionsConfiguration.php" />
+                        <file role="data" name="batchAction.php" />
+                        <file role="data" name="configuration.php" />
+                        <file role="data" name="createAction.php" />
+                        <file role="data" name="deleteAction.php" />
+                        <file role="data" name="deleteWinContentAction.php" />
+                        <file role="data" name="editAction.php" />
+                        <file role="data" name="editWinAction.php" />
+                        <file role="data" name="editWinContentAction.php" />
+                        <file role="data" name="fieldsConfiguration.php" />
+                        <file role="data" name="filterAction.php" />
+                        <file role="data" name="filtersAction.php" />
+                        <file role="data" name="filtersConfiguration.php" />
+                        <file role="data" name="indexAction.php" />
+                        <file role="data" name="mooDeleteAction.php" />
+                        <file role="data" name="newAction.php" />
+                        <file role="data" name="newWinAction.php" />
+                        <file role="data" name="paginationAction.php" />
+                        <file role="data" name="paginationConfiguration.php" />
+                        <file role="data" name="parts.txt" />
+                        <file role="data" name="processFormAction.php" />
+                        <file role="data" name="sortingAction.php" />
+                        <file role="data" name="sortingConfiguration.php" />
+                        <file role="data" name="updateAction.php" />
+                     </dir>
+
+                     <dir name="skeleton">
+                        <dir name="actions">
+                            <file role="data" name="actions.class.php" />
+                        </dir>
+                        <dir name="config">
+                            <file role="data" name="generator.yml" />
+                        </dir>
+                        <dir name="lib">
+                            <file role="data" name="configuration.php" />
+                            <file role="data" name="helper.php" />
+                        </dir>
+                        <dir name="templates">
+                        </dir>
+                     </dir>
+
+                     <dir name="template">
+                         <dir name="actions">
+                             <file role="data" name="actions.class.php" />
+                         </dir>
+
+                         <dir name="lib">
+                             <file role="data" name="helper.php" />
+                         </dir>
+
+                         <dir name="templates">
+                            <file role="data" name="_assets_list.php" />
+                            <file role="data" name="_assets.php" />
+                            <file role="data" name="editSuccess.php" />
+                            <file role="data" name="editWinContentSuccess.php" />
+                            <file role="data" name="editWinSuccess.php" />
+                            <file role="data" name="_feedback_editWin.php" />
+                            <file role="data" name="_filters_field.php" />
+                            <file role="data" name="_filters.php" />
+                            <file role="data" name="_flashesEdit.php" />
+                            <file role="data" name="_flashes.php" />
+                            <file role="data" name="_form_actions.php" />
+                            <file role="data" name="_form_actionsWin.php" />
+                            <file role="data" name="_form_field.php" />
+                            <file role="data" name="_form_fieldset.php" />
+                            <file role="data" name="_form_footer.php" />
+                            <file role="data" name="_form_header.php" />
+                            <file role="data" name="_form.php" />
+                            <file role="data" name="_formWin.php" />
+                            <file role="data" name="indexSuccess.php" />
+                            <file role="data" name="_item_deleted.php" />
+                            <file role="data" name="_list_actions.php" />
+                            <file role="data" name="_list_batch_actions.php" />
+                            <file role="data" name="_list_field_boolean.php" />
+                            <file role="data" name="_list_footer.php" />
+                            <file role="data" name="_list_header.php" />
+                            <file role="data" name="_list.php" />
+                            <file role="data" name="_list_td_actions.php" />
+                            <file role="data" name="_list_td_batch_actions.php" />
+                            <file role="data" name="_list_td_stacked.php" />
+                            <file role="data" name="_list_td_tabular.php" />
+                            <file role="data" name="_list_th_stacked.php" />
+                            <file role="data" name="_list_th_tabular.php" />
+                            <file role="data" name="newSuccess.php" />
+                            <file role="data" name="newWinContentSuccess.php" />
+                            <file role="data" name="newWinSuccess.php" />
+                            <file role="data" name="_pagination.php" />
+                            <file role="data" name="_winHandle.php" />
+                         </dir>
+                     </dir>
+                 </dir>
+             </dir>
+         </dir>
+      </dir>
+      <dir name="lib">
+        <file role="data" name="mooDooAdminGenerator.class.php" />
+        <file role="data" name="sfPropelMooDooGenerator.class.php" />
+        <file role="data" name="mooWidgetFormChoiceWithAdd.class.php" />
+        <file role="data" name="mooWidgetFormPropelChoiceWithAdd.class.php" />
+      </dir>
+
+
+      <dir name="web">
+        <dir name="css">
+           <file role="data" name="edit.css" />
+           <file role="data" name="global.css" />
+           <file role="data" name="list.css" />
+        </dir>
+        <dir name="images">
+           <file role="data" name="admin-fnds.png" />
+           <file role="data" name="iconos.png" />
+           <file role="data" name="menu01.png" />
+        </dir>
+        <dir name="js">
+            <file role="data" name="doors.js" />
+            <file role="data" name="dxd-1.2.class.js" />
+            <file role="data" name="global.js" />
+            <file role="data" name="list.js" />
+            <file role="data" name="moo.js" />
+            <file role="data" name="moo-more.js" />
+        </dir>
+      </dir>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.1.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.1.0</min>
+        <max>1.2.7</max>
+        <exclude>1.0.18</exclude>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease />
+  <changelog />
+</package>
