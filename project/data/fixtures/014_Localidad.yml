@@ -1,0 +1,20 @@
+Localidad:
+  localidad_neuquen_neuquen:
+    provincia_id:                    provincia_neuquen
+    nombre:                          'Neuquén Capital'
+
+  localidad_plottier_neuquen:
+    provincia_id:                    provincia_neuquen
+    nombre:                          'Plottier'
+
+  localidad_centenario_neuquen:
+    provincia_id:                    provincia_neuquen
+    nombre:                          'Centenario'
+
+  localidad_cipolletti_rio_negro:
+    provincia_id:                    provincia_rio_negro
+    nombre:                          'Cipolletti'
+
+  localidad_cinco_saltos_rio_negro:
+    provincia_id:                    provincia_rio_negro
+    nombre:                          'Cinco Saltos'

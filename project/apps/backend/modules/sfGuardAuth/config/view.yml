@@ -1,0 +1,11 @@
+default:
+  metas:
+    title:        Protecci&oacute;n Catodica del Comahue
+    description:  Protecci&oacute;n Catodica del Comahue
+    language:     es
+
+  stylesheets:    [ login ]
+
+  javascripts:    ~
+
+  layout:         layoutLogin

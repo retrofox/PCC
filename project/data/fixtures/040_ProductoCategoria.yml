@@ -1,0 +1,8 @@
+ProductoCategoria:
+  coque:
+    nombre:                    Coque
+    descripcion:               El coque es un combustible obtenido de la destilación de la hulla calentada a temperaturas muy altas en hornos cerrados, que la aislan del aire, y que sólo contiene una pequeña fracción de las materias volátiles que forman parte de la misma. Es producto de la descomposición térmica de carbones bituminosos en ausencia de aire. Cuando la hulla se calienta desprende gases que son muy útiles industrialmente; el sólido resultante es el carbón de coque, que es liviano y poroso.
+
+  repuesto_de_bomba_g_genver_5x6:
+    nombre:                    Repuesto de Bomba G.Denver 5x6
+    descripcion:               Repuesto de Bomba G.Denver 5x6

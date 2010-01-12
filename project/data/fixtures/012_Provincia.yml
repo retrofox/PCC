@@ -1,0 +1,101 @@
+Provincia:
+  provincia_capital_federal:
+    pais_id: argentina
+    nombre: 'Capital Federal'
+
+  provincia_gran_buenos_aires:
+    pais_id: argentina    
+    nombre: 'Gran Buenos Aires'
+
+  provincia_buenos_aires:
+    pais_id: argentina    
+    nombre: 'Buenos Aires'
+  provincia_catamarca:
+    pais_id: argentina
+    nombre: 'Catamarca'     
+  provincia_cordoba:
+    pais_id: argentina
+    nombre: 'Cordoba' 
+
+  provincia_chaco:
+    pais_id: argentina
+    nombre: 'Chaco' 
+
+  provincia_corrientes:
+    pais_id: argentina
+    nombre: 'Corrientes' 
+
+  provincia_entre_rios:
+    pais_id: argentina
+    nombre: 'Entre Rios' 
+
+  provincia_santa_cruz:
+    pais_id: argentina
+    nombre: 'Santa Cruz' 
+
+  provincia_formosa:
+    pais_id: argentina
+    nombre: 'Formosa' 
+
+  provincia_rio_negro:
+    pais_id: argentina
+    nombre: 'Rio Negro' 
+
+  provincia_neuquen:
+    pais_id: argentina
+    nombre: 'Neuquen' 
+
+  provincia_santa_fe:
+    pais_id: argentina
+    nombre: 'Santa Fe' 
+
+  provincia_jujuy:
+    pais_id: argentina
+    nombre: 'Jujuy' 
+       
+  provincia_mendoza:
+    pais_id: argentina
+    nombre: 'Mendoza' 
+
+  provincia_tucuman:
+    pais_id: argentina
+    nombre: 'Tucumán' 
+
+  provincia_salta:
+    pais_id: argentina
+    nombre: 'Salta' 
+
+  provincia_misiones:
+    pais_id: argentina
+    nombre: 'Misiones' 
+
+  provincia_santiago_del_estero:
+    pais_id: argentina
+    nombre: 'Santiago del Estero' 
+
+
+  provincia_san_juan:
+    pais_id: argentina
+    nombre: 'San Juan' 
+
+  provincia_chubut:
+    pais_id: argentina
+    nombre: 'Chubut' 
+
+  provincia_san_luis:
+    pais_id: argentina
+    nombre: 'San Luis' 
+
+  provincia_la_rioja:
+    pais_id: argentina
+    nombre: 'La Rioja' 
+
+  provincia_la_pampa:
+    pais_id: argentina
+    nombre: 'La Pampa' 
+
+  provincia_tierra_del_fuego:
+    pais_id: argentina
+    nombre: 'Tierra del Fuego'
+    
+    

@@ -1,0 +1,301 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>go</source>
+        <target>Hacer</target>
+      </trans-unit>
+
+      <trans-unit id="2">
+        <source>Username</source>
+        <target>Usuario</target>
+      </trans-unit>
+		
+      <trans-unit id="3">
+        <source>Created at</source>
+        <target>Creado</target>
+      </trans-unit>
+		
+      <trans-unit id="4">
+        <source>Last login</source>
+        <target>Último Login</target>
+      </trans-unit>
+		
+      <trans-unit id="5">
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+		
+      <trans-unit id="6">
+        <source>Remember</source>
+        <target>Recordar</target>
+      </trans-unit>
+		
+      <trans-unit id="7">
+        <source>sign in</source>
+        <target>Ingresar</target>
+      </trans-unit>
+		
+      <trans-unit id="8">
+        <source>Required.</source>
+        <target>Requerido.</target>
+      </trans-unit>
+		
+      <trans-unit id="9">
+        <source>The username and/or password is invalid.</source>
+        <target>Nombre de usuario o contraseña inválidos.</target>
+      </trans-unit>
+		
+      <trans-unit id="10">
+        <source>Choose an action</source>
+        <target>Elije una acción</target>
+      </trans-unit>
+		
+      <trans-unit id="11">
+        <source>You must at least select one item. </source>
+        <target>Tienes que elegir al menos un ítem.</target>
+      </trans-unit>
+		
+      <trans-unit id="12">
+        <source>close</source>
+        <target>cerrar</target>
+      </trans-unit>
+		
+      <trans-unit id="13">
+        <source>results</source>
+        <target>resultados</target>
+      </trans-unit>
+		
+      <trans-unit id="14">
+        <source>filter</source>
+        <target>filtrar</target>
+      </trans-unit>
+		
+      <trans-unit id="15">
+        <source>is empty</source>
+        <target>vacío</target>
+      </trans-unit>
+		
+      <trans-unit id="16">
+        <source>Name</source>
+        <target>Nombre</target>
+      </trans-unit>
+
+      <trans-unit id="17">
+        <source>Description</source>
+        <target>Descripción</target>
+      </trans-unit>
+		
+      <trans-unit id="18">
+        <source>Password (again)</source>
+        <target>Contraseña (de nuevo)</target>
+      </trans-unit>
+		
+      <trans-unit id="19">
+        <source>Permissions and groups</source>
+        <target>Permisos y Grupos</target>
+      </trans-unit>
+		
+      <trans-unit id="20">
+        <source>Is active</source>
+        <target>Activo</target>
+      </trans-unit>
+		
+      <trans-unit id="21">
+        <source>Is super admin</source>
+        <target>Super administrador</target>
+      </trans-unit>
+		
+      <trans-unit id="22">
+        <source>Groups</source>
+        <target>Grupos</target>
+      </trans-unit>
+		
+      <trans-unit id="23">
+        <source>Permissions</source>
+        <target>Permisos</target>
+      </trans-unit>
+		
+      <trans-unit id="24">
+        <source>User list</source>
+        <target>Listado de Usuarios</target>
+      </trans-unit>
+		
+      <trans-unit id="25">
+        <source>Group list</source>
+        <target>Listado de Grupos</target>
+      </trans-unit>
+		
+      <trans-unit id="26">
+        <source>Profile</source>
+        <target>Perfil</target>
+      </trans-unit>
+		
+      <trans-unit id="27">
+        <source>Logout</source>
+        <target>Salir</target>
+      </trans-unit>
+		
+      <trans-unit id="28">
+        <source>New Group</source>
+        <target>Nuevo Grupo</target>
+      </trans-unit>
+		
+      <trans-unit id="29">
+        <source>Permission list</source>
+        <target>Listado de credenciales</target>
+      </trans-unit>
+		
+      <trans-unit id="30">
+        <source>Editing Permission</source>
+        <target>Editando Credencial</target>
+      </trans-unit>
+		
+      <trans-unit id="31">
+        <source>New Permission</source>
+        <target>Nueva Credencial</target>
+      </trans-unit>
+		
+      <trans-unit id="32">
+        <source>Edit</source>
+        <target>Editar</target>
+      </trans-unit>
+
+      <trans-unit id="33">
+        <source>New Product</source>
+        <target>Producto Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="34">
+        <source>New</source>
+        <target>Nuevo</target>
+      </trans-unit>
+
+      <trans-unit id="35">
+        <source>Add Product</source>
+        <target>Agregar Producto</target>
+      </trans-unit>
+
+      <trans-unit id="36">
+        <source>Product List</source>
+        <target>Listado de Productos</target>
+      </trans-unit>
+
+      <trans-unit id="37">
+        <source>Suppliers List</source>
+        <target>Listado de Proveedores</target>
+      </trans-unit>
+
+      <trans-unit id="38">
+        <source>New Supplier</source>
+        <target>Nuevo Proveedor</target>
+      </trans-unit>
+
+      <trans-unit id="39">
+        <source>Are you sure?</source>
+        <target>Estás seguro ?</target>
+      </trans-unit>
+
+      <trans-unit id="40">
+        <source>Add Supplier</source>
+        <target>Agregar Proveedor</target>
+      </trans-unit>
+
+      <trans-unit id="41">
+        <source>Edit Product</source>
+        <target>Editar Producto</target>
+      </trans-unit>
+
+      <trans-unit id="42">
+        <source>Edit Supplier</source>
+        <target>Editar Proveedor</target>
+      </trans-unit>
+
+      <trans-unit id="43">
+        <source>Sales List</source>
+        <target>Listado de Ventas</target>
+      </trans-unit>
+
+      <trans-unit id="44">
+        <source>must be greater than</source>
+        <target>debe ser mayor que</target>
+      </trans-unit>
+
+      <trans-unit id="45">
+        <source>must be less than</source>
+        <target>debe ser menor que</target>
+      </trans-unit>
+
+      <trans-unit id="46">
+        <source>reedit</source>
+        <target>reeditar</target>
+      </trans-unit>
+
+      <trans-unit id="47">
+        <source>New Event</source>
+        <target>Nuevo Evento</target>
+      </trans-unit>
+
+      <trans-unit id="48">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="49">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="50">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="51">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="52">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="53">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="54">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="55">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="56">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="57">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="58">
+        <source></source>
+        <target></target>
+      </trans-unit>
+
+      <trans-unit id="59">
+        <source></source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

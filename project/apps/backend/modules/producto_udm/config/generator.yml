@@ -1,0 +1,33 @@
+generator:
+  class:                             sfPropelMooDooGenerator
+  param:
+    model_class:                     ProductoUDM
+    theme:                           mooDooAdmin
+    non_verbose_templates:           true
+    with_show:                       false
+    singular:                        ~
+    plural:                          ~
+    route_prefix:                    producto_udm
+    with_propel_route:               1
+
+    config:
+      actions: ~
+      fields:
+        unidad_mas_multi:                     { label: Unidad + Multiplicador }
+      list:
+        title:                                Unidades de Medida
+        display:                              [ nombre, unidad, unidad_mas_multi, dimension ]
+
+        actions:
+          _new:                                { label: Nueva, inWinPopUp:true }
+
+        object_actions:
+          _edit:                                { inWinPopUp:true }
+          _delete:                             ~
+
+      filter:  ~
+      form:    ~
+
+      edit:    ~
+      new:
+        title:                                  Nueva Unidad de Medida

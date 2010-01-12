@@ -1,0 +1,64 @@
+generator:
+  class:                   sfPropelMooDooGenerator
+  param:
+    model_class:           RecepcionPedido
+    theme:                 mooDooAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          recepcion_pedido
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:
+        nota_pedido_id:                       { label: Nota de Pedido }
+        recibe_id:                            { label: Recibió }
+        controla_id:                          { label: Controló }
+        administra_id:                        { label: Administró }
+        proveedor_factura:                    { label: Factura }
+        proveedor_remito:                     { label: Remito }
+        transportista_id:                     { label: Transportista }
+        transportista_numero_guia:            { label: Número de guía }
+        transportista_bultos:                 { label: Cantidad de bultos }
+        remito_proveedor:                     { label: Remito del proveedor }
+        certificado_calidad:                  { label: Certificado calidad }
+        cert_conformidad:                     { label: Certificado de conformidad }
+        otros_descripcion:                    { label: Otros descripción }
+        error_envio:                          { label: Error del envio }
+        error_envio_descripcion:              { label: Descripción de error }
+        fecha:                                { label: Fecha, date_format: dd/MM/yy }
+        rechazado_desc:                       { label: Descripción del rechazo }
+        control_items:                        { label: Control de ítems }
+        control_precios:                      { label: Control de precios }
+        control_calidad:                      { label: Control de calidad }
+        control_cantidad:                     { label: Control de cantidad }
+
+      list:
+        title:                                Lista de recepción de pedidos
+        display:                              [ id, nota_pedido_id, fecha, recibe, proveedor_factura, proveedor_remito, transportista ]
+
+        actions:
+          _new:                               { label: New, inWinPopUp:true }
+
+        object_actions:
+          _edit:                               { inWinPopUp:true }
+          _delete:                            ~
+
+
+      filter:
+        display:                              [ id, nota_pedido_id, fecha, recibe_id, proveedor_factura, proveedor_remito, transportista_id ]
+      form:
+        display:
+          "Datos generales":                  [ id, nota_pedido_id, fecha, recibe_id, controla_id, administra_id ]
+          "Datos del Proveedor":              [ proveedor_factura, proveedor_remito ]
+          "Transporte":                       [ transportista_id, transportista_numero_guia, transportista_bultos ]
+          "Control de documentacion":         [ remito_proveedor, certificado_calidad, factura, manuales, ensayos, cert_conformidad, MSDS, otros, otros_descripcion ]
+          "Disconformidad del Material":      [ error_envio, error_envio_desc, rechazado, rechazado_desc]
+          "Control de materiales":            [ control_items, control_precios, control_calidad, control_cantidad ]
+
+      edit:
+        title:                                 Editar recepción de pedido
+      new:
+        title:                                 Nueva recepción de pedido

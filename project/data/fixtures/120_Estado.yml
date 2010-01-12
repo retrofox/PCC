@@ -1,0 +1,148 @@
+##############
+##  Estado  ##
+##############
+Estado:
+
+####################
+# Estado de Compra #
+####################
+  compra-estado_iniciado:
+    tipo:          0
+    orden:         0
+    nombre:        Iniciado
+    descripcion:   Siempre que se inicie la compra de un producto su estado inicial es 'Iniciado'.
+
+  compra-estado_aceptado:
+    tipo:          0
+    orden:         1
+    nombre:        Aceptado
+    descripcion:   Una compra es aceptada cuando cumple con condiciones financieras.
+
+  compra-estado_rechazado:
+    tipo:          0
+    orden:         2
+    nombre:        Rechazado
+    descripcion:   Este estado se produce a causa de un rechazo administrativo.
+
+  compra-estado_pausado:
+    tipo:          0
+    orden:         3
+    nombre:        Pausado
+    descripcion:   La compra queda en un estado de 'espera' hasta que se resuelvan ciertos inconvenientes en su proceso.
+
+  compra-estado_realizado:
+    tipo:          0
+    orden:         4
+    nombre:        Realizado
+    descripcion:   La compra se ha llevado a cabo con exito.
+
+  compra-estado_parcialmente_entregado:
+    tipo:          0
+    orden:         5
+    nombre:        Entrega Parcial.
+    descripcion:   Entrega Parcial.
+    
+  compra-estado_compra_inmediata:
+    tipo:          0
+    orden:         null
+    nombre:        Compra Inmediata.
+    descripcion:   Una compra inmediata no pasa por el proceso normal de compra generalmente asociado a una nota de pedido. Las compras se hacen comunmente en pequeñas cantidades.
+
+
+####################
+# Estado de Venta #
+####################
+
+  venta-estado_iniciado:
+    tipo:          1
+    orden:         0
+    nombre:        Iniciado
+    descripcion:   Iniciado.
+
+  venta-estado_aceptado:
+    tipo:          1
+    orden:         1
+    nombre:        Aceptado
+    descripcion:   Aceptado.
+
+  venta-estado_rechazado:
+    tipo:          1
+    orden:         2
+    nombre:        Rechazado
+    descripcion:   Rechazado.
+
+  venta-estado_pausado:
+    tipo:          1
+    orden:         3
+    nombre:        Pausado
+    descripcion:   Pausado.
+
+  venta-estado_realizado:
+    tipo:          1
+    orden:         4
+    nombre:        Realizado
+    descripcion:   Realizado.
+
+  venta-estado_reservado:
+    tipo:          1
+    orden:         5
+    nombre:        Reservado
+    descripcion:   Reservado.
+    
+############################
+# Estado de Nota de Pedido #
+############################
+
+  nota_de_pedido-estado_admin_iniciada:
+    tipo:          2
+    orden:         1
+    nombre:        Administración - Iniciada
+    descripcion:   Administración - Iniciada.
+
+  nota_de_pedido-estado_admin_cancelada:
+    tipo:          2
+    orden:         2
+    nombre:        Administración - Cancelada
+    descripcion:   Administración - Cancelada.
+    
+  nota_de_pedido-estado_admin_modificada:
+    tipo:          2
+    orden:         3
+    nombre:        Administración - Modificada
+    descripcion:   Administración - Modificada.
+    
+  nota_de_pedido-estado_control_costos_visada:
+    tipo:          2
+    orden:         4
+    nombre:        Control de Costos - Visada
+    descripcion:   Control de Costos - Visada.
+
+  nota_de_pedido-estado_control_costos_denegada:
+    tipo:          2
+    orden:         5
+    nombre:        Control de Costos - Denegada
+    descripcion:   Control de Costos - Denegada.
+
+  nota_de_pedido-estado_control_costos_aceptada:
+    tipo:          2
+    orden:         6
+    nombre:        Control de Costos - Aceptada
+    descripcion:   Control de Costos - Aceptada.
+
+  nota_de_pedido-estado_autorizacion_denegada:
+    tipo:          2
+    orden:         7
+    nombre:        Autorización - Denegada
+    descripcion:   Autorización - Denegada.
+    
+  nota_de_pedido-estado_autorizacion_aceptada:
+    tipo:          2
+    orden:         8
+    nombre:        Autorización - Aceptada
+    descripcion:   Autorización - Aceptada.
+
+  nota_de_pedido-estado_autorizacion_en_espera:
+    tipo:          2
+    orden:         9
+    nombre:        Autorización - En Espera
+    descripcion:   Autorización - En Espera.

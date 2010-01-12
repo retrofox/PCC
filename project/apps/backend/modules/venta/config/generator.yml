@@ -1,0 +1,43 @@
+generator:
+  class:                   sfPropelMooDooGenerator
+  param:
+    model_class:           Venta
+    theme:                 mooDooAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          venta
+    with_propel_route:     1
+
+    config:
+      fields:
+        fecha:                                 { label: Fecha, date_format: dd/MM/yy }
+        transportista_interno_id:              { label: Transportista Interno }
+        transportista_externo_id:              { label: Transportista Externo }
+        producto_id:                           { label: Producto }
+
+      actions: ~
+      form:
+        display:
+          NONE:                              [ producto_id, cantidad, numero_remito, transportista_interno_id, transportista_externo_id, fecha, comentario ]
+
+      filter:
+        display:                             [ producto_id, transportista_interno_id, transportista_externo_id, fecha ]
+
+      list:
+        title:                                Listado de Ventas
+        fields:
+          cantidad:                           { label: Cant.}
+          numero_remito:                      { label: NºRto.}
+        display:                              [ fecha, producto, numero_remito, cantidad, ultimo_estado ]
+
+        actions:
+          _new:                                { inWinPopUp:true }
+
+        object_actions:
+          _edit:                               { inWinPopUp:true }
+          _delete:                            ~
+
+      new:
+        title:                                 Venta de Producto

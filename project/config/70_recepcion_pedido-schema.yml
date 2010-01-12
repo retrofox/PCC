@@ -1,0 +1,40 @@
+propel:
+### RECEPCION PEDIDO ###
+  recepcion_pedido:
+    _attributes:                  { phpName: RecepcionPedido, idMethod: native }
+    id:                           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nota_pedido_id:               { type: integer, foreignTable: nota_pedido, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    fecha:                        { type: date }
+
+    recibe_id:                    { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    controla_id:                  { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    administra_id:                { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+
+    proveedor_factura:            { type: varchar(30) }
+    proveedor_remito:             { type: varchar(30) }
+    
+    transportista_id:             { type: integer, foreignTable: proveedor, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+    transportista_numero_guia:    { type: varchar(30) }
+    transportista_bultos:         { type: tinyint }
+
+    remito_proveedor:             { type: boolean, dafault: false }
+    certificado_calidad:          { type: boolean, dafault: false }
+    factura:                      { type: boolean, dafault: false }
+    manuales:                     { type: boolean, dafault: false }
+    ensayos:                      { type: boolean, dafault: false }
+    cert_conformidad:             { type: boolean, dafault: false }
+    MSDS:                         { type: boolean, dafault: false }
+    otros:                        { type: boolean, dafault: false }
+    otros_descripcion:            { type: varchar(50) }
+    
+    error_envio:                  { type: boolean, deafult: false }
+    error_envio_desc:             { type: varchar(100) }
+    rechazado:                    { type: boolean, deafult: false }
+    rechazado_desc:               { type: varchar(100) }
+    control_items:                { type: boolean, default: false }
+    control_precios:              { type: boolean, default: false }
+    control_calidad:              { type: boolean, default: false }
+    
+    control_cantidad:             { type: boolean, default: false }
+
+    cerrada:                      { type: boolean, default: false }

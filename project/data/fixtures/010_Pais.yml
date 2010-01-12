@@ -1,0 +1,16 @@
+Pais:
+  argentina:
+    nombre: 'Argentina'
+    codigo: 'AR'
+    
+  chile:
+    nombre: 'Chile'
+    codigo: 'CH'
+    
+  paraguay:
+    nombre: 'Paraguay'
+    codigo: 'PY'
+    
+  brasil:
+    nombre: 'Brasil'
+    codigo: 'BR'

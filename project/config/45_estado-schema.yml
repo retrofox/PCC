@@ -1,0 +1,9 @@
+propel:
+#Tabla de estado de compra, venta, nota de pedido, etc.
+  estado:
+    _attributes:     { phpName: Estado, idMethod: native }
+    id:              { type: tinyint, required: true, primaryKey: true, autoIncrement: true }
+    orden:           { type: tinyint, required: true, primaryKey: false, autoIncrement: false, description: 'Indica el orden que puede tener un estado dentro de los diferentes estados' }
+    tipo:            { type: tinyint, required: true, description:'Define si es estado para una compra (0), venta (1), nota de pedido (2), etc' }
+    nombre:          { type: varchar(30), description: 'Nombre del tipo de estado' }
+    descripcion:     { type: varchar(200) }

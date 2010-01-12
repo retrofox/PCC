@@ -1,0 +1,201 @@
+# Usuarios Inicial PCC
+sfGuardUser:
+  pamestic: 
+    username: pamestic
+    password: 123456
+  cbandier: 
+    username: cbandier
+    password: 123456
+  dbandier: 
+    username: dbandier
+    password: 123456
+  mbandier: 
+    username: mbandier
+    password: 123456
+  Pbarros: 
+    username: Pbarros
+    password: 123456
+  cborella: 
+    username: cborella
+    password: 123456
+  jbrion: 
+    username: jbrion
+    password: 123456
+  dcaceres: 
+    username: dcaceres
+    password: 123456
+  rcastill: 
+    username: rcastill
+    password: 123456
+  ecastro: 
+    username: ecastro
+    password: 123456
+  mcataldo: 
+    username: mcataldo
+    password: 123456
+  ocaucama: 
+    username: ocaucama
+    password: 123456
+  jcedro: 
+    username: jcedro
+    password: 123456
+  gcontrer: 
+    username: gcontrer
+    password: 123456
+  rcontrer: 
+    username: rcontrer
+    password: 123456
+  ecortez: 
+    username: ecortez
+    password: 123456
+  edemonte: 
+    username: edemonte
+    password: 123456
+  aescuder: 
+    username: aescuder
+    password: 123456
+  nflores: 
+    username: nflores
+    password: 123456
+  jgalera: 
+    username: jgalera
+    password: 123456
+  agasen: 
+    username: agasen
+    password: 123456
+  jgonzale: 
+    username: jgonzale
+    password: 123456
+  egonzale: 
+    username: egonzale
+    password: 123456
+  agrillo: 
+    username: agrillo
+    password: 123456
+  ehermosi: 
+    username: ehermosi
+    password: 123456
+  mhormaza: 
+    username: mhormaza
+    password: 123456
+  jhuenchu: 
+    username: jhuenchu
+    password: 123456
+  firanzo: 
+    username: firanzo
+    password: 123456
+  djaramil: 
+    username: djaramil
+    password: 123456
+  gkutsche: 
+    username: gkutsche
+    password: 123456
+  mlagos: 
+    username: mlagos
+    password: 123456
+  mlopez: 
+    username: mlopez
+    password: 123456
+  pmamani: 
+    username: pmamani
+    password: 123456
+  pmarinao: 
+    username: pmarinao
+    password: 123456
+  omartine: 
+    username: omartine
+    password: 123456
+  amedina: 
+    username: amedina
+    password: 123456
+  omenna: 
+    username: omenna
+    password: 123456
+  mmolina: 
+    username: mmolina
+    password: 123456
+  rmolina: 
+    username: rmolina
+    password: 123456
+  mmorales: 
+    username: mmorales
+    password: 123456
+  mnavarre: 
+    username: mnavarre
+    password: 123456
+  dojeda: 
+    username: dojeda
+    password: 123456
+  cortega: 
+    username: cortega
+    password: 123456
+  rpacheco: 
+    username: rpacheco
+    password: 123456
+  cparedes: 
+    username: cparedes
+    password: 123456
+  gperez: 
+    username: gperez
+    password: 123456
+  eplaate: 
+    username: eplaate
+    password: 123456
+  dpulicar: 
+    username: dpulicar
+    password: 123456
+  jrodrigu: 
+    username: jrodrigu
+    password: 123456
+  asandova: 
+    username: asandova
+    password: 123456
+  asanrame: 
+    username: asanrame
+    password: 123456
+  hsantill: 
+    username: hsantill
+    password: 123456
+  msantill: 
+    username: msantill
+    password: 123456
+  lschrott: 
+    username: lschrott
+    password: 123456
+  gstuardo: 
+    username: gstuardo
+    password: 123456
+  atoro: 
+    username: atoro
+    password: 123456
+  gtorres: 
+    username: gtorres
+    password: 123456
+  gtosi: 
+    username: gtosi
+    password: 123456
+  pvelarde: 
+    username: pvelarde
+    password: 123456
+  azampa: 
+    username: azampa
+    password: 123456
+
+# XiFOX.NET
+  diego:
+    username:       Diego
+    password:       123456
+    is_super_admin: true
+    is_active:      true
+
+  german:
+    username:       German
+    password:       123456
+    is_super_admin: false
+    is_active:      true
+
+  damian:
+    username:       Damian     
+    password:       123456
+    is_super_admin: false
+    is_active:      true

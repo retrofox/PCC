@@ -1,0 +1,24 @@
+Evento:
+  evento_uno:
+    producto_id:                        coque01
+    user_id:                            gperez
+    cantidad:                           100
+    fecha:                              '2009-02-18'
+    operacion:                          true
+    descripcion:                        Evento Incremental cargado a traves del fix 140_Eventos.yml
+    
+  evento_dos:
+    producto_id:                        coque01
+    user_id:                            jbrion
+    cantidad:                           28
+    fecha:                              '2009-02-25'
+    operacion:                          false
+    descripcion:                        Evento Decremental cargado a traves del fix 140_Eventos.yml
+    
+  evento_tres:
+    producto_id:                        coque01
+    user_id:                            damian
+    cantidad:                           180
+    fecha:                              '2009-05-03'
+    operacion:                          true
+    descripcion:                        Evento Incremental cargado a traves del fix 140_Eventos.yml

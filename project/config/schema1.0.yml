@@ -1,0 +1,329 @@
+propel:
+  pcc_producto:
+    _attributes:       { phpName: Producto, idMethod: native }
+    id:                { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    codigo:            { type: varchar(20), required: true, description: 'Codigo del Producto' }
+    nombre:            { type: varchar(100), required: true, description: 'Nombre del Producto' }
+    descripcion:       { type: longvarchar, description: 'Descripcion del Producto' }
+    categoria_id:      { type: integer, foreignTable: pcc_categoria, foreignReference: id, description: 'Refrencia la categoria del producto', onDelete: cascade, onUpdate: cascade }
+    udm_id:            { type: integer, foreignTable: pcc_udm, foreignReference: id,  description: 'Unidad de Medida', onDelete: cascade, onUpdate: cascade }
+    ubicacion_fisica:  { type: varchar(20) } 
+    
+  pcc_categoria:
+    _attributes:       { phpName: Categoria, idMethod: native }
+    id:                { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:            { type: varchar(50), required: true, description: 'Nombre de la Categoria' }
+    descripcion:       { type: longvarchar }
+
+  pcc_udm:
+    _attributes:       { phpName: Udm, idMethod: native }
+    id:                { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    unidad:            { type: varchar(50), required: true }
+    descripcion:       { type: longvarchar }
+
+  pcc_producto_stock:
+    _attributes:       { phpName: ProductoStock, idMethod: native }
+    id:                { type: integer, required: true, primaryKey: true, autoIncrement: false, foreignTable: pcc_producto, foreignReference: id, onDelete: cascade, description: 'ID del producto' }
+    stock_actual:      { type: integer, default: 0 } 
+    stock_critico:     { type: integer, default: 0 }
+    stock_preaviso:    { type: integer, default: 0 }
+    stock_reservado:   { type: integer, default: 0 }
+
+  pcc_producto_proveedor:
+    _attributes:  { phpName: ProductoProveedor, idMethod: native }
+    producto_id:  { type: integer, primaryKey: true, required: true, foreignTable: pcc_producto,  foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    proveedor_id: { type: integer, primaryKey: true, required: true, foreignTable: pcc_proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+
+##
+## Tabla que almacena el nombre de los archivos multimedia que tiene asociado un producto
+##
+  pcc_producto_archivo:
+    _attributes: { phpName: ProductoArchivo, idMethod: native }
+    producto_id: { type: integer, primaryKey: true, required: true, foreignTable: pcc_producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    archivo_id:  { type: integer, primaryKey: true, required: true, foreignTable: pcc_archivo,  foreignReference: id, onUpdate: cascade, onDelete: cascade }
+      
+  pcc_archivo:  # Antes conocido como multimedia
+    _attributes:    { phpName: Archivo, idMethod: native }
+    id:             { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre_archivo: { type: varchar(255), required: true } 
+    tipo_archivo:   { type: varchar(20) }
+    descripcion:    { type: longvarchar }
+
+  pcc_proveedor:
+    _attributes:    { phpName: Proveedor, idMethod: native }
+    id:             { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:         { type: varchar(255) }
+    cuit:           { type: varchar(20) }
+    email:          { type: varchar(100) }
+    telefono:       { type: varchar(100) }
+    fax:            { type: varchar(100) }
+    celular:        { type: varchar(100) }
+    contacto:       { type: varchar(255), description: 'Contacto del proveedor' }
+    direccion:      { type: varchar(255) }
+    pais_id:        { type: integer, foreignTable: pcc_pais, foreignReference: id, onDelete: setnull, onUpdate: cascade  }
+    provincia_id:   { type: integer, foreignTable: pcc_provincia, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+    localidad_id:   { type: integer, foreignTable: pcc_localidad, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+    rubro_id:       { type: integer, foreignTable: pcc_proveedor_rubro, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+
+        
+  pcc_proveedor_rubro:
+    _attributes:    { phpName: ProveedorRubro, idMethod: native }
+    id:             { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:         { type: varchar(255) }
+  pcc_proveedor_fdp:
+    _attributes: { phpName: ProveedorFdp, idMethod: native }
+    proveedor_id: { type: integer, foreignTable: pcc_proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    fdp_id:       { type: integer, foreignTable: pcc_fdp, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+     
+  pcc_fdp:
+    _attributes:  { phpName: FDP, idMethod: native }
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:       { type: varchar(255) }
+    descripcion:  { type: longvarchar }
+    
+# Evento. Clase que registra eventos en un determinado producto.
+  pcc_evento:
+    _attributes:     { phpName: Evento, idMethod: native }
+    id:              { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    producto_id:     { type: integer, foreignTable: pcc_producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    fecha:           { type: timestamp }
+    descripcion:     { type: longvarchar }
+    cantidad:        { type: integer }
+
+####  COMPRAS  ####
+  pcc_compra:
+    _attributes:     { phpName: Compra, idMethod: native }
+    id:              { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    producto_id:     { type: integer, foreignTable: pcc_producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    cantidad:        { type: integer }  
+    proveedor_id:    { type: integer, foreignTable: pcc_proveedor,   foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    nota_pedido_id:  { type: integer, foreignTable: pcc_nota_pedido, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    precio:          { type: float }
+    moneda:          { type: varchar(10) }
+    fecha:           { type: timestamp }
+    fecha_entrega:   { type: timestamp }
+    _uniques:
+      nota_pedido_producto: [ nota_pedido_id, producto_id ]
+        
+  pcc_compra_estado:
+    _attributes:        { phpName: CompraEstado, idMethod: native }
+    id:                 { type: integer, primaryKey: true, required: true, autoIncrement: true }
+    compra_id:          { type: integer, foreignTable: pcc_compra,    foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    estado_id:          { type: tinyint, foreignTable: pcc_estado,    foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    user_id:            { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    cantidad:           { type: integer, default: 0  }
+    fecha:              { type: timestamp }
+    nota_recepcion_id:  { type: integer, foreignTable: pcc_recepcion_pedido, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+
+  pcc_estado:
+    _attributes:     { phpName: Estado, idMethod: native }
+    id:              { type: tinyint, required: true, primaryKey: true, autoIncrement: false }
+    descripcion:     { type: varchar(20) }
+
+#### NOTA PEDIDO ####  
+
+  pcc_nota_pedido:  
+    _attributes:         { phpName: NotaPedido, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    numero:              { type: varchar(8) }
+    revision:            { type: tinyint, default: 0 }
+    fecha:               { type: date }
+
+    # Datos de Provision
+    proveedor_id:            { type: integer, foreignTable: pcc_proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    plazo_entrega:           { type: varchar(100) }
+    condicion_pago:          { type: integer, foreignTable: pcc_fdp, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    condicion_pago_detalle:  { type: varchar(200) }
+    condicion_lugar_entrega: { type: varchar(100) }
+    remitir_doc_a:           { type: varchar(100), default: "Carlos Pellegrini Mza 'G' Lote '10 J'. PIN Este - C.P. 8300 - Neuquen" }
+
+    # Transportista
+    transporte_id:           { type: integer, foreignTable: pcc_proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    lugar_entrega:           { type: varchar(100), default: "Carlos Pellegrini Mza 'G' Lote '10 J'. PIN Este - C.P. 8300 - Neuquen" }
+
+    # Documentacion
+    remito_proveedor:    { type: boolean, default: false }
+    certificado_calidad: { type: boolean, default: false }
+    factura:             { type: boolean, default: false }
+    manuales:            { type: boolean, default: false }
+    ensayos:             { type: boolean, default: false }
+    cert_conformidad:    { type: boolean, default: false }
+    MSDS:                { type: boolean, default: false }
+    Otros:               { type: boolean, default: false }
+    otros_descripcion:   { type: varchar(50) }
+
+    # Fecha de control de la aplicacion para el seguimiento de la nota de pedido. 
+    fecha_entrega:              { type: date } # Sujeto a modificaciones
+
+    # Responsables
+    administra_id:       { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }    
+    solicita_id:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    controla_id:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    autoriza_id:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+
+    # Estados de control
+    recepcion_total:     { type: boolean, default: false }
+    bloqueada:           { type: boolean, default: false }
+
+    ultima_revision:     { type: boolean, default: true }
+    _uniques:
+      numero_revision:    [ numero, revision ]
+      
+### Estados de una nota de Pedido
+  pcc_estado_nota_pedido:
+    _attributes:                  { phpName: EstadoNotaPedido, isMethod: native }
+    id:                           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nota_pedido_id:               { type: integer, foreignTable: pcc_nota_pedido, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    estado_id:                    { type: integer, foreignTable: pcc_estado_np, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    user_id:                      { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    observaciones:                { type: longvarchar }
+    fecha:                        { type: timestamp }
+
+# Posibles Estados de una nota de Pedido
+  pcc_estado_np:
+    _attributes:                  { phpName: EstadoNP, isMethod: native }
+    id:                           { type: integer, primaryKey: true, autoIncrement: false, required: true }
+    descripcion:                  { type: varchar(30) }
+    
+### RECEPCION PEDIDO ###
+  pcc_recepcion_pedido:
+    _attributes:                  { phpName: RecepcionPedido, idMethod: native }
+    id:                           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nota_pedido_id:               { type: integer, foreignTable: pcc_nota_pedido, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    fecha:                        { type: date }
+
+    recibe_id:                    { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    controla_id:                  { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    administra_id:                { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+
+    proveedor_factura:            { type: varchar(30) }
+    proveedor_remito:             { type: varchar(30) }
+    
+    transportista_id:             { type: integer, foreignTable: pcc_proveedor, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+    transportista_numero_guia:    { type: varchar(30) }
+    transportista_bultos:         { type: tinyint }
+
+    remito_proveedor:             { type: boolean, dafault: false }
+    certificado_calidad:          { type: boolean, dafault: false }
+    factura:                      { type: boolean, dafault: false }
+    manuales:                     { type: boolean, dafault: false }
+    ensayos:                      { type: boolean, dafault: false }
+    cert_conformidad:             { type: boolean, dafault: false }
+    MSDS:                         { type: boolean, dafault: false }
+    otros:                        { type: boolean, dafault: false }
+    otros_descripcion:            { type: varchar(50) }
+    
+    error_envio:                  { type: boolean, deafult: false }
+    error_envio_desc:             { type: varchar(100) }
+    rechazado:                    { type: boolean, deafult: false }
+    rechazado_desc:               { type: varchar(100) }
+    control_items:                { type: boolean, default: true }
+    control_precios:              { type: boolean, default: true }
+    control_calidad:              { type: boolean, default: true }
+    
+    control_cantidad:             { type: boolean, default: true }
+    
+    cerrada:                      { type: boolean, default: false }
+    
+    
+    
+#####  VENTAS  #####
+  pcc_venta:       
+    _attributes:    { phpName: Venta, idMethod: native }
+    id:             { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    producto_id:    { type: integer, foreignTable: pcc_producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    cantidad:       { type: integer }
+    numero_remito:  { type: varchar(20) }
+    cliente_id:     { type: integer, foreignTable: pcc_cliente, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    transportista_interno_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    transportista_externo_id: { type: integer, foreignTable: pcc_proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade } 
+    fecha:          { type: timestamp }
+  
+  pcc_estado_venta:
+    _attributes:   { phpName: EstadoVenta, idMethod: native }
+    id:            { type: integer, primaryKey: true, autoIncrement: true, required: true }
+    venta_id:      { type: integer, foreignTable: pcc_venta, foreignReference: id, onDelete: cascade,     onUpdate: cascade }
+    estado_id:     { type: integer, foreignTable: pcc_estado_v, foreignReference: id, onDelete: cascade,  onUpdate: cascade }
+    user_id:       { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    observaciones: { type: longvarchar }
+    fecha:         { type: timestamp }
+
+  pcc_estado_v:
+    _attributes:   { phpName: EstadoV, idMethod: native }
+    id:            { type: integer, primaryKey: true, autoIncrement: false, required: true }
+    descripcion:   { type: varchar(20) }
+
+
+######  COMPRAS-VENTAS  ######
+
+  pcc_compra_venta:
+    _attributes:     { phpName: CompraVenta, idMethod: native }
+    id:              { type: integer, primaryKey: true, autoIncrement: true, required: true }
+    compra_id:       { type: integer, foreignTable: pcc_compra, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    venta_id:        { type: integer, foreignTable: pcc_venta, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+
+
+### CLIENTES ###
+
+  pcc_cliente:
+    _attributes:   { phpName: Cliente, idMethod: native }
+    id:            { type: integer, primaryKey: true, autoIncrement: true, required: true }
+    nombre:        { type: varchar(255) }
+    descripcion:   { type: longvarchar }
+
+#####  PERFIL DEL USUARIO ######
+  sf_guard_user_profile:
+    _attributes:         { phpName: sfGuardUserProfile, idMethod: native }
+
+    id:                  { type: integer, required: true, primaryKey: true, autoincrement: true }
+    user_id:             { type: integer, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, unique: true, required: true }
+    language:            { type: varchar(5), default: 'es', description: "Lenguaje nativo del usuario" }
+
+    # Datos Personales
+    nombre:              { type: varchar(255) }
+    apellido:            { type: varchar(255) }
+    fdn:                 { type: date }
+    nacionalidad:        { type: integer, foreignTable: pcc_pais, foreignReference: id }
+    documento_tipo:      { type: tinyint }
+    documento_numero:    { type: varchar(15) }
+
+    # Datos Laborales
+    cuil:                { type: varchar(13) } 
+    legajo:              { type: integer }
+    
+    # Contacto
+    telefono:            { type: varchar(255), description: "Telefono fijo del usuario" }
+    movil:               { type: varchar(255) }
+    email:               { type: varchar(255) }
+
+    # Domicilio    
+    domicilio_calle:     { type: varchar(50) }
+    domicilio_numero:    { type: varchar(5) }
+    domicilio_manzana:   { type: varchar(5) }
+    domicilio_barrio:    { type: varchar(50) }
+    domicilio_piso:      { type: varchar(2) }
+    domicilio_depto:     { type: varchar(2) }
+
+    localidad_id:        { type: integer, foreignTable: pcc_localidad, foreignReference: id }
+    provincia_id:        { type: integer, foreignTable: pcc_provincia, foreignReference: id }
+    
+    comment:             { type: longvarchar }
+
+  pcc_provincia:
+    _attributes:         { phpName: Provincia, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoincrement: true }
+    pais_id:             { type: varchar(2) }
+    nombre:              { type: varchar(50) }    
+
+  pcc_localidad:
+    _attributes:         { phpName: Localidad, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoincrement: true }
+    #provincia_id:        { type: varchar(2) } # Que paso aca? Deberia ser un integer con foreignReference a la tabla provincia
+    provincia_id:        { type: integer, foreignTable: pcc_provincia, foreignReference: id }
+    nombre:              { type: varchar(50) }
+    
+  pcc_pais:
+    _attributes:         { phpName: Pais, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:              { type: varchar(50) }
+    codigo:              { type: varchar(2), description: 'Codigo ISO de Pais' }

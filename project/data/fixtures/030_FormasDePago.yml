@@ -1,0 +1,20 @@
+FormasDePago:
+  fdp_contado_pesos:
+    nombre:                 Contado en Pesos
+    moneda:                 peso
+    descripcion:            Pago al contado en Pesos Argentinos.
+
+  fdp_contado_euros:
+    nombre:                 Contado en Euros
+    moneda:                 euro
+    descripcion:            Pago al contado en Euros.
+
+  fdp_contado_dolares:
+    nombre:                 Contado en Dólares
+    moneda:                 dolar
+    descripcion:            Pago al contado en Dólares Estado Unidenses.
+
+  fdp_contado:
+    nombre:                 Cuenta Corriente en Pesos
+    moneda:                 peso
+    descripcion:            Pago a trevés de Cuenta Corriente.

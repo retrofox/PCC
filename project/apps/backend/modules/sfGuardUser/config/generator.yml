@@ -1,0 +1,50 @@
+generator:
+  class:                         sfPropelMooDooGenerator
+  param:
+    model_class:                 sfGuardUser
+    theme:                       mooDooAdmin
+    non_verbose_templates:       true
+    with_show:                   false
+    singular:                    ~
+    plural:                      ~
+    route_prefix:                sf_guard_user
+    with_propel_route:           1
+
+    config:
+      fields:
+        password_again:               { label: "Password (again)" }
+
+      filter:
+        display:                      [ username, nombre, apellido, sf_guard_user_group_list, sf_guard_user_permission_list ]
+
+      list:
+        title:                        User list
+        fields:
+          created_at:                 { date_format: dd/MM/yyyy }
+          last_login:                 { date_format: dd/MM/yyyy }
+
+        object_actions:
+          _edit:                      { label: Cuenta, inWinPopUp:true }
+          _delete:                    ~
+
+        actions:
+          _new:												{ label: Agregar, inWinPopUp:true }
+
+        display:                      [ username, nombre, apellido, created_at ]
+
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "Cuenta de Usuario":         [ username, password, password_again ]
+          "Datos Personales":          [ language, nombre, apellido, fdn, nacionalidad, documento_numero, documento_tipo ]
+          "Datos Laborales":           [ cuil, legajo ]
+          "Contacto":                  [ telefono, movil, email ]
+          "Domicilio":                 [ domicilio_calle, domicilio_numero, domicilio_manzana, domicilio_barrio, domicilio_piso, domicilio_depto ]
+          "Ubicación Geográfica":      [ localidad_id, provincia_id ]
+          "Permissions and groups":		 [is_active, is_super_admin, sf_guard_user_group_list, sf_guard_user_permission_list]
+
+      edit:
+        title: Editando datos de usuario "%%username%%"
+
+      new:
+        title: Nueva Cuenta de Usuario

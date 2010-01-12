@@ -1,0 +1,41 @@
+generator:
+  class:                              sfPropelMooDooGenerator
+  param:
+    model_class:                      Evento
+    theme:                            mooDooAdmin
+    non_verbose_templates:            true
+    with_show:                        false
+    singular:                         ~
+    plural:                           ~
+    route_prefix:                     evento
+    with_propel_route:                1
+
+    config:
+      actions: ~
+      fields:
+        producto_id:                          { label: Producto }
+        fecha:                                { label: Fecha, date_format: dd/MM/yy }
+      list:
+        title:                                Eventos de Productos 
+        display:                              [ producto, fecha, descripcion, cantidad, operacion ]
+        fields:
+          operacion:                          { label: Oper. }
+          cantidad:                           { label: Cant. }
+
+        actions:
+          _new:                                 { inWinPopUp:true }
+
+        object_actions:
+          _edit:                                { inWinPopUp:true }
+          _delete: 
+
+      filter:
+        display:                               [ producto_id, fecha ]
+
+      form:
+        display:
+          NONE:                                [ producto_id, fecha, descripcion, cantidad, operacion ]
+
+      edit:    ~
+      new:
+        title:                                 New Event

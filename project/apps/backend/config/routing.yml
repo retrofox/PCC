@@ -1,0 +1,191 @@
+mooDooClienFiles_core_js:
+  url:      /mooDoo/:filename.js
+  param:    { module: mooDooClientFiles, action: loadJs }
+
+mooDooClienFile_json:
+  url:      /mooDoo/:module/:filename.json
+  param:    { action: loadJsonData }
+
+recepcion_pedido:
+  class: sfPropelRouteCollection
+  options:
+    model:                RecepcionPedido
+    module:               recepcion_pedido
+    prefix_path:          recepcion_pedido
+    column:               id
+    with_wildcard_routes: true
+
+nota_pedido:
+  class: sfPropelRouteCollection
+  options:
+    model:                NotaPedido
+    module:               nota_pedido
+    prefix_path:          nota_pedido
+    column:               id
+    with_wildcard_routes: true
+
+venta:
+  class: sfPropelRouteCollection
+  options:
+    model:                Venta
+    module:               venta
+    prefix_path:          venta
+    column:               id
+    with_wildcard_routes: true
+
+evento:
+  class: sfPropelRouteCollection
+  options:
+    model:               Evento
+    module:              evento
+    prefix_path:         evento
+    column:              id
+    with_wildcard_routes: true
+
+compra:
+  class: sfPropelRouteCollection
+  options:
+    model:               Compra
+    module:              compra
+    prefix_path:         compra
+    column:              id
+    with_wildcard_routes: true
+
+formas_de_pago:
+  class: sfPropelRouteCollection
+  options:
+    model:               FormasDePago
+    module:              formasDePago
+    prefix_path:         formasDePago
+    column:              id
+    with_wildcard_routes: true
+
+pais:
+  class: sfPropelRouteCollection
+  options:
+    model:               Pais
+    module:              pais
+    prefix_path:         pais
+    column:              id
+    with_wildcard_routes: true
+
+provincia:
+  class: sfPropelRouteCollection
+  options:
+    model:               Provincia
+    module:              provincia
+    prefix_path:         provincia
+    column:              id
+    with_wildcard_routes: true
+
+localidad:
+  class: sfPropelRouteCollection
+  options:
+    model:               Localidad
+    module:              localidad
+    prefix_path:         localidad
+    column:              id
+    with_wildcard_routes: true
+
+proveedor_fdp:
+  class: sfPropelRouteCollection
+  options:
+    model:               ProveedorFDP
+    module:              proveedor_fdp
+    prefix_path:         proveedor_fdp
+    column:              id
+    with_wildcard_routes: true
+
+proveedor_rubro:
+  class:                 sfPropelRouteCollection
+  options:
+    model:               ProveedorRubro
+    module:              proveedor_rubro
+    prefix_path:         proveedor_rubro
+    column:              id
+    with_wildcard_routes: true
+
+proveedor:
+  class:                 sfPropelRouteCollection
+  options:
+    model:               Proveedor
+    module:              proveedor
+    prefix_path:         proveedor
+    column:              id
+    with_wildcard_routes: true
+
+producto_proveedor:
+  class: sfPropelRouteCollection
+  options:
+    model:               ProductoProveedor
+    module:              producto_proveedor
+    prefix_path:         producto_proveedor
+    column:              producto_id
+    with_wildcard_routes: true
+
+archivo:
+  class: sfPropelRouteCollection
+  options:
+    model:               Archivo
+    module:              archivo
+    prefix_path:         archivo
+    column:              id
+    with_wildcard_routes: true
+
+producto_archivo:
+  class: sfPropelRouteCollection
+  options:
+    model:               ProductoArchivo
+    module:              producto_archivo
+    prefix_path:         producto_archivo
+    column:              producto_id
+    with_wildcard_routes: true
+
+producto_categoria:
+  class: sfPropelRouteCollection
+  options:
+    model:               ProductoCategoria
+    module:              producto_categoria
+    prefix_path:         producto_categoria
+    column:              id
+    with_wildcard_routes: true
+
+producto:
+  class: sfPropelRouteCollection
+  options:
+    model:               Producto
+    module:              producto
+    prefix_path:         producto
+    column:              id
+    with_wildcard_routes: true
+
+
+producto_udm:
+  class: sfPropelRouteCollection
+  options:
+    model:               ProductoUDM
+    module:              producto_udm
+    prefix_path:         producto_udm
+    column:              id
+    with_wildcard_routes: true
+
+sf_guard_user_profile:
+  class: sfPropelRouteCollection
+  options:
+    model:               sfGuardUserProfile
+    module:              sf_guard_user_profile
+    prefix_path:         sf_guard_user_profile
+    column:              id
+    with_wildcard_routes: true
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

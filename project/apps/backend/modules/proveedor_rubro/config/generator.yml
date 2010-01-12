@@ -1,0 +1,30 @@
+generator:
+  class:                   sfPropelMooDooGenerator
+  param:
+    model_class:           ProveedorRubro
+    theme:                 mooDooAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          proveedor_rubro
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title:                                 Listado de Rubros de Proveedores
+        display:                               [ nombre ]
+
+        actions:
+          _new:                                { inWinPopUp:true }
+
+        object_actions:
+          _edit:                                { inWinPopUp:true }
+          _delete:                             ~
+
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

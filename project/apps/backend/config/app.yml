@@ -1,0 +1,12 @@
+all:
+  sf_guard_plugin:
+    profile_class:      UserProfile
+    profile_field_name: user_id
+
+# default values
+#all:
+
+#all:
+#  mooDooPlugin:
+#    css_dir:            ../../plugins/mooDooPlugin/web/css
+#    js_dir:             ../../plugins/mooDooPlugin/web/js

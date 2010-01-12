@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sNews 1.7 ReadMe</title>
+	<meta name="author" content="snewscms.com" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<style type="text/css" media="all">
+	<!--
+		*{margin:0;padding:0;}
+		html,body{height:100%;margin:0;padding:0;}
+		body{background:#FFF;color:#000;font:.9em/1.6em Helvetica,Arial,sans-serif;border-top:9pt solid #f9e9f2;margin:0 auto;}
+		h1,h2,h3,h4,h5,h6{position:relative;}
+		img{border:none;outline:none;margin:2em 0;}
+		a{color:purple;text-decoration:underline;}
+		a:hover,a:focus{color:#000;text-decoration:none;}
+		a img:link,a img:visited,a img:hover,a img:active,a img:focus{text-decoration: none; border: none; outline: none; -moz-outline: none;}
+		#wrap {margin: 0 auto; padding: 4em 6em; color: inherit;}
+		#wrap div {margin: 1em auto 2em; padding: .2em 1em;}
+		#wrap h1 {font-size: 2.8em; color: #37a; margin: 0 0 .2em 0;}
+		#wrap h2, #wrap h3, #wrap h4 {color: #268; margin: 2em 0 .4em 0;}
+		#wrap h2 {border-bottom: 1px solid #b86;}
+		#wrap h3, #wrap h4 {font-style: italic;}
+		#wrap p {margin: 12px 0 18px 0; text-align: left;}
+		#wrap pre {margin: 1.5em 0; color: navy;}
+		#wrap ul {font-family: Verdana,sans-serif; font-size: 1.1em; line-height: 1.66em;}
+		#wrap li {list-style-type: square; list-style-position: inside; margin: .3em 0; padding: .1em 0 .1em .3em}
+		#wrap .greentext {color:olive !important;}
+		#wrap .redtext {color:#b91212 !important;}
+		#wrap .graytext {color:#444 !important;}
+		#wrap .smallcaps {text-transform: uppercase; font-size: 78% !important; letter-spacing: 1pt; margin-right: 1em;}
+		#wrap div.important {padding: .4em 1em; border: 2px solid #eeb; color: #a91212; background: #ffc;}
+		#wrap div.sky {background: #ddf; color: #101; padding: .4em 1em;}
+		#wrap div.lime {background: #fea; color: #041; padding: .4em 1em;}
+		#wrap div.lime h3 {border-bottom: 1px solid #b86; margin: 0 0 .5em 0 !important; padding: 0 0 .1em 0 !important;}
+		.note {font-size: 10pt; text-align: center !important;}
+		pre {
+			white-space: pre-wrap;       /* css-3 */
+		 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	 		white-space: -pre-wrap;      /* Opera 4-6 */
+	 		white-space: -o-pre-wrap;    /* Opera 7 */
+	 		word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		}
+	-->
+	</style>
+	<!--[if IE]>
+	<style type="text/css" media="all">
+		body{text-align:center;}
+		#wrap{text-align:left;}
+	</style><![endif]-->
+</head>
+<body>
+	<p class="note">
+		<a href="http://snewscms.com/" title="Everything the &lt;body&gt; needs">
+			<img src="images/logo.gif" alt="sNews 1.7 logo" />
+		</a>
+	</p>
+	<div id="wrap">
+		<h1>sNews 1.7 Readme</h1>
+		<p>Welcome to <a href="http://snewscms.com/">sNews 1.7</a> a single file, template independant, <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a> powered, standards compliant <a href="http://en.wikipedia.org/wiki/Content_management_system">Content Management System</a> (CMS). sNews consists of one engine file (snews.php), one language file (snews_EN.php), one XHTML file (index.php) for content presentation, one stylesheet (style.css) for content styling and one javascript file for functionality. This makes sNews the lightest and one of the most user-friendly CMSs available today.</p>
+		<p><strong>Before installing, please check that your server meets the minimum system requirements:</strong></p>
+		<div class="important">
+			<ul>
+				<li><a href="http://www.apache.org/">Apache Server</a> with <strong>mod_rewrite</strong> module enabled</li>
+				<li><a href="http://www.mysql.com/">MySQL</a> database, minimum version 4.x</li>
+				<li><a href="http://www.php.net/">PHP</a>: Hypertext Preprocessor, minimum version 4.x</li>
+			</ul>
+		</div>
+		<h3>Fits any OS (Linux, Mac, Windows)</h3>
+		<p>Apache, MySQL and PHP are all Open Source applications and freely available. They come preinstalled on Mac OS X 10.2.8 and later; they can be installed both on Windows and Linux OS (detailed info can be found on their respective websites) and they form the most widely used database server setup on the Internet today. For best result in a local server environment though, we suggest that you use <a href="http://en.wikipedia.org/wiki/List_of_AMP_Packages" title="Wikipedia list of AMP stacks">a dedicated server stack</a> (applications bundle): <strong class="graytext">LAMP (Linux), MAMP (Mac)</strong> and <strong class="graytext">XAMPP (Windows)</strong> are the recommended stacks at this time.</p>
+		<p><em class="redtext">Note that sNews 1.7 in its default configuration will not work on a Windows IIS server because it uses different methods of URL rewriting.</em></p>
+
+		<h2><strong>Install sNews</strong> by following these simple steps:</h2>
+		<h3>1. Setup the Database</h3>
+		<p><strong>1.a.</strong> Start by creating a database and user/password (if required by the server), using the database administration tool available on your server (phpMyAdmin for example). If you already have a database set up, skip this step.</p>
+		<p><strong>1.b.</strong> Next, use the code below to populate the database. Copy all of the code and paste it into the textarea in your database admin tools <em>SQL</em> panel, alternatively paste it into a text document using your text editor and save it as a .sql file (e.g. snews17.sql) and use the <em>Import</em> panel in the servers database admin tool to locate and import that file.</p>
+		<p class="redtext"><strong>1.c.</strong> <strong class="smallcaps">Important!</strong> If you need to use a <em>prefix</em>, for example if your domain host only allows you to use one database, you should add that prefix to each table  e.g. <em>prefix_articles</em>, <em>prefix_extras</em>, <em>prefix_categories</em> etc, including all instances of settings before running the code. You must also add that prefix into snews.php in step 2. Be aware that this prefix is something that you choose: it is entirely separate from any prefix that your host may add.</p>
+
+		<div class="lime">
+		<h3>SQL Data</h3>
+		<pre>CREATE TABLE `articles` (
+	`id` int(11) primary key auto_increment,
+	`title` varchar(100) default NULL,
+	`seftitle` varchar(100) default NULL,
+	`text` longtext,
+	`date` datetime default NULL,
+	`category` int(8) NOT NULL default '0',
+	`position` int(6) default NULL,
+	`extraid` varchar(8) default NULL,
+	`page_extra` varchar(8) default NULL,
+	`displaytitle` char(3) NOT NULL default 'YES',
+	`displayinfo` char(3) NOT NULL default 'YES',
+	`commentable` varchar(5) NOT NULL default '',
+	`published` int(3) NOT NULL default '1',
+	`description_meta` varchar(255) default NULL,
+	`keywords_meta` varchar(255) default NULL,
+	`show_on_home` enum('YES','NO') default 'YES',
+	`show_in_subcats` enum('YES','NO') default 'NO',
+	`artorder` smallint(6) NOT NULL default '0',
+	`visible` varchar(6) default 'YES',
+	`default_page` varchar(6) default 'NO'
+);
+</pre><pre>
+	INSERT INTO `articles` VALUES
+(1, 'Welcome to sNews 1.7', 'welcome-to-snews-17', '&lt;p&gt;If you\'re seeing this article, you have installed &lt;strong&gt;sNews 1.7&lt;/strong&gt; and are connected to the database.&lt;/p&gt;\r\n\r\n&lt;p&gt;It is &lt;strong&gt;strongly &lt;/strong&gt;suggested that you &lt;a href=\"login/\" title=\"Login\"&gt;login &lt;/a&gt;right away, the default username and password is \"&lt;strong&gt;test&lt;/strong&gt;\" and \"&lt;strong&gt;test&lt;/strong&gt;\", then go to the page \"&lt;a href=\"settings/\" title=\"Settings\"&gt;settings&lt;/a&gt;\". At the bottom of that page you\'ll find &lt;em&gt;\"Change Username and Password\"&lt;/em&gt;. &lt;strong&gt;Do it&lt;/strong&gt; and make the password hard to guess.&lt;/p&gt;\r\n\r\n&lt;p&gt;After doing that, feel free to delete this article & &lt;a href=\"administration/\" title=\"Admin sNews\"&gt;start building your site&lt;/a&gt;.&lt;/p&gt;\r\n\r\n&lt;p&gt;If you stumble along the way, check the &lt;a href=\"http://snewscms.com/faq/faq/\" title=\"Troubleshooting and FAQ\"&gt;Troubleshooting and FAQ&lt;/a&gt; page.  If you\'re still having trouble search the &lt;a href=\"http://snewscms.com/forum/\" title=\"sNews CMS Forum\"&gt;sNews CMS Forum&lt;/a&gt; before posting your question, it may already be answered.  Still lost? We\'ll be there to assist you in any way we can.&lt;/p&gt;\r\n\r\n&lt;p&gt;Thank you for choosing sNews.  We hope you enjoy it as much as we do.&lt;/p&gt;', NOW(), 1, 1, '', '', 'YES', 'YES', 'NO', 1, '', '', 'YES', 'NO', '1', 'YES', 'NO');
+</pre><pre>
+CREATE TABLE `extras` (
+	`id` int(8) primary key auto_increment,
+ 	`name` varchar(40) NOT NULL,
+	`seftitle` varchar(100) default NULL,
+	`description` varchar(100) NOT NULL
+);
+</pre><pre>
+	INSERT INTO `extras` VALUES (1, 'Extra', 'extra', 'The default extra');
+</pre><pre>
+CREATE TABLE `categories` (
+	`id` int(8) primary key auto_increment,
+ 	`name` varchar(100) NOT NULL,
+ 	`seftitle` varchar(100) NOT NULL,
+ 	`description` varchar(255) NOT NULL,
+ 	`published` varchar(4) NOT NULL default 'YES',
+ 	`catorder` smallint(6) NOT NULL default '0',
+ 	`subcat` int(8) NOT NULL default '0'
+);</pre><pre>
+	INSERT INTO `categories` VALUES ('1', 'Uncategorized', 'uncategorized', '', 'YES', '1', '0');
+</pre><pre>
+CREATE TABLE `comments` (
+ 	`id` int(11) primary key auto_increment,
+ 	`articleid` int(11) default '0',
+ 	`name` varchar(50),
+ 	`url` varchar(100) NOT NULL,
+ 	`comment` text,
+ 	`time` datetime NOT NULL default '0000-00-00 00:00:00',
+ 	`approved` varchar(5) NOT NULL default 'True'
+);
+</pre><pre>
+CREATE TABLE `settings` (
+ 	`id` int(8) primary key auto_increment,
+ 	`name` varchar(20) NOT NULL,
+ 	`value` varchar(255) NOT NULL
+);
+</pre><pre>
+	INSERT INTO `settings` VALUES (1, 'website_title', 'sNews 1.7');
+	INSERT INTO `settings` VALUES (2, 'home_sef', 'home');
+	INSERT INTO `settings` VALUES (3, 'website_description', 'sNews CMS');
+	INSERT INTO `settings` VALUES (4, 'website_keywords', 'new, site, snews');
+	INSERT INTO `settings` VALUES (5, 'website_email', 'info@mydomain.com');
+	INSERT INTO `settings` VALUES (6, 'contact_subject', 'Contact Form');
+	INSERT INTO `settings` VALUES (7, 'language', 'EN');
+	INSERT INTO `settings` VALUES (8, 'charset', 'UTF-8');
+	INSERT INTO `settings` VALUES (9, 'date_format', 'd.m.Y. H:i');
+	INSERT INTO `settings` VALUES (10, 'article_limit', '3');
+	INSERT INTO `settings` VALUES (11, 'rss_limit', '5');
+	INSERT INTO `settings` VALUES (12, 'display_page', '');
+	INSERT INTO `settings` VALUES (13, 'display_new_on_home', '');
+	INSERT INTO `settings` VALUES (14, 'display_pagination', '');
+	INSERT INTO `settings` VALUES (15, 'num_categories', 'on');
+	INSERT INTO `settings` VALUES (16, 'show_cat_names', '');
+	INSERT INTO `settings` VALUES (17, 'approve_comments', '');
+	INSERT INTO `settings` VALUES (18, 'mail_on_comments', '');
+	INSERT INTO `settings` VALUES (19, 'comment_repost_timer', '20');
+	INSERT INTO `settings` VALUES (20, 'comments_order', 'ASC');
+	INSERT INTO `settings` VALUES (21, 'comment_limit', '30');
+	INSERT INTO `settings` VALUES (22, 'enable_comments', 'NO');
+	INSERT INTO `settings` VALUES (23, 'freeze_comments', 'NO');
+	INSERT INTO `settings` VALUES (24, 'word_filter_enable', '');
+	INSERT INTO `settings` VALUES (25, 'word_filter_file', '');
+	INSERT INTO `settings` VALUES (26, 'word_filter_change', '');
+	INSERT INTO `settings` VALUES (27, 'username', '098f6bcd4621d373cade4e832627b4f6');
+	INSERT INTO `settings` VALUES (28, 'password', '098f6bcd4621d373cade4e832627b4f6');
+	INSERT INTO `settings` VALUES (29, 'enable_extras', 'NO');
+	INSERT INTO `settings` VALUES (30, 'last_date', NOW());
+	INSERT INTO `settings` VALUES (31, 'file_extensions', 'phps,php,txt,inc,htm,html');
+	INSERT INTO `settings` VALUES (32, 'allowed_files', 'php,htm,html,txt,inc,css,js,swf');
+	INSERT INTO `settings` VALUES (33, 'allowed_images', 'gif,jpg,jpeg,png');
+</pre><pre>
+	-- SPECIAL KEYS
+
+	ALTER TABLE `articles` ADD INDEX ( `show_on_home` );
+	ALTER TABLE `comments` ADD INDEX ( `articleid` );
+	</pre>
+		</div>
+
+		<h3>2. Edit Settings</h3>
+		<p><strong>Edit "snews.php"</strong> and <strong>enter your settings</strong> at the top of the file:</p>
+		<p><em class="redtext">Please note that the $db['website'] variable that was needed in previous versions has been replaced &amp; no longer needs to be manually entered, as the path is automatially detected.</em></p>
+		<div class="sky">
+			<p><em class="graytext">MySQL Host  provided by hosting company, this is usually "localhost":</em><br />
+			$db['dbhost'] = 'localhost';</p>
+
+			<p><em class="graytext">Database Name  created in <strong>phpMyAdmin</strong> or similar database editor:</em><br />
+			$db['dbname'] = 'snews';</p>
+
+			<p><em class="graytext">Database Username  created in phpMyAdmin or similar database editor:</em><br />
+			$db['dbuname'] = 'username';</p>
+
+			<p><em class="graytext">Database password  created in phpMyAdmin or similar database editor:</em><br />
+			$db['dbpass'] = 'password';</p>
+
+			<p><em class="graytext">Database prefix, which should end with an underscore (ex: 'snews_')  created in phpMyAdmin or similar database editor, usually used when a hosting company provides only one database:</em><br />
+			$db['prefix'] = '';</p>
+		</div>
+
+		<h3>3. Upload files</h3>
+		<div class="lime">
+			<p><strong>Copy all the files</strong> from the sNews 1.7 package to your server and CHMOD 777 (= rwx-rwx-rwx) your folder where you'll upload your images (e.g. img). If you don't know how to change permissions, contact your server administrator.</p>
+		</div>
+
+		<h3>Done!</h3>
+		<p>You are ready to go! Login to start adding content and managing your site  default username is <strong>test</strong> and password is <strong>test</strong>.<br />
+		Bug reports, suggestions, comments, questions: <a href="http://snewscms.com/" title="The official sNews user Forum">sNews Forum</a></p>
+
+		<h2>Additional info</h2>
+		<div class="important">
+			<p><strong class="smallcaps">Important!</strong> sNews makes use of the Apache module <em>mod_rewrite</em> and the system file <em>.htaccess</em> to create the <em>Search Engine Friendly</em> (SEF) links that are essential to the CMS. Using SEF or pretty links makes your site much more search engine friendly and gives it better rankings on Google and other popular search engines. <em>If you install the sNews files in a subfolder on your domain root (i.e. http://mydomain.com/<strong>subfolder</strong>/), you must edit the included .htaccess file to match the path to your installation</em>. On a web server, use your FTP client to locate the .htaccess file in your sNews installation folder (you will need to enable "show hidden files" or similar feature in the client);</p>
+			<p>Open the .htaccess file in the FTP client or your text editor of choice and find the line: <strong>#RewriteBase /sNews17</strong>.<br />
+			Change this line to look like the following, with the second part matching the path to your sNews installation:<br />
+			<strong>RewriteBase /name-of-sNews-folder</strong></p>
+			<p>If you need to do the same operation locally on a Mac using Mac OS X or a PC using Windows Vista and can't find the .htaccess file, use the included "htaccess.txt" file to make your changes, then save it as .htaccess in your sNews installation folder. Mac OS X and Windows Vista (some editions) hide files that start with a period (.) from plain view.</p>
+		</div>
+		<p>More information about using sNews on your local computer can be found in the Help section at <a href="http://snewscms.com/" title="The official sNews web site">snewscms.com</a>.</p>
+		<p>Enjoy!<br />
+		<em>The sNews Team</em></p>
+		<hr />
+		<p class="note">&copy; Copyright <a href="http://www.solucija.com" title="Information Architecture and Web Design">Solucija</a>, 2008. <a href="http://snewscms.com/">sNews</a> is licensed under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</a>.</p>
+	</div>
+</body>
+</html>

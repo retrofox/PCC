@@ -1,0 +1,62 @@
+propel:
+# Evento. Clase que registra eventos en un determinado producto.
+  evento:
+    _attributes:     { phpName: Evento, idMethod: native }
+    id:              { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    producto_id:     { type: integer, foreignTable: producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    user_id:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade, description: 'Estable que usuario ha realizado el evento' }
+    fecha:           { type: timestamp }
+    descripcion:     { type: longvarchar }
+    cantidad:        { type: integer }
+    operacion:       { type: boolean, description: 'Operacion de Incremento/Decremento del stock del producto' }
+    created_at:      ~
+
+####  COMPRAS  ####
+  compra:
+    _attributes:     { phpName: Compra, idMethod: native }
+    id:              { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    producto_id:     { type: integer, foreignTable: producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    cantidad:        { type: integer }  
+    proveedor_id:    { type: integer, foreignTable: proveedor,   foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    nota_pedido_id:  { type: integer, foreignTable: nota_pedido, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    precio:          { type: float }
+    moneda:          { type: varchar(10) }
+    fecha:           { type: timestamp }
+    fecha_entrega:   { type: timestamp }
+    comentario:      { type: longvarchar }
+    created_at:      ~
+
+  compra_estado:
+    _attributes:        { phpName: CompraEstado, idMethod: native }
+    id:                 { type: integer, primaryKey: true, required: true, autoIncrement: true }
+    compra_id:          { type: integer, foreignTable: compra, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    user_id:            { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade, description: 'Estable que usuario ha realizado la venta.' }
+    estado_id:          { type: tinyint, foreignTable: estado, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    cantidad:           { type: integer, default: 0  }
+    fecha:              { type: timestamp }
+    observaciones:      { type: longvarchar }
+    nota_recepcion_id:  { type: integer, foreignTable: recepcion_pedido, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+    created_at:         ~
+    
+#####  VENTAS  #####
+  venta:
+    _attributes:                 { phpName: Venta, idMethod: native }
+    id:                          { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    producto_id:                 { type: integer, foreignTable: producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    cantidad:                    { type: integer }
+    numero_remito:               { type: varchar(20) }
+    #cliente_id:                  { type: integer, foreignTable: cliente, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    transportista_interno_id:    { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    transportista_externo_id:    { type: integer, foreignTable: proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade } 
+    fecha:                       { type: timestamp }
+    comentario:                  { type: longvarchar }
+    created_at:         ~
+    
+  venta_estado:
+    _attributes:     { phpName: VentaEstado, idMethod: native }
+    id:              { type: integer, primaryKey: true, autoIncrement: true, required: true }
+    venta_id:        { type: integer, foreignTable: venta, foreignReference: id, onDelete: cascade,     onUpdate: cascade }
+    estado_id:       { type: tinyint, foreignTable: estado, foreignReference: id, onDelete: cascade,  onUpdate: cascade }
+    user_id:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    observaciones:   { type: longvarchar }
+    fecha:           { type: timestamp }

@@ -1,0 +1,17 @@
+# Grupos de Usuarios de PCC
+sfGuardGroup:
+  administracion: 
+    name:                   Administración
+    description:            Grupo de Usuarios de Administración. Pueden acceder a todos los módulos de la aplicación
+    
+  stock: 
+    name:                   Stock
+    description:            Usuarios relacionados con acciones para el control de stock de la empresa. Pueden dar de alta/baja productos, seguimiento del control stock, etc.
+    
+  contaduria: 
+    name:                   Contaduría
+    description:            Usuarios pertenecientes al sector contable de la empresa.
+    
+  rh: 
+    name:                   Recursos Humanos
+    description:            Usuarios pertenecientes al sector de Recursos Humanos.

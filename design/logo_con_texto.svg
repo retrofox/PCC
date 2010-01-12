@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="510.4053"
+   height="231.87886"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="logo_con_texto.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/var/www/pcc-1.2/trunk/design/logo_con_texto.png"
+   inkscape:export-xdpi="35.27"
+   inkscape:export-ydpi="35.27">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <marker
+       orient="auto"
+       markerHeight="3"
+       markerWidth="4"
+       markerUnits="strokeWidth"
+       refY="5"
+       refX="10"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         id="path2755"
+         d="M 10,0 L 0,5 L 10,10 L 10,0 z" />
+    </marker>
+    <marker
+       orient="auto"
+       markerHeight="3"
+       markerWidth="4"
+       markerUnits="strokeWidth"
+       refY="5"
+       refX="0"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         id="path2752"
+         d="M 0,0 L 10,5 L 0,10 L 0,0 z" />
+    </marker>
+    <inkscape:perspective
+       id="perspective2788"
+       inkscape:persp3d-origin="258.08551 : 77.975667 : 1"
+       inkscape:vp_z="516.17102 : 116.9635 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 116.9635 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7946522"
+     inkscape:cx="255.20265"
+     inkscape:cy="115.93943"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1125"
+     inkscape:window-x="0"
+     inkscape:window-y="25" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-51.940205,-44.994172)">
+    <g
+       id="g2795"
+       transform="translate(47.198495,43.970026)">
+      <g
+         id="g2757">
+        <g
+           id="g2759">
+          <path
+             id="path2761"
+             d="M 187.853,60.1523 C 192.544,116.723 127.433,125.349 82.5063,125.316 L 70.9403,168.991 C 69.9742,172.64 68.6411,177.783 74.2922,180.615 C 81.1407,184.048 82.1681,186.718 81.6841,189.328 C 81.1052,192.449 77.1311,194.166 75.315,194.417 L 9.39587,194.515 C 3.73013,193.368 2.40762,184.632 14.8456,180.668 C 21.729,177.598 21.5705,175.852 23.0073,170.289 L 54.9957,46.4357 C 56.4209,40.9177 57.5722,37.8327 50.606,35.3517 C 47.502,34.2464 40.8851,33.7993 40.8967,29.5043 C 40.9052,26.3503 43.2149,26.1737 47.0305,26.1771 L 128.874,26.2542 C 147.441,26.2712 183.161,32.9664 187.853,60.1523 z M 137.737,92.2709 C 141.411,87.5784 144.029,82.6435 145.544,77.3846 C 147.06,72.1259 147.841,67.1911 147.841,62.6199 C 146.094,41.0589 129.232,38.1159 111.885,38.0725 C 104.761,38.0546 104.418,41.1561 104.013,42.7026 L 86.1691,110.809 L 92.4087,110.514 C 102.822,110.022 111.789,108.977 119.321,105.943 C 126.852,102.91 133.007,98.3386 137.737,92.2709 z"
+             style="fill:#00ff00;stroke:#000000;stroke-width:1.00018799" />
+          <path
+             id="path2763"
+             d="M 132.853,137.841 C 139.364,137.841 142.716,138.706 147.262,141.831 C 151.132,144.492 148.505,151.322 147.45,155.46 C 147.362,155.806 147.081,155.99 146.636,155.99 L 142.232,155.99 C 141.787,155.99 141.671,155.814 141.688,155.46 C 141.774,153.725 141.796,148.368 140.188,146.278 C 138.58,144.189 134.436,143.02 131.063,143.02 C 125.02,143.02 119.667,145.182 115.009,149.485 C 110.817,153.339 108.033,158.009 106.645,163.454 C 104.908,170.265 105.199,175.832 107.522,180.135 C 110.198,185.07 115.285,187.538 122.804,187.538 C 128.378,187.538 134.07,186.069 139.837,183.112 C 140.16,182.949 140.357,182.908 140.43,182.99 C 140.503,183.072 140.566,183.194 140.618,183.357 L 141.85,186.334 C 141.941,186.62 141.727,186.905 141.215,187.17 C 131.971,192.003 123.534,194.41 115.898,194.41 C 106.786,194.41 100.201,191.942 96.0951,187.007 C 92.0335,182.174 90.9907,175.791 93.0239,167.818 C 95.1558,159.457 99.8832,152.401 107.2,146.671 C 114.793,140.777 123.342,137.841 132.853,137.841 z"
+             style="fill:#00ff00;stroke:#000000;stroke-width:1.00018799" />
+          <path
+             id="path2765"
+             d="M 193.331,137.841 C 199.843,137.841 203.194,138.706 207.74,141.831 C 211.611,144.492 208.983,151.322 207.929,155.46 C 207.841,155.806 207.559,155.99 207.114,155.99 L 202.711,155.99 C 202.265,155.99 202.149,155.814 202.167,155.46 C 202.253,153.725 202.275,148.368 200.667,146.278 C 199.059,144.189 194.915,143.02 191.542,143.02 C 185.498,143.02 180.145,145.182 175.487,149.485 C 171.295,153.339 168.512,158.009 167.124,163.454 C 165.387,170.265 165.677,175.832 168,180.135 C 170.677,185.07 175.763,187.538 183.282,187.538 C 188.857,187.538 194.549,186.069 200.315,183.112 C 200.638,182.949 200.836,182.908 200.909,182.99 C 200.981,183.072 201.044,183.194 201.096,183.357 L 202.328,186.334 C 202.419,186.62 202.206,186.905 201.693,187.17 C 192.45,192.003 184.013,194.41 176.377,194.41 C 167.264,194.41 160.68,191.942 156.574,187.007 C 152.512,182.174 151.469,175.791 153.502,167.818 C 155.634,159.457 160.362,152.401 167.679,146.671 C 175.272,140.777 183.821,137.841 193.331,137.841 z"
+             style="fill:#00ff00;stroke:#000000;stroke-width:1.00018799" />
+          <path
+             id="path2767"
+             d="M 202.993,79.015 L 234.28,79.015 L 245.33,56.3271 L 251.426,110.046 L 257.164,79.1825 L 272.223,79.1825 L 276.702,38.1448 L 288.687,125.35 L 292.78,79.1825 L 302.747,93.0661 L 307.889,47.3288 L 316.985,79.1825 L 374.873,79.1825"
+             style="fill:none;stroke:#000000;stroke-width:1.00018799" />
+          <path
+             id="path2769"
+             d="M 395.352,123.587 L 452.598,123.587 L 452.598,130.909 L 395.352,130.909 L 395.352,123.587 L 395.352,123.587 z"
+             style="fill:#000000;stroke:#000000;stroke-width:1.00018799" />
+          <g
+             id="g2771">
+            <path
+               id="path2773"
+               d="M 394.329,75.7437 L 451.575,75.7437 L 451.575,83.0659 L 394.329,83.0659 L 394.329,75.7437 L 394.329,75.7437 z"
+               style="fill:#ff0000;stroke:#000000;stroke-width:0.500094" />
+            <path
+               id="path2775"
+               d="M 419.087,108.083 L 426.41,108.083 L 426.41,50.8365 L 419.087,50.8365 L 419.087,108.083 L 419.087,108.083 z"
+               style="fill:#ff0000;stroke:#000000;stroke-width:0.500094" />
+            <path
+               id="path2777"
+               d="M 418.472,76.0921 L 427.392,76.0921 L 427.392,82.7592 L 418.472,82.7592 L 418.472,76.0921 L 418.472,76.0921 z"
+               style="fill:#ff0000;stroke:#ff0000;stroke-width:0.21602701" />
+          </g>
+          <path
+             id="path2779"
+             d="M 6.46677,1.13216 L 515.039,1.13216 L 515.039,232.795 L 6.46677,232.795 L 6.46677,1.13216 L 6.46677,1.13216 z"
+             style="fill:none;stroke:#ffffff;stroke-width:0.21602701" />
+        </g>
+        <g
+           id="g2781" />
+      </g>
+      <g
+         id="g2783" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="386.8241"
+       y="204.9928"
+       id="text2851"><tspan
+         sodipodi:role="line"
+         id="tspan2853"
+         x="386.8241"
+         y="204.9928"
+         style="font-size:17px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic">PROTECCION CATODICA</tspan><tspan
+         sodipodi:role="line"
+         x="386.8241"
+         y="226.2428"
+         id="tspan2869"
+         style="font-size:17px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic">del Comahue s.r.l.</tspan><tspan
+         sodipodi:role="line"
+         x="386.8241"
+         y="247.4928"
+         id="tspan2859" /></text>
+  </g>
+</svg>

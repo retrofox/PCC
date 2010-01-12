@@ -1,0 +1,87 @@
+	/* Main Menu */
+	#mainMenu {
+		position: absolute;
+		left: 0; top: 0;
+		z-index: 500;
+		width: 800px;
+	}
+
+	#mainMenu ul, #mainMenu li {
+		margin: 0; padding: 0;
+		list-style: none;
+	}
+
+	.menuLevel0 {
+		float: left;
+		margin-right: 5px;
+		width: 150px; height: 35px;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.menuLevel0Header {
+		width: 150px; height: 24px;
+		margin: 6px 3px 0; padding: 2px 2px 0;
+	}
+
+	.menuLevel0Header div, .menuLevel1 ul li div {
+		float: left;
+		margin: 2px 8px 2px 3px;
+	}
+	
+	.menuLevel0Header h3 {
+		margin: 0; padding: 0;
+		line-height: 24px;
+	}
+
+	.menuLevel1Content {
+		display: none;
+	}
+
+	.menuLevel1 {
+		width: 246px;
+		margin: 0 0 0 4px;
+		background: transparent url('images/sombra01.png') no-repeat right -10px;
+	}
+	
+	.menuLevel1 ul {
+	}
+ 	.menuLevel1 ul li {
+		height: 24px;
+		line-height: 24px;
+		width: 230px;
+ 	}
+	
+	.menuLevel1 ul li.divi01 {
+		height: 1px;
+		background: #CACACA none;
+		border-bottom: 1px solid #FFF;
+		border-top: 1px solid #CCC;
+		}
+
+#stateBar {
+	height: 25px;
+ 	position: absolute;
+	z-index: 520; bottom:0px;right:0px;	
+}
+
+.sombraBottom {
+	width: 250px; height: 20px;
+}
+
+.sombraBottom div {
+	height: 20px;
+	background-color: transparent;
+	background-image: url('images/sombra01.png');
+	background-repeat: no-repeat;
+
+}
+
+.sombraLeftBottom {
+	width: 50px; float: right;
+	background-position: left bottom;
+}
+.sombraRightBottom {	
+	width: 200px; float: right;
+	background-position: right bottom;
+}

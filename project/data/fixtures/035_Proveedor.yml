@@ -1,0 +1,38 @@
+Proveedor:
+  arauco_camiones:
+    nombre:                    Arauco Camiones
+    rubro_id:                  vehiculos_pesados
+    
+  comercial_argentina_srl:
+    nombre:                    Comercial Argentina SRL
+    rubro_id:                  seguridad_industrial
+
+  chasqui_srl:
+    nombre:                    Chasqui SRL
+    rubro_id:                  control_de_plagas
+    
+  distribuidora_leo:
+    nombre:                    Distribuidora Leo
+    rubro_id:                  insumos_de_libreria
+    
+  el_quijote_srl:
+    nombre:                    El Quijote SRL
+    rubro_id:                  insumos_de_libreria
+
+  xifox_net:
+    nombre:                    XiFOX.net
+    rubro_id:                  insumos_de_libreria
+    persona_nombre:            Damian
+    persona_apellido:          Suarez
+
+  el_rapido:
+    nombre:                    El Rapido
+    rubro_id:                  transportista
+
+  via_bariloche:
+    nombre:                    Via Bariloche
+    rubro_id:                  transportista
+
+  cruz_del_sur:
+    nombre:                    Cruz del Sur
+    rubro_id:                  transportista

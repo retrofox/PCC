@@ -1,0 +1,17 @@
+/* sf_guard_user_profile */
+.evento-index .sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li {
+    width: 140px;
+}
+
+/* Ancho de las columnas */
+.evento-index .sf_admin_list_th_fecha                  { width: 70px; }
+.evento-index .sf_admin_list_th_producto               { width: 200px; }
+/*.evento-index  .sf_admin_list_th_descripcion           { width: 300px; }*/
+.evento-index  .sf_admin_list_th_cantidad              { width: 50px; }
+.evento-index  .sf_admin_list_th_operacion             { width: 30px; }
+
+/* Iconos en las acciones de los objetos*/
+.evento-index .icn-submit                              { background-position:  -160px  -540px; }
+.evento-index .icn-new                                 { background-position:  -20px  -540px; }
+.evento-index .icn-edit                                { background-position:  -60px  -540px; }
+.evento-index .icn-delete                              { background-position:  -40px  -540px; }

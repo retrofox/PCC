@@ -1,0 +1,39 @@
+propel:
+ # Perfil extendido de Usuario
+  user_profile:
+    _attributes:                { phpName: UserProfile, idMethod: native }
+
+    id:                         { type: integer, required: true, primaryKey: true, autoincrement: true }
+    user_id:                    { type: integer, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, unique: true, required: true }
+    language:                   { type: varchar(5), default: 'es', description: "Lenguaje nativo del usuario" }
+
+    # Datos Personales
+    nombre:                     { type: varchar(255) }
+    apellido:                   { type: varchar(255) }
+    fdn:                        { type: date }
+    nacionalidad:               { type: integer, foreignTable: geo_pais, foreignReference: id }
+    documento_tipo:             { type: tinyint }
+    documento_numero:           { type: varchar(15) }
+
+    # Datos Laborales
+    cuil:                       { type: varchar(13) }
+    legajo:                     { type: varchar(5) }
+    
+    # Contacto
+    telefono:                   { type: varchar(255), description: "Telefono fijo del usuario" }
+    movil:                      { type: varchar(255) }
+    email:                      { type: varchar(255) }
+
+    # Domicilio    
+    domicilio_calle:            { type: varchar(50) }
+    domicilio_numero:           { type: varchar(5) }
+    domicilio_manzana:          { type: varchar(5) }
+    domicilio_barrio:           { type: varchar(50) }
+    domicilio_piso:             { type: varchar(2) }
+    domicilio_depto:            { type: varchar(2) }
+
+    localidad_id:               { type: integer, foreignTable: geo_localidad, foreignReference: id }
+    provincia_id:               { type: integer, foreignTable: geo_provincia, foreignReference: id }
+
+    comentario:                 { type: longvarchar }
+  # ------- fin sfGuardUser ---------

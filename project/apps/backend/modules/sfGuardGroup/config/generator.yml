@@ -1,0 +1,22 @@
+generator:
+  class:                   sfPropelMooDooGenerator
+  param:
+    model_class:           sfGuardGroup
+    theme:                 mooDooAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_group
+    with_propel_route:     1
+
+    config:
+      list:
+        display:                       [name, description]
+
+        object_actions:
+          _edit:                        { label: Group, inWinPopUp:true }
+          _delete:                     ~
+
+        actions:
+          _new:                         { label: Nuevo, inWinPopUp:true }

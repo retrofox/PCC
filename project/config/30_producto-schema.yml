@@ -1,0 +1,44 @@
+propel:
+
+  producto_categoria:
+    _attributes:                { phpName: ProductoCategoria, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:                     { type: varchar(50), required: true, description: 'Nombre de la Categoria (50)' }
+    descripcion:                { type: longvarchar }
+
+  producto_udm:
+    _attributes:                { phpName: ProductoUDM, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:                     { type: varchar(50), required: true, description: 'Nombre de la Unidad de Medida (50)' }
+    unidad:                     { type: varchar(15), description: 'Unidad propiamente dicha, Por ejemplo "m"'}
+    unidad_mas_multi:           { type: varchar(15), description: 'Es la unidad mas el multiplo o submultiplo, por ejemplo, Kg.' }
+    descripcion:                { type: longvarchar }
+    dimension:                  { type: varchar(15), description: 'Dimension de la unidad. Puede ser lineal, cuadrática, ćubica, etc.' }
+
+  producto:
+    _attributes:                { phpName: Producto, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    codigo:                     { type: varchar(20), required: true, description: 'Codigo del Producto (20)' }
+    nombre:                     { type: varchar(100), required: true, description: 'Nombre del Producto (100)' }
+    marca:                      { type: varchar(80), description: 'Marca del Producto (80)' }
+    descripcion:                { type: longvarchar, description: 'Descripcion del Producto' }
+    producto_categoria_id:      { type: integer, foreignTable: producto_categoria, foreignReference: id, description: 'Refrencia la categoria del producto', onDelete: cascade, onUpdate: cascade }
+    producto_udm_id:            { type: integer, foreignTable: producto_udm, foreignReference: id,  description: 'Unidad de Medida', onDelete: cascade, onUpdate: cascade }
+    ubicacion_fisica:           { type: varchar(20) }
+    stock_actual:               { type: integer, default: 0 } 
+    stock_reservado:            { type: integer, default: 0 }
+    stock_preaviso:             { type: integer, default: 0 }
+    stock_critico:              { type: integer, default: 0 }
+
+  # Tabla que almacena el nombre de los archivos multimedia que tiene asociado un producto
+  producto_archivo:
+    _attributes:                { phpName: ProductoArchivo, idMethod: native }
+    producto_id:                { type: integer, primaryKey: true, required: true, foreignTable: producto, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    archivo_id:                 { type: integer, primaryKey: true, required: true, foreignTable: archivo,  foreignReference: id, onUpdate: cascade, onDelete: cascade }
+    created_at:                 ~
+
+  # Tabla que relaciona los productos con los proveedores (n <-> m)
+  producto_proveedor:
+    _attributes:                { phpName: ProductoProveedor, idMethod: native }
+    producto_id:                { type: integer, primaryKey: true, required: true, foreignTable: producto,  foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    proveedor_id:               { type: integer, primaryKey: true, required: true, foreignTable: proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }

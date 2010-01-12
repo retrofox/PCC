@@ -1,0 +1,362 @@
+#Perfiles de Usuarios
+UserProfile:
+  pamestic_profile: 
+    user_id: pamestic
+    legajo: 183
+    apellido: "Amestica"
+    nombre: "Patricio"
+    cuil: "20-26854797-6"
+  cbandier_profile: 
+    user_id: cbandier
+    legajo: 145
+    apellido: "Bandieri"
+    nombre: "Carlos Raul"
+    cuil: "20-13477054-7"
+  dbandier_profile: 
+    user_id: dbandier
+    legajo: 70
+    apellido: "Bandieri"
+    nombre: "Diego Raul"
+    cuil: "23-24876475-9"
+  mbandier_profile: 
+    user_id: mbandier
+    legajo: 94
+    apellido: "Bandieri"
+    nombre: "Monica"
+    cuil: "23-27516842-4"
+  Pbarros_profile: 
+    user_id: Pbarros
+    legajo: 170
+    apellido: "Barros"
+    nombre: "Pablo Andres"
+    cuil: "20-33316070-7"
+  cborella_profile: 
+    user_id: cborella
+    legajo: 135
+    apellido: "Borella Rodriguez"
+    nombre: "Cristian Jonatan"
+    cuil: "20-25308900-9"
+  jbrion_profile: 
+    user_id: jbrion
+    legajo: 61
+    apellido: "Brion"
+    nombre: "Juan José"
+    cuil: "20-25087034-6"
+  dcaceres_profile: 
+    user_id: dcaceres
+    legajo: 71
+    apellido: "Caceres"
+    nombre: "Dominga Marina"
+    cuil: "27-17932115-2"
+  rcastill_profile: 
+    user_id: rcastill
+    legajo: 56
+    apellido: "Castillo"
+    nombre: "Rafael Jesús"
+    cuil: "20-24023991-5"
+  ecastro_profile: 
+    user_id: ecastro
+    legajo: 99
+    apellido: "Castro"
+    nombre: "Gustavo Enrique"
+    cuil: "20-27719737-6"
+  mcataldo_profile: 
+    user_id: mcataldo
+    legajo: 160
+    apellido: "Cataldo"
+    nombre: "María Cristina"
+    cuil: "27-22520891-9"
+  ocaucama_profile: 
+    user_id: ocaucama
+    legajo: 165
+    apellido: "Caucaman"
+    nombre: "Osvaldo"
+    cuil: "23-27406491-9"
+  jcedro_profile: 
+    user_id: jcedro
+    legajo: 5
+    apellido: "Cedro Durán"
+    nombre: "Jose"
+    cuil: "20-18689836-3"
+  gcontrer_profile: 
+    user_id: gcontrer
+    legajo: 144
+    apellido: "Contreras"
+    nombre: "Gustavo Ariel"
+    cuil: "20-25139717-2"
+  rcontrer_profile: 
+    user_id: rcontrer
+    legajo: 179
+    apellido: "Contreras"
+    nombre: "Rodolfo Sebastian"
+    cuil: "23-25860680-9"
+  ecortez_profile: 
+    user_id: ecortez
+    legajo: 127
+    apellido: "Cortez"
+    nombre: "Eduardo Hilario"
+    cuil: "20-31756303-6"
+  edemonte_profile: 
+    user_id: edemonte
+    legajo: 7
+    apellido: "Demonte"
+    nombre: "Edgardo Luis"
+    cuil: "20-14610685-5"
+  aescuder_profile: 
+    user_id: aescuder
+    legajo: 175
+    apellido: "Escudero"
+    nombre: "Ana Alejandra"
+    cuil: "27-23004689-7"
+  nflores_profile: 
+    user_id: nflores
+    legajo: 48
+    apellido: "Flores"
+    nombre: "Nazario"
+    cuil: "20-18804724-7"
+  jgalera_profile: 
+    user_id: jgalera
+    legajo: 10
+    apellido: "Galera"
+    nombre: "Juan Carlos"
+    cuil: "20-14470733-9"
+  agasen_profile: 
+    user_id: agasen
+    legajo: 134
+    apellido: "Gasen"
+    nombre: "Angel Israel"
+    cuil: "20-25599370-5"
+  jgonzale_profile: 
+    user_id: jgonzale
+    legajo: 147
+    apellido: "Gonzalez Rios"
+    nombre: "Juan Pablo"
+    cuil: "20-24825424-7"
+  egonzale_profile: 
+    user_id: egonzale
+    legajo: 178
+    apellido: "Gonzalez"
+    nombre: "Ezequiel"
+    cuil: "20-31327518-4"
+  agrillo_profile: 
+    user_id: agrillo
+    legajo: 105
+    apellido: "Grillo"
+    nombre: "Antonio Luis"
+    cuil: "20-28413690-0"
+  ehermosi_profile: 
+    user_id: ehermosi
+    legajo: 117
+    apellido: "Hermosilla"
+    nombre: "Eduardo Rolando"
+    cuil: "20-12283825-1"
+  mhormaza_profile: 
+    user_id: mhormaza
+    legajo: 175
+    apellido: "Hormazabal"
+    nombre: "Margot Tamara"
+    cuil: "27-27109628-9"
+  jhuenchu_profile: 
+    user_id: jhuenchu
+    legajo: 15
+    apellido: "Huenchullanca Juan"
+    nombre: "Juan"
+    cuil: "20-92708633-7"
+  firanzo_profile: 
+    user_id: firanzo
+    legajo: 68
+    apellido: "Iranzo"
+    nombre: "Fernando Damián"
+    cuil: "20-30174979-2"
+  djaramil_profile: 
+    user_id: djaramil
+    legajo: 77
+    apellido: "Jaramillo"
+    nombre: "Diego Ubaldo"
+    cuil: "20-29206249-5"
+  gkutsche_profile: 
+    user_id: gkutsche
+    legajo: 131
+    apellido: "Kutscher"
+    nombre: "Guillermo Cesar"
+    cuil: "20-25216153-9"
+  mlagos_profile: 
+    user_id: mlagos
+    legajo: 72
+    apellido: "Lagos"
+    nombre: "Monica Beatriz"
+    cuil: "27-26356944-5"
+  mlopez_profile: 
+    user_id: mlopez
+    legajo: 54
+    apellido: "Lopez"
+    nombre: "Mario Eduardo"
+    cuil: "20-26575979-4"
+  pmamani_profile: 
+    user_id: pmamani
+    legajo: 67
+    apellido: "Mamani"
+    nombre: "Pedro Nicolás"
+    cuil: "20-30725842-1"
+  pmarinao_profile: 
+    user_id: pmarinao
+    legajo: 106
+    apellido: "Marinao"
+    nombre: "Pedro Daniel"
+    cuil: "20-27232892-8"
+  omartine_profile: 
+    user_id: omartine
+    legajo: 169
+    apellido: "Martinez"
+    nombre: "Octavio Eduardo"
+    cuil: "20-31613937-0"
+  amedina_profile: 
+    user_id: amedina
+    legajo: 184
+    apellido: "Medina"
+    nombre: "Ariel Andres"
+    cuil: "20-26331196-6"
+  omenna_profile: 
+    user_id: omenna
+    legajo: 136
+    apellido: "Menna"
+    nombre: "Osvaldo Omar"
+    cuil: "20-08397662-5"
+  mmolina_profile: 
+    user_id: mmolina
+    legajo: 97
+    apellido: "Molina"
+    nombre: "Marcelo Juan Victor"
+    cuil: "20-30770747-1"
+  rmolina_profile: 
+    user_id: rmolina
+    legajo: 146
+    apellido: "Molina Moyano"
+    nombre: "Rodrigo"
+    cuil: "20-31284016-3"
+  mmorales_profile: 
+    user_id: mmorales
+    legajo: 93
+    apellido: "Morales"
+    nombre: "Mario Cesar"
+    cuil: "23-30131334-9"
+  mnavarre_profile: 
+    user_id: mnavarre
+    legajo: 133
+    apellido: "Navarrete"
+    nombre: "Marcelo Alejandro"
+    cuil: "20-30144579-3"
+  dojeda_profile: 
+    user_id: dojeda
+    legajo: 101
+    apellido: "Ojeda"
+    nombre: "Diego Gaston"
+    cuil: "20-29382759-2"
+  cortega_profile: 
+    user_id: cortega
+    legajo: 103
+    apellido: "Ortega"
+    nombre: "Claudio Rubén"
+    cuil: "20-24102073-9"
+  rpacheco_profile: 
+    user_id: rpacheco
+    legajo: 76
+    apellido: "Pacheco"
+    nombre: "Ramón Carlos"
+    cuil: "20-26989104-2"
+  cparedes_profile: 
+    user_id: cparedes
+    legajo: 89
+    apellido: "Paredes"
+    nombre: "Carlos Luciano"
+    cuil: "20-29973452-9"
+  gperez_profile: 
+    user_id: gperez
+    legajo: 21
+    apellido: "Perez"
+    nombre: "Gustavo Cesar"
+    cuil: "20-18395750-4"
+  eplaate_profile: 
+    user_id: eplaate
+    legajo: 60
+    apellido: "Plaate"
+    nombre: "Enzo Fernando"
+    cuil: "20-25679161-8"
+  dpulicar_profile: 
+    user_id: dpulicar
+    legajo: 80
+    apellido: "Pulicari"
+    nombre: "Diego Alfredo"
+    cuil: "20-30412897-7"
+  jrodrigu_profile: 
+    user_id: jrodrigu
+    legajo: 78
+    apellido: "Rodriguez"
+    nombre: "Julio Cesar"
+    cuil: "20-20612642-7"
+  asandova_profile: 
+    user_id: asandova
+    legajo: 143
+    apellido: "Sandoval"
+    nombre: "Alfredo Juan"
+    cuil: "23-31359087-9"
+  asanrame_profile: 
+    user_id: asanrame
+    legajo: 166
+    apellido: "Sanrame"
+    nombre: "Ana Roberta "
+    cuil: "27-21756492-7"
+  hsantill_profile: 
+    user_id: hsantill
+    legajo: 181
+    apellido: "Santillan"
+    nombre: "Hector Omar"
+    cuil: "20-25540996-5"
+  msantill_profile: 
+    user_id: msantill
+    legajo: 182
+    apellido: "Santillan"
+    nombre: "Manuel Patricio"
+    cuil: "20-24009262-0"
+  lschrott_profile: 
+    user_id: lschrott
+    legajo: 96
+    apellido: "Schrott"
+    nombre: "Luis Ricardo"
+    cuil: "20-11789011-3"
+  gstuardo_profile: 
+    user_id: gstuardo
+    legajo: 158
+    apellido: "Stuardo"
+    nombre: "Gabriel"
+    cuil: "20-29736102-4"
+  atoro_profile: 
+    user_id: atoro
+    legajo: 125
+    apellido: "Toro"
+    nombre: "Angel Mauricio"
+    cuil: "23-31483540-9"
+  gtorres_profile: 
+    user_id: gtorres
+    legajo: 98
+    apellido: "Torres"
+    nombre: "Graciela Beatriz"
+    cuil: "27-13786219-6"
+  gtosi_profile: 
+    user_id: gtosi
+    legajo: 115
+    apellido: "Tosi Dealbera"
+    nombre: "Guillermo Andres"
+    cuil: "23-24581246-9"
+  pvelarde_profile: 
+    user_id: pvelarde
+    legajo: 180
+    apellido: "Velardez"
+    nombre: "Pablo Daniel"
+    cuil: "23-29786090-9"
+  azampa_profile: 
+    user_id: azampa
+    legajo: 53
+    apellido: "Zampa"
+    nombre: "Adrian Guillermo"
+    cuil: "20-24271891-8"

@@ -1,0 +1,61 @@
+propel:
+#### NOTA PEDIDO ####  
+  nota_pedido:  
+    _attributes:             { phpName: NotaPedido, idMethod: native }
+    id:                      { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    numero:                  { type: varchar(8) }
+    revision:                { type: tinyint, default: 0 }
+    fecha:                   { type: date }
+    fecha_plazo_entrega:     { type: date }
+
+    # Datos de Provision
+    proveedor_id:            { type: integer, foreignTable: proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    plazo_entrega:           { type: varchar(100) }
+    condicion_pago:          { type: integer, foreignTable: formas_de_pago, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    condicion_pago_detalle:  { type: varchar(200) }
+    condicion_lugar_entrega: { type: varchar(100) }
+    remitir_doc_a:           { type: varchar(100), default: "Carlos Pellegrini Lote '10 J'. PIN Este - C.P. 8300 - Neuquen" }
+
+    # Transportista
+    transporte_id:           { type: integer, foreignTable: proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    lugar_entrega:           { type: varchar(100), default: "Carlos Pellegrini Lote '10 J'. PIN Este - C.P. 8300 - Neuquen" }
+
+    # Documentacion
+    remito_proveedor:        { type: boolean, default: false }
+    certificado_calidad:     { type: boolean, default: false }
+    factura:                 { type: boolean, default: false }
+    manuales:                { type: boolean, default: false }
+    ensayos:                 { type: boolean, default: false }
+    cert_conformidad:        { type: boolean, default: false }
+    MSDS:                    { type: boolean, default: false }
+    otros:                   { type: boolean, default: false }
+    otros_descripcion:       { type: varchar(50) }
+
+    # Fecha de control de la aplicacion para el seguimiento de la nota de pedido. 
+    fecha_entrega:              { type: date } # Sujeto a modificaciones
+
+    # Responsables
+    administra_id:           { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    solicita_id:             { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    controla_id:             { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    autoriza_id:             { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+
+    # Estados de control
+    recepcion_total:         { type: boolean, default: false }
+    bloqueada:               { type: boolean, default: false }
+
+    ultima_revision:         { type: boolean, default: true }
+    created_at:              ~
+    _uniques:
+      numero_revision:        [ numero, revision ]
+      
+### Estados de una nota de Pedido
+  nota_pedido_estado:
+    _attributes:                  { phpName: NotaPedidoEstado, isMethod: native }
+    id:                           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nota_pedido_id:               { type: integer, foreignTable: nota_pedido, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    estado_id:                    { type: tinyint, foreignTable: estado, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    user_id:                      { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    observaciones:                { type: longvarchar }
+    fecha:                        { type: timestamp }
+    created_at:                   ~

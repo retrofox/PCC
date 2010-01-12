@@ -1,0 +1,14 @@
+/* sf_guard_user_profile */
+.venta-index .sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li {
+    width: 140px;
+}
+
+/* Ancho de las columnas */
+.venta-index .sf_admin_list_th_fecha                  { width: 100px; }
+
+
+/* Iconos en las acciones de los objetos*/
+.venta-index .icn-submit                              { background-position:  -180px  -600px; }
+.venta-index .icn-new                                 { background-position:  -20px  -600px; }
+.venta-index .icn-edit                                { background-position:  -80px  -600px; }
+.venta-index .icn-delete                              { background-position:  -60px  -600px; }

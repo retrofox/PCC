@@ -1,0 +1,43 @@
+#  Unidad de Medida de un Producto
+
+ProductoUDM:
+  udm_mts:
+    nombre:             Metro
+    unidad:             m
+    unidad_mas_multi:   m
+    descripcion:        El metro es la unidad de longitud del Sistema Internacional de Unidades. Se define como la longitud del trayecto recorrido en el vacío por la luz durante un tiempo de 1/299 792 458 de segundo (unidad de tiempo) (aproximadamente 3,34 ns).
+    dimension:          Lineal
+
+  udm_kgs:
+    nombre:             Kilometro
+    unidad:             m
+    unidad_mas_multi:   Km
+    descripcion:        Si bien la unidad es el metro, definimos km como unidad indendiente para aquellos casos en que el uso del km es más frecuente. 
+    dimension:          Lineal
+
+  udm_mts2:
+    nombre:       mts2 
+    descripcion:  Metros Cuadrados. Superficie. Magntud Cuadrática.
+
+  udm_mts3:
+    nombre:       mts3 
+    descripcion:  Metros Cubicos. Volúmen. Magnitud Cúbica.
+
+  udm_unit:
+    nombre:       unidad
+    descripcion:  Unidades. Cantidad. Magnitud Lineal.
+    
+    
+  bolsa:
+    nombre:             Bolsa
+    unidad:             bls
+    unidad_mas_multi:   bls
+    descripcion:        Se define 'bolsa' como unidad de medida para aquellos productos que se cuantifican en bolsas, por ejemplo, Coque, Yeso, etc. 
+    dimension:          Lineal
+
+  unidad:
+    nombre:             Unidad
+    unidad:             u
+    unidad_mas_multi:   u
+    descripcion:        Cantidad lineal unitaria para cuantificar productos que no tienen una magnitud particular, por ejemplo, bulones, bobinas de cable, etc.
+    dimension:          Lineal

@@ -1,0 +1,8 @@
+propel:
+# Archivo
+  archivo:
+    _attributes:                { phpName: Archivo, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:                     { type: varchar(255), required: true, description: 'Nombre del Archivo (255)' } 
+    tipo:                       { type: varchar(20), description: 'Tipo del Archivo (20)' }
+    descripcion:                { type: longvarchar }

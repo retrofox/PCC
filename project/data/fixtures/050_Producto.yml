@@ -1,0 +1,19 @@
+Producto:
+  coque01:
+    codigo:                    COQ
+    nombre:                    Coque Calcinado de Petroleo
+    marca:                     Loresco
+    descripcion:               Bolsa de Coque LORESCO. Cada Pallets cuenta con 45, cada una pesa 22.72 Kg.
+    ubicacion_fisica:          Patio Exterior
+    producto_categoria_id:     coque
+    producto_udm_id:           bolsa
+
+  eje_de_mando:
+    codigo:                    PPGD FXG 371
+    nombre:                    Eje de Mando
+    marca:                     -
+    descripcion:               Eje de mando Parte Nº PPGD FXG 371
+    ubicacion_fisica:          BOX 1
+    producto_categoria_id:     repuesto_de_bomba_g_genver_5x6
+    producto_udm_id:           unidad
+    

@@ -1,0 +1,19 @@
+propel:
+  # Tablas de Ubicacicon Geografica
+  geo_pais:
+    _attributes:         { phpName: Pais, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:              { type: varchar(50) }
+    codigo:              { type: varchar(2), description: 'Codigo ISO de Pais (2)' }
+
+  geo_provincia:
+    _attributes:         { phpName: Provincia, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoincrement: true }
+    pais_id:             { type: integer , foreignTable: geo_pais, foreignReference: id }
+    nombre:              { type: varchar(50) }    
+
+  geo_localidad:
+    _attributes:         { phpName: Localidad, idMethod: native }
+    id:                  { type: integer, required: true, primaryKey: true, autoincrement: true }
+    provincia_id:        { type: integer, foreignTable: geo_provincia, foreignReference: id }
+    nombre:              { type: varchar(50) }

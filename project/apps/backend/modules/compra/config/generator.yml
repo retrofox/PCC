@@ -1,0 +1,54 @@
+generator:
+  class:                         sfPropelMooDooGenerator
+  param:
+    model_class:                 Compra
+    theme:                       mooDooAdmin
+    non_verbose_templates:       true
+    with_show:                   false
+    singular:                    ~
+    plural:                      ~
+    route_prefix:                compra
+    with_propel_route:           1
+
+    config:
+      fields:
+        fecha_entrega:                        { label: Fecha de Entrega, date_format: dd/MM/yy }
+        fecha:                                { label: Fecha, date_format: dd/MM/yy }
+        proveedor_id:                         { label: Proveedor }
+        producto_id:                          { label: Producto }
+
+      actions: ~
+      form:
+        fields:
+          precio:                             { help: precio por unidad }
+        display:
+          Compra:                             [ nota_pedido_id, producto_id, proveedor_id, cantidad, precio, moneda, fecha, fecha_entrega ]
+          Comentario:                         [ comentario ]
+
+      filter:
+        fields:
+          nota_pedido_id:                     { label: Nota de Pedido }
+        display:                              [ producto_id, proveedor_id, nota_pedido_id, fecha ]
+
+      list:
+        title:                                Listado de Compras
+        fields:
+          nota_pedido_id:                     { label: NP }
+          cantidad:                           { label: Cant.}
+
+        display:                              [ fecha, producto, proveedor, cantidad, ultimo_estado ]
+
+        actions:
+          _new:                               { inWinPopUp:true }
+
+        object_actions:
+          _edit:                              { inWinPopUp:true }
+          _delete:                            ~
+
+        max_per_page:                         15
+
+      new:
+        title:                                 Compra de Producto
+
+      edit:
+        title:                                 Editar Compra

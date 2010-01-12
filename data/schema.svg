@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="56cm" height="83cm" viewBox="4 -25 56 83">
+  <rect style="fill: #ffffff" x="16" y="24" width="8.2" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="16" y="24" width="8.2" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 3.7175 cm; font-family: sans; font-style: normal; font-weight: 700" x="18.2413" y="25">Producto</text>
+  <rect style="fill: #ffffff" x="16" y="25.4" width="8.2" height="9.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="16" y="25.4" width="8.2" height="9.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="26.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="27.1">+codigo</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="27.9">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="28.7">+marca</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="29.5">+descripcion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="30.3">+producto_categoria_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="31.1">+producto_udm_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="31.9">+ubicacion_fisica</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="32.7">+stock_actual</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="33.5">+stock_reservado</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="34.3">+stock_preaviso</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="16.15" y="35.1">+stock_critico</text>
+  <rect style="fill: #ffffff" x="16" y="35.2" width="8.2" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="16" y="35.2" width="8.2" height="0.4"/>
+  <rect style="fill: #ffffff" x="45" y="46" width="5.75" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="45" y="46" width="5.75" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 3.17 cm; font-family: sans; font-style: normal; font-weight: 700" x="46.29" y="47">Compra</text>
+  <rect style="fill: #ffffff" x="45" y="47.4" width="5.75" height="8.2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="45" y="47.4" width="5.75" height="8.2"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="48.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="49.1">+producto_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="49.9">+cantidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="50.7">+proveedor_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="51.5">+nota_pedido_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="52.3">+precio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="53.1">+moneda</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="53.9">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="54.7">+fecha_entrega</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="45.15" y="55.5">+created_at</text>
+  <rect style="fill: #ffffff" x="45" y="55.6" width="5.75" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="45" y="55.6" width="5.75" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="44.0422,51 31,51 31,29.8 24.2494,29.8 "/>
+  <polygon style="fill: #ffffff" points="44.0422,51.4 44.8422,51 44.0422,50.6 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="44.0422,51.4 44.8422,51 44.0422,50.6 "/>
+  <rect style="fill: #ffffff" x="18" y="50" width="9.25" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="18" y="50" width="9.25" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 2.38 cm; font-family: sans; font-style: normal; font-weight: 700" x="21.435" y="51">Venta</text>
+  <rect style="fill: #ffffff" x="18" y="51.4" width="9.25" height="6.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="18" y="51.4" width="9.25" height="6.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="52.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="53.1">+producto_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="53.9">+cantidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="54.7">+numero_remito</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="55.5">+transportista_interno_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="56.3">+transportista_externo_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="57.1">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="18.15" y="57.9">+created_at</text>
+  <rect style="fill: #ffffff" x="18" y="58" width="9.25" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="18" y="58" width="9.25" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.1618,51.9 29,51.9 29,33.9 24.2,33.9 "/>
+  <polygon style="fill: #ffffff" points="28.1618,51.5 27.3618,51.9 28.1618,52.3 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.1618,51.5 27.3618,51.9 28.1618,52.3 "/>
+  <rect style="fill: #ffffff" x="20" y="-24" width="6.095" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20" y="-24" width="6.095" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 5.595 cm; font-family: sans; font-style: normal; font-weight: 700" x="20.25" y="-23">geo_localidad</text>
+  <rect style="fill: #ffffff" x="20" y="-22.6" width="6.095" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20" y="-22.6" width="6.095" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="20.15" y="-21.7">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="20.15" y="-20.9">+provincia_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="20.15" y="-20.1">+nombre</text>
+  <rect style="fill: #ffffff" x="20" y="-20" width="6.095" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20" y="-20" width="6.095" height="0.4"/>
+  <rect style="fill: #ffffff" x="12" y="-24" width="6.185" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12" y="-24" width="6.185" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 5.685 cm; font-family: sans; font-style: normal; font-weight: 700" x="12.25" y="-23">geo_provincia</text>
+  <rect style="fill: #ffffff" x="12" y="-22.6" width="6.185" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12" y="-22.6" width="6.185" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.15" y="-21.7">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.15" y="-20.9">+pais_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.15" y="-20.1">+nombre</text>
+  <rect style="fill: #ffffff" x="12" y="-20" width="6.185" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12" y="-20" width="6.185" height="0.4"/>
+  <rect style="fill: #ffffff" x="6" y="-24" width="4.0825" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="6" y="-24" width="4.0825" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 3.5825 cm; font-family: sans; font-style: normal; font-weight: 700" x="6.25" y="-23">geo_pais</text>
+  <rect style="fill: #ffffff" x="6" y="-22.6" width="4.0825" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="6" y="-22.6" width="4.0825" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="6.15" y="-21.7">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="6.15" y="-20.9">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="6.15" y="-20.1">+codigo</text>
+  <rect style="fill: #ffffff" x="6" y="-20" width="4.0825" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="6" y="-20" width="4.0825" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.0882,-22.1 18.185,-22.1 18.185,-22.1 "/>
+  <polygon style="fill: #ffffff" points="19.0882,-21.7 19.8882,-22.1 19.0882,-22.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.0882,-21.7 19.8882,-22.1 19.0882,-22.5 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.0882,-21.3 10.0825,-21.3 10.0825,-21.3 "/>
+  <polygon style="fill: #ffffff" points="11.0882,-20.9 11.8882,-21.3 11.0882,-21.7 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.0882,-20.9 11.8882,-21.3 11.0882,-21.7 "/>
+  <rect style="fill: #ffffff" x="31" y="-24" width="12.75" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31" y="-24" width="12.75" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 8.7425 cm; font-family: sans; font-style: normal; font-weight: 700" x="33.0037" y="-23">sf_guard_user_profile</text>
+  <rect style="fill: #ffffff" x="31" y="-22.6" width="12.75" height="18.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31" y="-22.6" width="12.75" height="18.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-21.7">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-20.9">+user_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-20.1">+language</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-19.3">+nombre: Datos personales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-18.5">+apellido: Datos personales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-17.7">+fdn: Datos personales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 10.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-16.9">+nacionalidad: Datos personales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 11.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-16.1">+documento_tipo: Datos personales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-15.3">+documento_numero: Datos personales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-14.5">+cuil: Datos laborales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.4 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-13.7">+legajo: Datos laborales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.65 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-12.9">+telefono: Contacto</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-12.1">+movil: Contacto</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-11.3">+email: Contacto</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-10.5">+domicilio_calle: Domicilio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-9.7">+domicilio_numero: Domicilio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 10.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-8.9">+domicilio_manzana: Domicilio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-8.1">+domicilio_barrio: Domicilio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-7.3">+domicilio_piso: Domicilio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-6.5">+domicilio-depto: Domicilio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-5.7">+localidad_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-4.9">+provincia_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.15" y="-4.1">+comentario</text>
+  <rect style="fill: #ffffff" x="31" y="-4" width="12.75" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31" y="-4" width="12.75" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="30.0882,-5.3 19,-5.3 19,-22.1 18.185,-22.1 "/>
+  <polygon style="fill: #ffffff" points="30.0882,-4.9 30.8882,-5.3 30.0882,-5.7 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="30.0882,-4.9 30.8882,-5.3 30.0882,-5.7 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="30.0882,-6.1 28.5475,-6.1 28.5475,-22.1 26.095,-22.1 "/>
+  <polygon style="fill: #ffffff" points="30.0882,-5.7 30.8882,-6.1 30.0882,-6.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="30.0882,-5.7 30.8882,-6.1 30.0882,-6.5 "/>
+  <rect style="fill: #ffffff" x="5" y="25" width="8.4625" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="25" width="8.4625" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 7.9625 cm; font-family: sans; font-style: normal; font-weight: 700" x="5.25" y="26">producto_categoria</text>
+  <rect style="fill: #ffffff" x="5" y="26.4" width="8.4625" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="26.4" width="8.4625" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="27.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="28.1">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="28.9">+descripcion</text>
+  <rect style="fill: #ffffff" x="5" y="29" width="8.4625" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="29" width="8.4625" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="15.0379,29.8 14.7061,29.8 14.7061,26.9 13.4625,26.9 "/>
+  <polygon style="fill: #ffffff" points="15.0379,30.2 15.8379,29.8 15.0379,29.4 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="15.0379,30.2 15.8379,29.8 15.0379,29.4 "/>
+  <rect style="fill: #ffffff" x="5" y="30" width="6.8" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="30" width="6.8" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 5.8725 cm; font-family: sans; font-style: normal; font-weight: 700" x="5.46375" y="31">producto_udm</text>
+  <rect style="fill: #ffffff" x="5" y="31.4" width="6.8" height="5"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="31.4" width="6.8" height="5"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="32.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="33.1">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="33.9">+unidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="34.7">+unidad _mas_multi</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="35.5">+descripcion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="36.3">+dimension</text>
+  <rect style="fill: #ffffff" x="5" y="36.4" width="6.8" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="36.4" width="6.8" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="15.0882,31.5 13.9,31.5 13.9,31.9 11.8,31.9 "/>
+  <polygon style="fill: #ffffff" points="15.0882,31.9 15.8882,31.5 15.0882,31.1 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="15.0882,31.9 15.8882,31.5 15.0882,31.1 "/>
+  <rect style="fill: #ffffff" x="12" y="39" width="7.6" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12" y="39" width="7.6" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 7.1 cm; font-family: sans; font-style: normal; font-weight: 700" x="12.25" y="40">producto_archivo</text>
+  <rect style="fill: #ffffff" x="12" y="40.4" width="7.6" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12" y="40.4" width="7.6" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.15" y="41.3">+producto_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.15" y="42.1">+archivo_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.15" y="42.9">+created_at</text>
+  <rect style="fill: #ffffff" x="12" y="43" width="7.6" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12" y="43" width="7.6" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="15.8,38.0384 15.8,36.9749 20.1,36.9749 20.1,35.6471 "/>
+  <polygon style="fill: #ffffff" points="15.4,38.0384 15.8,38.8384 16.2,38.0384 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="15.4,38.0384 15.8,38.8384 16.2,38.0384 "/>
+  <rect style="fill: #ffffff" x="24" y="19" width="8.8" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="24" y="19" width="8.8" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 8.3 cm; font-family: sans; font-style: normal; font-weight: 700" x="24.25" y="20">producto_proveedor</text>
+  <rect style="fill: #ffffff" x="24" y="20.4" width="8.8" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="24" y="20.4" width="8.8" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="24.15" y="21.3">+producto_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="24.15" y="22.1">+proveedor_id</text>
+  <rect style="fill: #ffffff" x="24" y="22.2" width="8.8" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="24" y="22.2" width="8.8" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="23.0882,22.6 15,22.6 15,25.9 16,25.9 "/>
+  <polygon style="fill: #ffffff" points="23.0882,23 23.8882,22.6 23.0882,22.2 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="23.0882,23 23.8882,22.6 23.0882,22.2 "/>
+  <rect style="fill: #ffffff" x="25" y="0" width="6.8" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="25" y="0" width="6.8" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 4.23 cm; font-family: sans; font-style: normal; font-weight: 700" x="26.285" y="1">proveedor</text>
+  <rect style="fill: #ffffff" x="25" y="1.4" width="6.8" height="14.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="25" y="1.4" width="6.8" height="14.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="2.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="3.1">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="3.9">+cuit</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="4.7">+rubro_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="5.5">+telefono</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.4 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="6.3">+fax</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="7.1">+movil</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="7.9">+email</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="8.7">+persona_nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="9.5">+persona_apellido</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="10.3">+direccion_calle</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="11.1">+direccion_numero</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="11.9">+direccion_manzana</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="12.7">+direccion_barrio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="13.5">+direccion_piso</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="14.3">+direccion_depto</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="15.1">+localidad_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="25.15" y="15.9">+provincia_id</text>
+  <rect style="fill: #ffffff" x="25" y="16" width="6.8" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="25" y="16" width="6.8" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.4,-0.962055 28.4,-22.1 26.095,-22.1 "/>
+  <polygon style="fill: #ffffff" points="28,-0.962055 28.4,-0.162055 28.8,-0.962055 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28,-0.962055 28.4,-0.162055 28.8,-0.962055 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="24.0384,8.2 19,8.2 19,-21.8 18.2354,-21.8 "/>
+  <polygon style="fill: #ffffff" points="24.0384,8.6 24.8384,8.2 24.0384,7.8 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="24.0384,8.6 24.8384,8.2 24.0384,7.8 "/>
+  <rect style="fill: #ffffff" x="5" y="0" width="7.3575" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="0" width="7.3575" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 6.8575 cm; font-family: sans; font-style: normal; font-weight: 700" x="5.25" y="1">proveedor_rubro</text>
+  <rect style="fill: #ffffff" x="5" y="1.4" width="7.3575" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="1.4" width="7.3575" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="2.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="3.1">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="3.9">+descripcion</text>
+  <rect style="fill: #ffffff" x="5" y="4" width="7.3575" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="4" width="7.3575" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="24.0882,1.9 12.3575,1.9 12.3575,1.9 "/>
+  <polygon style="fill: #ffffff" points="24.0882,2.3 24.8882,1.9 24.0882,1.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="24.0882,2.3 24.8882,1.9 24.0882,1.5 "/>
+  <rect style="fill: #ffffff" x="35" y="0" width="11.745" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="35" y="0" width="11.745" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 11.245 cm; font-family: sans; font-style: normal; font-weight: 700" x="35.25" y="1">proveedor_formas_de_pago</text>
+  <rect style="fill: #ffffff" x="35" y="1.4" width="11.745" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="35" y="1.4" width="11.745" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="35.15" y="2.3">+proveedor_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="35.15" y="3.1">+fdp_id</text>
+  <rect style="fill: #ffffff" x="35" y="3.2" width="11.745" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="35" y="3.2" width="11.745" height="0.4"/>
+  <rect style="fill: #ffffff" x="34" y="7" width="7.15" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="34" y="7" width="7.15" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 6.65 cm; font-family: sans; font-style: normal; font-weight: 700" x="34.25" y="8">formas_de_pago</text>
+  <rect style="fill: #ffffff" x="34" y="8.4" width="7.15" height="2.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="34" y="8.4" width="7.15" height="2.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="34.15" y="9.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="34.15" y="10.1">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="34.15" y="10.9">+descripcion</text>
+  <rect style="fill: #ffffff" x="34" y="11" width="7.15" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="34" y="11" width="7.15" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="34.0882,1.9 31.8,1.9 31.8,1.9 "/>
+  <polygon style="fill: #ffffff" points="34.0882,2.3 34.8882,1.9 34.0882,1.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="34.0882,2.3 34.8882,1.9 34.0882,1.5 "/>
+  <rect style="fill: #ffffff" x="44" y="32" width="4.7" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="44" y="32" width="4.7" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 2.7925 cm; font-family: sans; font-style: normal; font-weight: 700" x="44.9537" y="33">estado</text>
+  <rect style="fill: #ffffff" x="44" y="33.4" width="4.7" height="4.2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="44" y="33.4" width="4.7" height="4.2"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="44.15" y="34.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="44.15" y="35.1">+orden</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="44.15" y="35.9">+tipo</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="44.15" y="36.7">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="44.15" y="37.5">+descripcion</text>
+  <rect style="fill: #ffffff" x="44" y="37.6" width="4.7" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="44" y="37.6" width="4.7" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.4,18.0377 28.4,16.4503 28.4,16.4503 "/>
+  <polygon style="fill: #ffffff" points="28,18.0377 28.4,18.8377 28.8,18.0377 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28,18.0377 28.4,18.8377 28.8,18.0377 "/>
+  <rect style="fill: #ffffff" x="22" y="38" width="4.7" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="22" y="38" width="4.7" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 2.8325 cm; font-family: sans; font-style: normal; font-weight: 700" x="22.9337" y="39">evento</text>
+  <rect style="fill: #ffffff" x="22" y="39.4" width="4.7" height="6.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="22" y="39.4" width="4.7" height="6.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="40.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="41.1">+producto_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="41.9">+user_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="42.7">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="43.5">+descripcion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="44.3">+cantidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="45.1">+operacion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="22.15" y="45.9">+created_at</text>
+  <rect style="fill: #ffffff" x="22" y="46" width="4.7" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="22" y="46" width="4.7" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="27.6592,42.2 30,42.2 30,32.3 24.2,32.3 "/>
+  <polygon style="fill: #ffffff" points="27.6592,41.8 26.8592,42.2 27.6592,42.6 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="27.6592,41.8 26.8592,42.2 27.6592,42.6 "/>
+  <rect style="fill: #ffffff" x="53" y="36" width="6.8" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="53" y="36" width="6.8" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 6.225 cm; font-family: sans; font-style: normal; font-weight: 700" x="53.2875" y="37">compra_estado</text>
+  <rect style="fill: #ffffff" x="53" y="37.4" width="6.8" height="7.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="53" y="37.4" width="6.8" height="7.4"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="38.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="39.1">+compra_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="39.9">+user_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="40.7">+estado_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="41.5">+cantidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="42.3">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="43.1">+observaciones</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="43.9">+nota_recepcion_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="53.15" y="44.7">+created_at</text>
+  <rect style="fill: #ffffff" x="53" y="44.8" width="6.8" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="53" y="44.8" width="6.8" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="52.0378,40.6 51.8498,40.6 51.8498,47.9 50.75,47.9 "/>
+  <polygon style="fill: #ffffff" points="52.0378,41 52.8378,40.6 52.0378,40.2 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="52.0378,41 52.8378,40.6 52.0378,40.2 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="52.0882,38.7 50.8751,38.7 50.8751,35 48.7503,35 "/>
+  <polygon style="fill: #ffffff" points="52.0882,39.1 52.8882,38.7 52.0882,38.3 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="52.0882,39.1 52.8882,38.7 52.0882,38.3 "/>
+  <rect style="fill: #ffffff" x="54" y="51" width="5.9875" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="54" y="51" width="5.9875" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 5.4875 cm; font-family: sans; font-style: normal; font-weight: 700" x="54.25" y="52">venta_estado</text>
+  <rect style="fill: #ffffff" x="54" y="52.4" width="5.9875" height="5.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="54" y="52.4" width="5.9875" height="5.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="53.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="54.1">+venta_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="54.9">+estado_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="55.7">+user_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="56.5">+observaciones</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="57.3">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="54.15" y="58.1">+created_at</text>
+  <rect style="fill: #ffffff" x="54" y="58.2" width="5.9875" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="54" y="58.2" width="5.9875" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="53.0882,56.9 40.6501,56.9 40.6501,54.2 27.3003,54.2 "/>
+  <polygon style="fill: #ffffff" points="53.0882,57.3 53.8882,56.9 53.0882,56.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="53.0882,57.3 53.8882,56.9 53.0882,56.5 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="53.0378,54.8 51.3248,54.8 51.3248,35.5 48.7,35.5 "/>
+  <polygon style="fill: #ffffff" points="53.0378,55.2 53.8378,54.8 53.0378,54.4 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="53.0378,55.2 53.8378,54.8 53.0378,54.4 "/>
+  <rect style="fill: #ffffff" x="33" y="24" width="8.9" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="33" y="24" width="8.9" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 5.0375 cm; font-family: sans; font-style: normal; font-weight: 700" x="34.9313" y="25">nota_pedido</text>
+  <rect style="fill: #ffffff" x="33" y="25.4" width="8.9" height="24.2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="33" y="25.4" width="8.9" height="24.2"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="26.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="27.1">+numero</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="27.9">+revision</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="28.7">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.55 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="29.5">+proveedor_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="30.3">+plazo_entrega</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="31.1">+condicion_pago</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="31.9">+condicion_pago_detalle</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.4 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="32.7">+condicion_lugar_entrega</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="33.5">+remitir_doc_a</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="34.3">+transporte_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="35.1">+lugar_entrega</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="35.9">+remito_proveedor</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="36.7">+certificado_calidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="37.5">+factura</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="38.3">+manuales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="39.1">+ensayos</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="39.9">+cert_conformidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="40.7">+MSDS</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="41.5">+Otros</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="42.3">+otros_descripcion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="43.1">+fecha_entrega</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="43.9">+administra_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="44.7">+solicita_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="45.5">+controla_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="46.3">+autoriza_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="47.1">+recepcion_total</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="47.9">+bloqueada</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="48.7">+ultima_revision</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="33.15" y="49.5">+created_at</text>
+  <rect style="fill: #ffffff" x="33" y="49.6" width="8.9" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="33" y="49.6" width="8.9" height="0.4"/>
+  <rect style="fill: #ffffff" x="52" y="26" width="8.695" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="52" y="26" width="8.695" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 8.195 cm; font-family: sans; font-style: normal; font-weight: 700" x="52.25" y="27">nota_pedido_estado</text>
+  <rect style="fill: #ffffff" x="52" y="27.4" width="8.695" height="5.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="52" y="27.4" width="8.695" height="5.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="28.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="29.1">+nota_pedido_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="29.9">+estado_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="30.7">+user_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="31.5">+observaciones</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="32.3">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="52.15" y="33.1">+created_at</text>
+  <rect style="fill: #ffffff" x="52" y="33.2" width="8.695" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="52" y="33.2" width="8.695" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="51.0882,29.5 50.35,29.5 50.35,33.9 48.7,33.9 "/>
+  <polygon style="fill: #ffffff" points="51.0882,29.9 51.8882,29.5 51.0882,29.1 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="51.0882,29.9 51.8882,29.5 51.0882,29.1 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="51.0882,27.9 46.95,27.9 46.95,25.9 41.9,25.9 "/>
+  <polygon style="fill: #ffffff" points="51.0882,28.3 51.8882,27.9 51.0882,27.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="51.0882,28.3 51.8882,27.9 51.0882,27.5 "/>
+  <rect style="fill: #ffffff" x="50" y="-2" width="9.6" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="50" y="-2" width="9.6" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 7.185 cm; font-family: sans; font-style: normal; font-weight: 700" x="51.2075" y="-1">recepcion_pedido</text>
+  <rect style="fill: #ffffff" x="50" y="-0.6" width="9.6" height="24.2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="50" y="-0.6" width="9.6" height="24.2"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="0.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="1.1">+nota_pedido_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="1.9">+fecha</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="2.7">+recibe_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="3.5">+controla_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="4.3">+administra_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="5.1">+proveedor_factura</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="5.9">+proveedor_remito</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="6.7">+transportista_id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="7.5">+transportista_numero_guia</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.35 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="8.3">+transportista_bultos</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="9.1">+remito_proveedor</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="9.9">+certificado_calidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="10.7">+factura</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.15 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="11.5">+manuales</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="12.3">+ensayos</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="13.1">+cert_conformidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="13.9">+MSDS</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.1 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="14.7">+otros</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="15.5">+otros_descripcion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="16.3">+error_envio</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="17.1">+error_envio_desc</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="17.9">+rechazado</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="18.7">+rechazado_desc</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="19.5">+control_items</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="20.3">+control_precios</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.6 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="21.1">+control_calidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="21.9">+control_cantidad</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.8 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="22.7">+cerrada</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="50.15" y="23.5">+created_at</text>
+  <rect style="fill: #ffffff" x="50" y="23.6" width="9.6" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="50" y="23.6" width="9.6" height="0.4"/>
+  <rect style="fill: #ffffff" x="5" y="39" width="4.7" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="39" width="4.7" height="1.4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 3.03 cm; font-family: sans; font-style: normal; font-weight: 700" x="5.835" y="40">archivo</text>
+  <rect style="fill: #ffffff" x="5" y="40.4" width="4.7" height="4.2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="40.4" width="4.7" height="4.2"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="41.3">+id</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.45 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="42.1">+nombre</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="42.9">+tipo</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.2 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="43.7">+descripcion</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.85 cm; font-family: monospace; font-style: normal; font-weight: normal" x="5.15" y="44.5">+created_at</text>
+  <rect style="fill: #ffffff" x="5" y="44.6" width="4.7" height="0.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5" y="44.6" width="4.7" height="0.4"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.0882,42.5 10.8751,42.5 10.8751,42 9.75029,42 "/>
+  <polygon style="fill: #ffffff" points="11.0882,42.9 11.8882,42.5 11.0882,42.1 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.0882,42.9 11.8882,42.5 11.0882,42.1 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="34.0882,3.6 33,3.6 33,8.9 34,8.9 "/>
+  <polygon style="fill: #ffffff" points="34.0882,4 34.8882,3.6 34.0882,3.2 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="34.0882,4 34.8882,3.6 34.0882,3.2 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="49.0379,11 45.9749,11 45.9749,25 42,25 "/>
+  <polygon style="fill: #ffffff" points="49.0379,11.4 49.8379,11 49.0379,10.6 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="49.0379,11.4 49.8379,11 49.0379,10.6 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="37.45,23.0882 37.45,13.1 31.8,13.1 "/>
+  <polygon style="fill: #ffffff" points="37.05,23.0882 37.45,23.8882 37.85,23.0882 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="37.05,23.0882 37.45,23.8882 37.85,23.0882 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="44.0882,48.7 43.45,48.7 43.45,27.5 41.9,27.5 "/>
+  <polygon style="fill: #ffffff" points="44.0882,49.1 44.8882,48.7 44.0882,48.3 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="44.0882,49.1 44.8882,48.7 44.0882,48.3 "/>
+</svg>

@@ -1,0 +1,17 @@
+# Credenciales de la aplicacion
+sfGuardPermission:
+  admin: 
+    name:            Administrador
+    description:     Usuario administrador de toda la aplicación
+
+  user_admin:
+    name:            Administrador de Usuario
+    description:     Usuario que puede administrador los usuarios de la aplicacion
+    
+  user_stock: 
+    name:            Stock
+    description:     Usuario administrador con los modulos relacionados con el stock de la empresa
+    
+  user_monedy:
+    name:            Tesorería
+    description:     Usuario con provilegios para administrar modulos contables

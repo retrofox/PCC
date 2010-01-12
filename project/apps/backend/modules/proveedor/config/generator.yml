@@ -1,0 +1,56 @@
+generator:
+  class:                           sfPropelMooDooGenerator
+  param:
+    model_class:                   Proveedor
+    theme:                         mooDooAdmin
+    non_verbose_templates:         true
+    with_show:                     false
+    singular:                      ~
+    plural:                        ~
+    route_prefix:                  proveedor
+    with_propel_route:             1
+
+    config:
+      actions: ~
+      fields:
+        user_id:                               { label: Persona de contacto, help: La persona de contacto debe ser un usuario perteneciente a un grupo Proveedores }
+        rubro_id:                              { label: Rubro }
+        direccion_calle:                       { label: Calle } 
+        direccion_numero:                      { label: Número }
+        direccion_manzana:                     { label: Manzana }
+        direccion_barrio:                      { label: Barrio }
+        direccion_piso:                        { label: Piso }
+        direccion_depto:                       { label: Departamento }
+        localidad_id:                          { label: Localidad }
+        provincia_id:                          { label: Provincia }
+        producto_proveedor_list:               { label: Productos }
+        persona_nombre:                        { label: Nombre }
+        persona_apellido:                      { label: Apellido }
+
+      list:
+        title:                                 Suppliers List
+        display:                               [ nombre, cuit, proveedor_rubro, telefono ]
+
+        actions:
+          _new:
+
+        object_actions:
+          _edit:                               { inWinPopUp:true }
+          _delete:                             ~
+
+      filter:
+        display:                               [ nombre, producto_proveedor_list ]
+
+      form:
+        display:
+          "Datos Principales":                 [ nombre, cuit, rubro_id ]
+          "Datos de Contacto":                 [ telefono, fax, movil, email ]
+          "Persona de Contacto":               [ persona_nombre, persona_apellido ]
+          "Dirección":                         [ direccion_calle, direccion_numero, direccion_manzana, direccion_barrio, direccion_piso, direccion_depto ]
+          "Ubicación Geográfica":              [ localidad_id, provincia_id ]
+          "Productos Disponibles":             [ producto_proveedor_list ]
+
+      edit:
+        title:                                 Edit Supplier
+      new:
+        title:                                 New Supplier

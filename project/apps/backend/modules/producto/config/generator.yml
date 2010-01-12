@@ -1,0 +1,49 @@
+generator:
+  class:                           sfPropelMooDooGenerator
+  param:
+    model_class:                   Producto
+    theme:                         mooDooAdmin
+    non_verbose_templates:         true
+    with_show:                     false
+    singular:                      ~
+    plural:                        ~
+    route_prefix:                  producto
+    with_propel_route:             1
+
+    config:
+      actions: ~
+      fields:
+        ubicacion_fisica:                     { label: Ubicación }
+        producto_categoria_id:                { label: Categoría }
+        producto_archivo_list:                { label: Archivos asociados a este producto }
+        producto_proveedor_list:              { label: Proveedores }
+        producto_udm_id:                      { label: Unidad de Medida }
+      
+      list:
+        title:                                Product List
+        display:                              [ id, codigo, nombre, stock_actual, ubicacion_fisica ]
+
+        object_actions:
+          _edit:                              { inWinPopUp: true }
+          _delete:                            ~
+          evento:                             { inWinPopUp: true, label: Agregar Evento, winType: newWin }
+          comprar:                            { inWinPopUp: true, label: Agregar Compra, winType: newWin }
+          venta:                              { inWinPopUp: true, label: Realizar Venta, winType: newWin }
+          recalc:                             { inWinPopUp: true, label: Stock de Producto, dims: 400xautox100x50 }
+
+        actions:
+          _new:                               { inWinPopUp:true }
+
+      filter:
+        display:                              [ codigo, nombre, producto_categoria_id, ubicacion_fisica, producto_categoria_id, producto_proveedor_list ]
+      form:
+        display:
+          "Datos Principales":                [ codigo, nombre, marca, descripcion, producto_categoria_id, producto_udm_id, ubicacion_fisica ]
+          "Archivos Asociados":               [ producto_archivo_list ]
+          "Proveedores":                      [ producto_proveedor_list ]
+          "Control de Stock":                 [ _stock_actual, _stock_reservado, stock_preaviso, stock_critico ]
+
+      edit:
+        title:                                 Edit Product
+      new:
+        title:                                 New Product

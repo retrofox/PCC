@@ -1,0 +1,16 @@
+/* sf_guard_user_profile */
+.compra-index .sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li {
+}
+
+/* Ancho de las columnas */
+.compra-index .sf_admin_list_th_fecha                 { width: 40px; }
+.compra-index .sf_admin_list_th_producto              { width: 280px; }
+.compra-index .sf_admin_list_th_proveedor             { width: 260px; }
+.compra-index .sf_admin_list_th_cantidad              { width: 70px; }
+.compra-index .sf_admin_list_th_ultimo_estado         { width: 140px; }
+
+/* Iconos en las acciones de los objetos*/
+.compra-index .icn-submit                              { background-position:  -180px  -600px; }
+.compra-index .icn-new                                 { background-position:  -20px  -600px; }
+.compra-index .icn-edit                                { background-position:  -80px  -600px; }
+.compra-index .icn-delete                              { background-position:  -60px  -600px; }

@@ -1,0 +1,72 @@
+generator:
+  class:                   sfPropelMooDooGenerator
+  param:
+    model_class:           NotaPedido
+    theme:                 mooDooAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          nota_pedido
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:
+        proveedor_id:                         { label: Proveedor }
+        plazo_entrega:                        { label: Plazo de entrega, help: Cantidad de días. }
+        condicion_pago:                       { label: Condición de Pago }
+        condicion_pago_detalle:               { label: Detalle condición de pago }
+        condicion_lugar_entrega:              { label: Lugar de entrega }
+        remitir_doc_a:                        { label: Remitir documentación a }
+        transporte_id:                        { label: Transporte }
+        lugar_entrega:                        { label: Lugar de entrega }
+        remito_proveedor:                     { label: Remito proveedor }
+        certificado_calidad:                  { label: Certificado calidad }
+        cert_conformidad:                     { label: Certificado de conformidad }
+        otros_descripcion:                    { label: Otros descripción }
+        fecha:                                { label: Fecha, date_format: dd/MM/yy }
+        fecha_entrega:                        { label: Fecha de entrega }
+        administra_id:                        { label: Administrador }
+        solicita_id:                          { label: Solicitado por }
+        controla_id:                          { label: Controlado por }
+        autoriza_id:                          { label: Autorizado por }
+        recepcion_total:                      { label: Recepción total }
+        ultima_revisión:                      { label: Ultima revisión }
+
+      list:
+        fields:
+          revision:                           { label: Rev. }
+          numero:                             { label: Nº }
+          plazo_entrega:                      { label: Entrega }
+          ultimo_estado:                      { label: Estado }
+
+        title:                                Lista de notas de pedido
+        display:                              [ numero, revision, fecha, proveedor, plazo_entrega, transporte, ultimo_estado ]
+
+        actions:
+          _new:                               { label: New, inWinPopUp:true }
+
+        object_actions:
+          _edit:                              { inWinPopUp:true }
+          compras:                            { label: Administrar Compras, inWinPopUp:true, winType:list, dims:600x400x20x20 }
+          productos:                          { label: Administrar Productos, inWinPopUp:true, winType:list, dims:600x400x20x20 }
+          admin_compras:                      { label: Administrar Compras, inWinPopUp:true }
+          print:                              { label: Imprimir, action: print, inWinPopUp: true }
+          _delete:                            ~
+
+      filter:
+        display:                              [ numero, revision, proveedor_id, plazo_entrega ]
+      form:
+        display:
+          "Datos generales":                  [ numero, revision, fecha ]
+          "Datos del Proveedor":              [ proveedor_id ]
+          "Condiciones de Pago":              [ plazo_entrega, condicion_pago, condicion_pago_detalle, condicion_lugar_entrega, remitir_doc_a ]
+          "Transporte":                       [ transporte_id, lugar_entrega ]
+          "Documentacion a remitir":          [ remito_proveedor, certificado_calidad, factura, manuales, ensayos, cert_conformidad, MSDS, otros, otros_descripcion ]
+
+      edit:
+        title:                                 Editar nota de pedido
+
+      new:
+        title:                                 Nueva nota de pedido

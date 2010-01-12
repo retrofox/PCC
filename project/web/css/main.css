@@ -1,0 +1,223 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****endreset******/
+
+body
+{
+  background: #EEE url('images/fnd02.jpg') repeat center top;
+  font: normal 62.5%/1em sans-serif;
+  color:black;
+}
+
+#content {
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+}
+
+#header, #stateBar {
+  width: 100%; height: 40px;
+  background: #DDD none;
+  border-top: 1px solid #EEE;
+  line-height: 25px;
+}
+
+#header {
+  height: 60px; border: 0;
+  background: transparent url(images/header-fnd01.png) repeat-x left top;
+}
+
+/* Menu de Usuario */
+#headerUser {
+  width: 300px; height: 40px;
+  float: right;
+  margin-right: 5px;
+}
+
+#headerUser p {
+  height: 18px;
+  margin: 0; padding: 0;
+  text-align: right;
+}
+
+#headerUser a, #headerUser span {
+  text-decoration: none;
+  color: #028;
+  padding: 0px 5px;
+  margin: 0px 2px;
+  border: 1px solid #CCC;
+  background-color: #E5E5E5;
+}
+
+#headerUser a:hover, #headerUser span:hover {
+  color: #FFF;
+  border: 1px solid #55A;
+  background-color: #06C;
+  cursor: pointer;
+}
+
+/* Estilos para cada modulo/accion/campo */
+.sf_admin_container													{ width: 800px; }
+
+/* sf_guard_user_profile */
+.sf_guard_user_profile-index .sf_admin_list_th_nombre				{ width: 200px; }
+.sf_guard_user_profile-index .sf_admin_list_th_apellido				{ width: 180px; }
+.sf_guard_user_profile-index .sf_admin_list_th_documento_numero		{ width: 160px; }
+.sf_guard_user_profile-index .sf_admin_list_th_legajo				{ width: 80px; }
+
+/* sf_guard_user_profile */
+.sfGuardUser-index													{ width: 600px; }
+.sfGuardUser-index .sf_admin_list_th_username						{ width: 200px; }
+.sfGuardUser-index .sf_admin_list_th_created_at						{ width: 150px; }
+.sfGuardUser-index .sf_admin_list_th_last_login						{ width: 150px; }
+
+/* 	sfGuardGroup */
+.sfGuardGroup-index													{ width: 750px; }
+.sfGuardGroup-index .sf_admin_list_th_id							{ width: 50px; }
+.sfGuardGroup-index .sf_admin_list_th_name							{ width: 150px; }
+.sfGuardGroup-index .sf_admin_list_th_description					{ width: 450px; }
+.sfGuardGroup-index .sf_admin_list_th_name {
+  font-weight: bold;
+}
+.sfGuardGroup-index #sf_admin_list_th_actions						{ width: 20px; }
+
+/* 	sfGuardPermission */
+.sfGuardPermission-index												{ width: 750px; }
+.sfGuardPermission-index .sf_admin_list_th_id							{ width: 50px; }
+.sfGuardPermission-index .sf_admin_list_th_name							{ width: 150px; }
+.sfGuardPermission-index .sf_admin_list_th_description					{ width: 450px; }
+.sfGuardPermission-index .sf_admin_list_th_name {
+  font-weight: bold;
+}
+.sfGuardPermission-index #sf_admin_list_th_actions						{ width: 20px; }
+
+
+
+
+
+
+
+/* Redefinimos Iconos */
+.sf_guard_user_profile-index .icn-submit				{ background-position:  -60px  -60px; }
+.sf_guard_user_profile-index .icn-new					{ background-position:  -20px    0px; }
+.sf_guard_user_profile-index .icn-edit					{ background-position:  -80px    0px; }
+.sf_guard_user_profile-index .icn-delete				{ background-position:  -60px    0px; }
+
+.sfGuardUser-index .icn-submit							{ background-position:  -60px  -60px; }
+.sfGuardUser-index .icn-new								{ background-position:  -20px    0px; }
+.sfGuardUser-index .icn-edit							{ background-position:  -80px    0px; }
+.sfGuardUser-index .icn-profile							{ background-position: -220px    0px; }
+.sfGuardUser-index .icn-delete							{ background-position:  -60px    0px; }
+
+
+.sfGuardGroup-index .icn-new							{ background-position:  -20px  -60px; }
+.sfGuardGroup-index .icn-submit							{ background-position:  -60px  -60px; }
+.sfGuardGroup-index .icn-edit							{ background-position:  -60px  -60px; }
+.sfGuardGroup-index .icn-delete							{ background-position:  -40px  -60px; }
+
+.sfGuardPermission-index .icn-new						{ background-position:  -40px -360px; }
+.sfGuardPermission-index .icn-submit					{ background-position:  -20px -360px; }
+.sfGuardPermission-index .icn-edit						{ background-position:  -80px -360px; }
+.sfGuardPermission-index .icn-delete					{ background-position:  -60px -360px; }
+
+#sf_admin_form-sfGuardUser .icn-delete					{ background-position:  -60px    0px; }
+
+/* Iconos de Producto */
+.producto-index div.icn-new 							{ background-position:  -20px -120px; }
+.producto-index div.icn-submit							{ background-position: -60px  -120px; }
+.icn-producto-categoria									{ background-position: -80px  -120px; }
+.icn-producto-udm										{ background-position:-280px     0px; }
+
+/* Stock */
+.icn-stock												{ background-position:   0px  -480px; }
+
+/* Evento */
+.icn-evento												{ background-position:   0px  -540px; }
+
+.sf_admin_form_field_operacion ul.radio_list {
+  height: 30px;
+}
+
+.sf_admin_form_field_operacion ul.radio_list li {
+  list-style: none;
+  float: left;
+  padding: 5px 10px;
+}
+
+.proveedor-index										{ width: 800px; }
+/* Iconos de Proveedores */
+.icn-proveedor											{ background-position:  -200px  -120px; }
+.proveedor-index div.icn-new, .icn-proveedor-add		{ background-position:  -220px  -120px; }
+.proveedor-index div.icn-submit							{ background-position:  -300px  -120px; }
+.icn-proveedor-list										{ background-position:  -340px  -120px; }
+
+
+
+
+
+.producto-index 										{ width: 900px; }
+/* acciones del listado */
+.sf_admin_batch_actions_choice {
+}
+
+.azul { color: #03A }
+.recuadro { border: 1px solid #58C; padding: 1px 5px; background-color: #EFF; }
+
+div.bloque {
+    color: #333;
+    -moz-border-radius: 5px;
+    margin: 3px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    padding: 2px 5px;
+}

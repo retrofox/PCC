@@ -1,0 +1,32 @@
+generator:
+  class:                   sfPropelMooDooGenerator
+  param:
+    model_class:           ProductoCategoria
+    theme:                 mooDooAdmin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_categoria
+    with_propel_route:     1
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title:                                Product Category
+        display:                              [ nombre, descripcion ]
+
+        actions:
+          _new:                                 { label: Nueva, inWinPopUp:true }
+
+        object_actions:
+          _edit:                                { inWinPopUp:true }
+          _delete:                             ~
+
+      filter:  ~
+      form:    ~
+      edit:    ~
+
+      new:
+        title:                                Nueva Categoría de Producto

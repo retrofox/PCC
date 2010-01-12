@@ -1,0 +1,29 @@
+# ProveedorRubro
+
+ProveedorRubro:
+  transportista:
+    nombre: Transportista
+
+  rubro_electricidad_a:
+    nombre: Electricidad - Alta Tensión.
+
+  rubro_electricidad_b:
+    nombre: Electricidad - Medio Tensión.  
+
+  rubro_electricidad_a:
+    nombre: Electricidad - Baja Tensión.
+
+  rubro_electrónica_a:
+    nombre: Electrónica - General.
+
+  vehiculos_pesados:
+    nombre: Vehiculos Pesados
+
+  seguridad_industrial:
+    nombre: Seguridad Industrial
+
+  control_de_plagas:
+    nombre: Control de Plagas
+    
+  insumos_de_libreria:
+    nombre: Insumos de Librería

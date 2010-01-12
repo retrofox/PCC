@@ -1,0 +1,51 @@
+propel:
+
+  # Distintos Rubros a los cuales puede pertenecer un proveedor
+  proveedor_rubro:
+    _attributes:                { phpName: ProveedorRubro, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:                     { type: varchar(255), description: 'Rubro del Proveedor (2)' }
+    descripcion:                { type: longvarchar }
+    
+  proveedor:
+    _attributes:                { phpName: Proveedor, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:                     { type: varchar(255), description: 'Nombre del Proveedor (255)' }
+    cuit:                       { type: varchar(20), description: 'Cuit del Proveedor (50)' }
+    rubro_id:                   { type: integer, foreignTable: proveedor_rubro, foreignReference: id }
+    
+    # Datos de Contacto
+    telefono:                   { type: varchar(100), description: 'Telefono del Proveedor (100)' }
+    fax:                        { type: varchar(100), description: 'Fax del Proveedor (100)' }
+    movil:                      { type: varchar(100), description: 'Celular del Proveedor (100)' }
+    email:                      { type: varchar(255) }
+    
+    # Persona de Contacto Contacto
+    persona_nombre:             { type: varchar(100), description: 'Nombre de la persona de contacto del proveedor (100)' }
+    persona_apellido:           { type: varchar(100), description: 'Apellido de la persona de contacto del proveedor (100)' }
+
+    # Direccion, Ubicacion
+    direccion_calle:            { type: varchar(50), description: 'Direccioon / Calle del Proveedor (50)' }
+    direccion_numero:           { type: varchar(5), description: 'Direccioon / Numero de Calle del Proveedor (2)' }
+    direccion_manzana:          { type: varchar(5), description: 'Direccioon / Manzana del Proveedor (5)' }
+    direccion_barrio:           { type: varchar(50), description: 'Direccioon / Barrio del Proveedor (50)' }
+    direccion_piso:             { type: varchar(2), description: 'Direccioon / Piso del Proveedor (2)' }
+    direccion_depto:            { type: varchar(2), description: 'Direccioon / Departamento del Proveedor (2)' }
+    localidad_id:               { type: integer, foreignTable: geo_localidad, foreignReference: id, onDelete: setnull, onUpdate: cascade }
+    provincia_id:               { type: integer, foreignTable: geo_provincia, foreignReference: id }
+  # ------- fin Proveedor ---------
+
+  # Distintas formas de pago que puede tener un proveedor con el cliente (PCC)
+  formas_de_pago:
+    _attributes:                { phpName:  FormasDePago, idMethod: native }
+    id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre:                     { type: varchar(255) }
+    moneda:                     { type: varchar(20) }
+    descripcion:                { type: longvarchar }
+
+  # Formas de pago asociadas a un proveedor
+  proveedor_formas_de_pago:
+    _attributes:                { phpName: ProveedorFDP, idMethod: native }
+    proveedor_id:               { type: integer, foreignTable: proveedor, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+    fdp_id:                     { type: integer, foreignTable: proveedor_formas_de_pago, foreignReference: id, onDelete: cascade, onUpdate: cascade }
+

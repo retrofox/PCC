@@ -1,0 +1,1 @@
+  	<li><?php echo '<div options="{\'update\':\'vtn-menu-add\'}"  ajax_link="'.url_for('sfGuardUser/ListNewAccount', array(), 'messages').'" class="ajax_btn_to sf_admin_actions_newaccount btn_admin_actions"><div class="icn icn-newaccount"></div>'.__('Agregar').'</div>' ?></li>

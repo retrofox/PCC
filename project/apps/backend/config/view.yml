@@ -1,0 +1,18 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        PCC. Aplicación Administrativa.
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [ main.css, menu.css, /sfFormMooDooPlugin/css/moodoo.choice_with_add.css, /sfFormMooDooPlugin/css/moodoo.global.css ]
+  #stylesheets:    [ main.css, menu.css ]
+
+  javascripts:    [ mainMenu.js, /sfFormMooDooPlugin/js/moodoo.choice_with_add.js ]
+
+  has_layout:     on
+  layout:         layout

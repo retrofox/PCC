@@ -1,0 +1,53 @@
+####################
+##  CompraEstado  ##
+####################
+CompraEstado:
+
+  compra-estado-iniciado-compra_uno:
+    compra_id:          compra_uno
+    estado_id:          compra-estado_iniciado
+    user_id:            damian
+    cantidad:           200
+    fecha:              '2009-03-12'
+    observaciones:      Compra implementada por el fixture
+    
+  compra-estado_aceptado-compra_uno:
+    compra_id:          compra_uno
+    estado_id:          compra-estado_aceptado
+    user_id:            damian
+    cantidad:           200
+    fecha:              '2009-03-12'
+    observaciones:      Compra implementada por el fixture
+    
+  compra-estado_rechazado-compra_uno:
+    compra_id:          compra_uno
+    estado_id:          compra-estado_rechazado
+    user_id:            damian
+    cantidad:           200
+    fecha:              '2009-03-12'
+    observaciones:      Compra implementada por el fixture.
+
+
+  compra-estado_iniciado-compra_dos:
+    compra_id:          compra_dos
+    estado_id:          compra-estado_iniciado
+    user_id:            jbrion
+    cantidad:           180
+    fecha:              '2009-02-27'
+    observaciones:      Compra implementada por el fixture.
+
+  compra-estado_iniciado-compra_dos:
+    compra_id:          compra_dos
+    estado_id:          compra-estado_pausado
+    user_id:            damian
+    cantidad:           180
+    fecha:              '2009-03-15'
+    observaciones:      Compra implementada por el fixture.
+
+  compra-estado_iniciado-compra_dos:
+    compra_id:          compra_dos
+    estado_id:          compra-estado_realizado
+    user_id:            gperez
+    cantidad:           180
+    fecha:              '2009-04-07'
+    observaciones:      Compra implementada por el fixture.

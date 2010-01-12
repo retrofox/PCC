@@ -1,0 +1,18 @@
+Compra:
+  compra_uno:
+    producto_id:                        coque01
+    cantidad:                           100
+    proveedor_id:                       comercial_argentina_srl
+    precio:                             120
+    moneda:                             peso
+    fecha:                              '2009-03-10'
+    fecha_entrega:                      '2009-03-20'
+    
+  compra_dos:
+    producto_id:                        eje_de_mando
+    cantidad:                           14
+    proveedor_id:                       distribuidora_leo
+    precio:                             140
+    moneda:                             peso
+    fecha:                              '2009-04-05'
+    fecha_entrega:                      '2009-04-22'
