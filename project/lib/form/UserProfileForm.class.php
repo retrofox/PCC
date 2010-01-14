@@ -12,5 +12,6 @@ class UserProfileForm extends BaseUserProfileForm
 {
   public function configure()
   {
+    $this->widgetSchema['language'] = new sfWidgetFormInputHidden();
   }
 }
