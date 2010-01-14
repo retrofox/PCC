@@ -11,7 +11,6 @@
 class ProductoForm extends BaseProductoForm {
   public function configure() {
 
-
     $this->widgetSchema['producto_categoria_id'] = new sfWidgetFormMooPropelChoiceWithAdd(array(
       'model' => 'ProductoCategoria',
       'add_empty' => false,
@@ -19,23 +18,11 @@ class ProductoForm extends BaseProductoForm {
       'input_name' => 'producto_categoria[nombre]'
     ));
 
-/*
-    //mooWidgetFormChoiceWithAdd
-    $this->widgetSchema['producto_categoria_id'] = new mooWidgetFormPropelChoiceWithAdd(array(
-      'model' => 'ProductoCategoria',
-      'add_empty' => true
+    $this->widgetSchema['producto_udm_id'] = new sfWidgetFormMooPropelChoiceWithAdd(array(
+      'model' => 'ProductoUDM',
+      'add_empty' => false,
+      'url' => 'producto_udm/addUDM2Producto',
+      'input_name' => 'producto_udm[nombre]'
     ));
-*/
-    //mooWidgetFormChoiceWithAdd
-    /*
-    $this->widgetSchema['producto_udm_id'] = new mooWidgetFormPropelChoiceWithAdd(array(
-                    'model' => 'ProductoUDM',
-                    'action2Add' => 'producto/createUDM',
-                    'add_empty' => true
-    ));
-     *
-     */
-
-    $this->widgetSchema['producto_udm_id'] = new sfWidgetFormInputHidden();
   }
 }
