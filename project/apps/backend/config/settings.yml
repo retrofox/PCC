@@ -31,7 +31,7 @@ all:
     escaping_method:        ESC_SPECIALCHARS # Function or helper used for escaping. Accepted values: ESC_RAW, ESC_ENTITIES, ESC_JS, ESC_JS_NO_ENTITIES, and ESC_SPECIALCHARS.
 
     #sfGuardPlugin
-    enabled_modules:        [default, sfGuardAuth, sfGuardUser, sfGuardGroup, sfGuardPermission, mooDooClientFiles ]
+    enabled_modules:        [default, sfGuardAuth, sfGuardUser, sfGuardGroup, sfGuardPermission, mooDooClientFiles, formMooDoo ]
 
     # Traduccion. Cultura y Pais
     i18n: on

@@ -33,13 +33,18 @@ class producto_categoriaActions extends autoProducto_categoriaActions {
       $this->ProductoCategoriaForm->bind($request->getParameter($this->ProductoCategoriaForm->getName()));
 
       if ($this->ProductoCategoriaForm->isValid()) {
-
-
         $this->ProductoCategoriaForm->save();
-
-        $this->categoria_id = $this->ProductoCategoriaForm->getObject()->getId();
-        $this->categorias = ProductoCategoriaPeer::retrieveCategorias();
       }
     }
+
+    return $this->renderComponent('formMooDoo', 'propelChoiceWithAdd', array (
+      db_search => array (
+          'field_id' => ProductoCategoriaPeer::ID,
+          'field_name' => ProductoCategoriaPeer::NOMBRE,
+          'table_name' => ProductoCategoriaPeer::TABLE_NAME
+        ),
+      'id_selected' => $this->ProductoCategoriaForm->getObject()->getId(),
+      'form_field' => $this->ProductoCategoriaForm['nombre']
+    ));
   }
 }

@@ -30,22 +30,23 @@ class producto_udmActions extends autoProducto_udmActions
   public function executeAddUDM2Producto (sfWebRequest $request) {
     $this->ProductoUDMForm = new ProductoUDMForm();
 
-    
-    //producto[udm]
-
     if ($request->isMethod('post')) {
-      //$this->getResponse()->setContentType('application/json');
-      $this->getResponse()->setContentType('application/x-javascript');
-
       $this->ProductoUDMForm->bind($request->getParameter($this->ProductoUDMForm->getName()));
 
       if ($this->ProductoUDMForm->isValid()) {
 
         $this->ProductoUDMForm->save();
-
-        $this->categoria_id = $this->ProductoUDMForm->getObject()->getId();
-        $this->categorias = ProductoUDMPeer::retrieveUDMs();
       }
     }
+
+    return $this->renderComponent('formMooDoo', 'propelChoiceWithAdd', array (
+      db_search => array (
+          'field_id' => ProductoUDMPeer::ID,
+          'field_name' => ProductoUDMPeer::NOMBRE,
+          'table_name' => ProductoUDMPeer::TABLE_NAME
+        ),
+      'id_selected' => $this->ProductoUDMForm->getObject()->getId(),
+      'form_field' => $this->ProductoUDMForm['nombre']
+    ));
   }
 }

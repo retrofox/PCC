@@ -1,6 +1,7 @@
 var $wins = new Array ();
 
 var renderAjaxWin = function ($objAct) {
+  console.debug ('renderAjaxWin');
   if (!$wins.contains ($objAct.link)) {
     new mooWin ($objAct);
     $wins.push($objAct.link);

@@ -1,0 +1,28 @@
+<?php use_helper('I18N', 'Date', 'mooDooUrl') ?>
+
+// JsonData list
+var $jsonDataList = new Array ();
+$jsonDataList = {
+  controller: {
+    moduleName: 'producto_udm',
+    action: 'list'},
+  win: {
+    nodeId_formMethod: 'sf_admin_list_form_method-producto_udm',
+    nodeId_container : 'sf_admin_container-index-producto_udm',
+    nodeId_winsEmbedded: 'winsEmbedded_index-producto_udm',
+    obj_parent: window
+  }
+};
+
+// JsonData Actions list
+var $jsonDataActionsList = new Array ();
+$jsonDataObjActionsList = [
+<?php foreach ($pager->getResults() as $i => $producto_udm): ?>
+  <?php include_partial('producto_udm/data_json-list_actions', array('producto_udm' => $producto_udm, 'helper' => $helper, 'line' => $i)) ?>
+<?php endforeach; ?>
+];
+
+// JsonData Actions
+var $jsonDataActionsList = new Array ();
+$jsonDataActionsList = [
+  <?php echo $helper->mooJsonDataToNew(array(  'label' => 'Nueva',  'inWinPopUp' => true,  'params' =>   array(  ),  'class_suffix' => 'new',)) ?>];
