@@ -488,7 +488,8 @@ CREATE TABLE `producto_categoria`
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
 	`nombre` VARCHAR(50)  NOT NULL COMMENT 'Nombre de la Categoria (50)',
 	`descripcion` TEXT,
-	PRIMARY KEY (`id`)
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `id_nombre` (`nombre`)
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
@@ -506,7 +507,8 @@ CREATE TABLE `producto_udm`
 	`unidad_mas_multi` VARCHAR(15) COMMENT 'Es la unidad mas el multiplo o submultiplo, por ejemplo, Kg.',
 	`descripcion` TEXT,
 	`dimension` VARCHAR(15) COMMENT 'Dimension de la unidad. Puede ser lineal, cuadrática, ćubica, etc.',
-	PRIMARY KEY (`id`)
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `id_nombre` (`nombre`)
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------

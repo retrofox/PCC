@@ -5,6 +5,8 @@ propel:
     id:                         { type: integer, required: true, primaryKey: true, autoIncrement: true }
     nombre:                     { type: varchar(50), required: true, description: 'Nombre de la Categoria (50)' }
     descripcion:                { type: longvarchar }
+    _uniques:
+      id_nombre:                [ nombre ]
 
   producto_udm:
     _attributes:                { phpName: ProductoUDM, idMethod: native }
@@ -14,6 +16,8 @@ propel:
     unidad_mas_multi:           { type: varchar(15), description: 'Es la unidad mas el multiplo o submultiplo, por ejemplo, Kg.' }
     descripcion:                { type: longvarchar }
     dimension:                  { type: varchar(15), description: 'Dimension de la unidad. Puede ser lineal, cuadrática, ćubica, etc.' }
+    _uniques:
+      id_nombre:                [ nombre ]
 
   producto:
     _attributes:                { phpName: Producto, idMethod: native }

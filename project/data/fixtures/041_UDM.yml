@@ -23,11 +23,6 @@ ProductoUDM:
     nombre:       mts3 
     descripcion:  Metros Cubicos. Volúmen. Magnitud Cúbica.
 
-  udm_unit:
-    nombre:       unidad
-    descripcion:  Unidades. Cantidad. Magnitud Lineal.
-    
-    
   bolsa:
     nombre:             Bolsa
     unidad:             bls
