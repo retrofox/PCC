@@ -1,0 +1,13 @@
+generator:
+  class:              sfPropelsfPropelMooDooGenerator
+  param:
+##CONFIG##
+
+    config:
+      actions:        ~
+      fields:         ~
+      list:           ~
+      filter:         ~
+      form:           ~
+      _edit:           ~
+      new:            ~

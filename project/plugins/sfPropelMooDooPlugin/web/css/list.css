@@ -1,0 +1,252 @@
+/* Admin Generator */
+.sf_admin_list {
+  padding: 1px 2px;
+}
+
+.sf_admin_list table {
+}
+
+  /* Cabecera y Pie del listado */
+  .sf_admin_list thead, .sf_admin_list tfoot {
+    color: #556;
+    background: #EEEEFF;
+  }
+
+  .sf_admin_list thead a {
+    font: normal normal bold 12px / 25px sans-serif;
+    color: #24A;
+    text-decoration: none;
+  }
+
+  .sf_admin_list thead a:hover {
+    text-decoration: underline;
+    color: #24F;
+  }
+
+  .sf_admin_list thead th, .sf_admin_list tfoot th {
+    border-left: 1px solid #FFE;
+    border-right: 1px solid #AAA;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #AAA;
+  }
+
+
+  /* Acciones */
+  #sf_admin_list_batch_actions {
+    width: 28px;
+  }
+
+  #sf_admin_list_batch_actions input {
+
+  }
+
+  .sf_admin_list .sf_admin_list_th_actions, .sf_admin_list sf_admin_list_td_actions {
+    width: 20px;
+  }
+
+
+  /* checkboxs del thead */
+  .sf_admin_list thead th input {
+    float: left;
+    margin: 0;
+  }
+
+/* tFoot  - sf_admin_pagination */
+.sf_admin_list tfoot th {
+  line-height: 20px;
+}
+
+.sf_admin_pagination {
+  background-color: #F2F2FF;
+  height: 20px; width: 98%;
+  padding-left: 2%;
+  margin: 5px auto;
+  line-height: 20px;
+}
+
+.sf_admin_pagination a, .sf_admin_pagination span {
+  display: block;
+  text-decoration: none;
+  width: 16px; height: 16px;
+  float: left;
+}
+.sf_admin_pagination a img {
+  border: 0;
+}
+
+/* Cuerpo del listado */
+.sf_admin_list tbody {
+  border-left: 1px solid #FFE;
+  border-right: 1px solid #AAA;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #AAA;
+}
+
+
+.sf_admin_list tbody tr {
+  /*line-height: 20px;*/
+}
+
+.sf_admin_list tbody tr td {
+  height: 20px;
+  padding: 0px 5px;
+}
+
+.sf_admin_row {
+}
+
+.odd {
+  background-color: #FAFFFA;
+  color: #442;
+}
+
+.even {
+  background-color: #EFE;
+  color: #141;
+}
+
+.sf_admin_row-hover {
+  background: #DEF;
+  color: #024;
+}
+
+.sf_admin_list_td_hover {
+  background: #4AF;
+  color: #FFF;
+  cursor: pointer;
+}
+/* end list */
+
+
+
+/* Filters */
+.sf_admin_filter {
+  padding: 3px;
+  position: absolute;
+  left: 30px; top: 30px;
+  z-index: 200;
+}
+
+div.sf_admin_filter div.bar_menu {
+  cursor: move;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  -moz-border-radius: 3px;
+  background-color: #6A6;
+  height: 20px;
+}
+
+div.sf_admin_filter div.bar_menu a {
+  line-height:20px;
+}
+
+.sf_admin_filter_filters {
+  border-spacing: 2px;
+  background: #DFD;
+  border: 1px solid #AAA;
+}
+
+.sf_admin_filter_filters td {
+  vertical-align: top;
+  background: #EFE;
+  border: 1px solid #DFFFDF;
+  padding: 3px;
+}
+
+.filter_block {
+  border-bottom: 1px dotted #3A3;
+}
+
+.sf_admin_filter div.labelHeader {
+  height: 20px; line-height: 20px;
+}
+.sf_admin_filter div.labelHeader label {
+  color: #343;
+  padding: 1px 0;
+  font-weight: bold;
+}
+
+.sf_admin_filter_filters td input, .sf_admin_filter_filters td select {
+  border: 1px solid #BABBBA;
+  padding: 1px 2px;
+  color: #050;
+  background-color: #F5FFF5;
+}
+
+
+.sf_admin_form_row .sf_admin_text {
+  width: 130px;
+}
+
+.sf_admin_filter .sf_admin_text input {
+  width: 120px;
+}
+
+.sf_admin_form_row .help {
+  font-size: 0.9em;
+  color: #06A;
+}
+
+.sf_admin_date {
+
+}
+.sf_admin_date select {
+}
+
+/* Acciones del Listado */
+ul.sf_admin_actions li.sf_admin_batch_actions_choice {
+  width: 300px;
+}
+
+.sf_admin_batch_actions_choice select {
+  padding: 0 5px;
+  width: 180px;
+  float: left;
+}
+
+/** Acciones td del listado **/
+.sf_admin_list td.sf_admin_td_actions {
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+.sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions {
+  display: none;
+  position: absolute;
+  left: -100px; top: -3px;
+  z-index: 110;
+  list-style: none;
+}
+.sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li {
+  -moz-border-radius: 3px;
+  width: 200px; height: 21px;
+  margin: 1px;
+  line-height: 23px;
+}
+
+.sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li.mooBOA {
+  border: 1px solid #8AA;
+  color: #EEE;
+  background: transparent url(../images/fnds_object_action.png) no-repeat left top;
+}
+
+.sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li.mooBOA-hover {
+  border-color: #699;
+  cursor: pointer;
+  color: #FFF;
+  background-position: 0px -25px;
+}
+
+.sf_admin_list td.sf_admin_td_actions ul.sf_admin_ul_actions li.mooBOA-down {
+  background-position: 0px -50px;
+}
+
+.sf_admin_list ul.sf_admin_ul_actions div.icn {
+  margin: 0 5px 0 0; padding: 2px;
+  float: left
+}
+
+.col_w20      { width: 20px }
+.col_w40      { width: 40px }

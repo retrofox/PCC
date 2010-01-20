@@ -1,0 +1,37 @@
+[?php use_helper('I18N', 'Date', 'mooDooUrl') ?]
+
+// JsonData list
+var $jsonDataList = new Array ();
+$jsonDataList = {
+  controller: {
+    moduleName: '<?php echo $this->getModuleName() ?>',
+    action: 'list'},
+  win: {
+    nodeId_formMethod: 'sf_admin_list_form_method-<?php echo $this->getModuleName() ?>',
+    nodeId_container : 'sf_admin_container-index-<?php echo $this->getModuleName() ?>',
+    nodeId_winsEmbedded: 'winsEmbedded_index-<?php echo $this->getModuleName() ?>',
+    obj_parent: window
+  }
+};
+
+// JsonData Actions list
+var $jsonDataActionsList = new Array ();
+$jsonDataObjActionsList = [
+[?php foreach ($pager->getResults() as $i => $<?php echo $this->getSingularName() ?>): ?]
+<?php if ($this->configuration->getValue('list.object_actions')): ?>
+  [?php include_partial('<?php echo $this->getModuleName() ?>/data_json-list_actions', array('<?php echo $this->getSingularName() ?>' => $<?php echo $this->getSingularName() ?>, 'helper' => $helper, 'line' => $i)) ?]
+<?php endif; ?>
+[?php endforeach; ?]
+];
+
+// JsonData Actions
+var $jsonDataActionsList = new Array ();
+$jsonDataActionsList = [
+<?php if ($actions = $this->configuration->getValue('list.actions')): ?>
+<?php foreach ($actions as $name => $params): ?>
+<?php if ('_new' == $name): ?>
+  <?php echo $this->addCredentialCondition('[?php echo $helper->mooJsonDataToNew('.$this->asPhp($params).') ?]', $params) ?>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php endif; ?>
+];
