@@ -1,1 +1,0 @@
-<h3>[?php echo <?php echo $this->getI18NString('list.title') ?> ?]</h3>
