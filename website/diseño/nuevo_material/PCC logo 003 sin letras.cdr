@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with sK1/UniConvertor (http://sk1project.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="595.276pt"
+   height="841.89pt"
+   viewBox="0 0 595.276 841.89"
+   fill-rule="evenodd"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="PCC logo 003 sin letras.cdr">
+  <metadata
+     id="metadata40">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="976"
+     id="namedview38"
+     showgrid="false"
+     inkscape:zoom="3.0250781"
+     inkscape:cx="388.20162"
+     inkscape:cy="513.20305"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14" />
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18127 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09497 : 526.18127 : 1"
+       inkscape:persp3d-origin="372.04749 : 350.78752 : 1"
+       id="perspective42" />
+    <marker
+       id="ArrowEnd"
+       viewBox="0 0 10 10"
+       refX="0"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         id="path7" />
+    </marker>
+    <marker
+       id="ArrowStart"
+       viewBox="0 0 10 10"
+       refX="10"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto">
+      <path
+         d="M 10 0 L 0 5 L 10 10 z"
+         id="path10" />
+    </marker>
+  </defs>
+  <g
+     id="g12">
+    <g
+       id="g14">
+      <path
+         style="fill:#009946;fill-opacity:1;stroke:#000000;stroke-width:1.60000005999999995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431374"
+         d="m 297.35995,437.64276 c 2.68811,32.4167 -34.62289,37.35972 -60.36772,37.34081 l -6.62775,25.02739 c -0.55355,2.09101 -1.31741,5.03814 1.92082,6.66155 3.92473,1.96666 4.51324,3.49724 4.23589,4.9923 -0.33179,1.78845 -2.60904,2.77235 -3.64967,2.91618 l -37.77402,0.0567 c -3.24683,-0.65727 -4.00496,-5.66389 3.12248,-7.93541 3.94478,-1.75865 3.85367,-2.75975 4.67712,-5.94755 l 18.33088,-70.97234 c 0.81658,-3.16202 1.47615,-4.92984 -2.51563,-6.35154 -1.77871,-0.63321 -5.57049,-0.88936 -5.56361,-3.35055 0.005,-1.80736 1.32829,-1.90879 3.51443,-1.90707 l 46.89906,0.0447 c 10.64015,0.01 31.10903,3.84622 33.79772,19.4248 z m -28.71832,18.4048 c 2.10534,-2.68869 3.60555,-5.51662 4.4737,-8.53022 0.86872,-3.0136 1.31626,-5.84154 1.31626,-8.46089 -1.00109,-12.35525 -10.66364,-14.0417 -20.60411,-14.06634 -4.08232,-0.0103 -4.27887,1.76667 -4.51095,2.65316 l -10.22527,39.02782 3.57575,-0.16904 c 5.96704,-0.28194 11.10546,-0.88133 15.42157,-2.61935 4.31554,-1.7386 7.84258,-4.35795 10.55305,-7.83514 z"
+         id="path16"
+         inkscape:export-filename="/var/www/PCC/website/site/images/logo.png"
+         inkscape:export-xdpi="72"
+         inkscape:export-ydpi="72" />
+      <path
+         style="fill:#009946;fill-opacity:1;stroke:#000000;stroke-width:1.60000005999999995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431374"
+         d="m 265.84234,482.16086 c 3.73162,0 5.65187,0.49625 8.25747,2.28699 2.21765,1.52485 0.71228,5.43869 0.10773,7.80934 -0.0504,0.19827 -0.21145,0.30371 -0.46703,0.30371 l -2.52308,0 c -0.255,0 -0.32205,-0.10028 -0.31173,-0.30371 0.0493,-0.99364 0.0619,-4.06397 -0.85956,-5.26105 -0.92144,-1.19765 -3.29611,-1.86695 -5.22896,-1.86695 -3.46286,0 -6.53033,1.23833 -9.19953,3.70411 -2.40217,2.20848 -3.99751,4.88456 -4.79288,8.00475 -0.99537,3.90295 -0.82862,7.09305 0.50198,9.55883 1.53402,2.82794 4.44848,4.24219 8.75772,4.24219 3.19411,0 6.45583,-0.84122 9.76054,-2.53569 0.18451,-0.094 0.29798,-0.1169 0.33981,-0.0705 0.0418,0.047 0.0779,0.1169 0.10773,0.2103 l 0.70541,1.70651 c 0.0527,0.16331 -0.0699,0.3272 -0.36331,0.47906 -5.29715,2.76948 -10.13186,4.14821 -14.50757,4.14821 -5.22152,0 -8.99496,-1.41368 -11.34785,-4.24162 -2.32768,-2.76949 -2.92478,-6.42718 -1.7598,-10.99658 1.22171,-4.79116 3.93046,-8.83451 8.12337,-12.11801 4.35107,-3.3769 9.24996,-5.05991 14.69954,-5.05991 z"
+         id="path18"
+         inkscape:export-filename="/var/www/PCC/website/site/images/logo.png"
+         inkscape:export-xdpi="72"
+         inkscape:export-ydpi="72" />
+      <path
+         style="fill:#009946;fill-opacity:1;stroke:#000000;stroke-width:1.60000005999999995;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431374"
+         d="m 300.49904,482.16086 c 3.73162,0 5.65187,0.49625 8.25689,2.28699 2.21823,1.52485 0.71229,5.43869 0.10831,7.80934 -0.0504,0.19827 -0.21203,0.30371 -0.46703,0.30371 l -2.52365,0 c -0.255,0 -0.32148,-0.10028 -0.31174,-0.30371 0.0499,-0.99364 0.0625,-4.06397 -0.85898,-5.26105 -0.92144,-1.19765 -3.29611,-1.86695 -5.22896,-1.86695 -3.46343,0 -6.5309,1.23833 -9.20011,3.70411 -2.40217,2.20848 -3.99693,4.88456 -4.7923,8.00475 -0.99537,3.90295 -0.82919,7.09305 0.50198,9.55883 1.53402,2.82794 4.44848,4.24219 8.75715,4.24219 3.19468,0 6.4564,-0.84122 9.76053,-2.53569 0.18509,-0.094 0.29856,-0.1169 0.33981,-0.0705 0.0418,0.047 0.0779,0.1169 0.10774,0.2103 l 0.70598,1.70651 c 0.0521,0.16331 -0.0699,0.3272 -0.36388,0.47906 -5.29658,2.76948 -10.13129,4.14821 -14.50758,4.14821 -5.22151,0 -8.99496,-1.41368 -11.34727,-4.24162 -2.32768,-2.76949 -2.92536,-6.42718 -1.76037,-10.99658 1.22171,-4.79116 3.93103,-8.83451 8.12394,-12.11801 4.35107,-3.3769 9.24996,-5.05991 14.69954,-5.05991 z"
+         id="path20"
+         inkscape:export-filename="/var/www/PCC/website/site/images/logo.png"
+         inkscape:export-xdpi="72"
+         inkscape:export-ydpi="72" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.60000006;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round"
+         d="m 305.65236,443.56567 15.74362,0 5.56018,-13.00106 3.06804,30.78297 2.88696,-17.68621 7.57784,0 2.25432,-23.51571 6.03122,49.97168 2.05892,-26.45597 5.01579,7.95605 2.58726,-26.20899 4.578,18.25294 29.12918,0"
+         id="path22"
+         inkscape:export-filename="/var/www/PCC/website/site/images/logo.png"
+         inkscape:export-xdpi="72"
+         inkscape:export-ydpi="72" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.57314580999999998;stroke-linejoin:round"
+         d="m 338.8908,508.51425 26.39923,0 0,3.37633 -26.39923,0 0,-3.37633 0,0 z"
+         id="path24"
+         inkscape:export-filename="/var/www/PCC/website/site/images/logo.png"
+         inkscape:export-xdpi="72"
+         inkscape:export-ydpi="72" />
+      <g
+         id="g26"
+         inkscape:export-filename="/var/www/PCC/website/site/images/logo.png"
+         inkscape:export-xdpi="72"
+         inkscape:export-ydpi="72"
+         transform="matrix(0.57303691,0,0,0.57303691,124.85693,199.13793)"
+         style="stroke-linejoin:round">
+        <path
+           style="fill:#ff0000;stroke:#000000;stroke-width:0.50009400000000004;stroke-linejoin:round"
+           d="m 372.685,501.387 46.069,0 0,5.892 -46.069,0 0,-5.892 0,0 z"
+           id="path28" />
+        <path
+           style="fill:#ff0000;stroke:#000000;stroke-width:0.50009400000000004;stroke-linejoin:round"
+           d="m 392.609,527.412 5.893,0 0,-46.07 -5.893,0 0,46.07 0,0 z"
+           id="path30" />
+        <path
+           style="fill:#ff0000;stroke:#ff0000;stroke-width:0.21602700999999999;stroke-linejoin:round"
+           d="m 392.114,501.667 7.178,0 0,5.366 -7.178,0 0,-5.366 0,0 z"
+           id="path32" />
+      </g>
+    </g>
+    <g
+       id="g34" />
+  </g>
+  <g
+     id="g36" />
+</svg>

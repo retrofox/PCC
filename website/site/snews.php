@@ -32,7 +32,7 @@ function db($variable) {
 		// Database Username
 			'dbuname' 	=> 'root', //'xifox_pcc',
 		// Database password
-			'dbpass' 	=> '',//%TPg#(|vq6~K',
+			'dbpass' 	=> 'alfilasesino',//%TPg#(|vq6~K',
 		// Table prefix for multiple sNews systems on one database
 		// if you don't need it just leave it blank
 			'prefix' 	=> ''

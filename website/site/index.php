@@ -2,28 +2,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
- 		<meta name="robots" content="index,follow" />
-	    <meta name="author" content="XiFOX.net" />
-		<?php title(); ?>
-		
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<link href="css/style_old.css" rel="stylesheet" type="text/css" />
-		<script src="js/mootools.js" type="text/javascript"></script>
-		<script src="js/main.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/iepngfix_tilebg.js"></script>  
+      <meta name="robots" content="index,follow" />
+      <meta name="author" content="XiFOX.net" />
+      <?php title(); ?>
+
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link href="css/style_old.css" rel="stylesheet" type="text/css" />
+      <script src="js/mootools.js" type="text/javascript"></script>
+      <script src="js/main.js" type="text/javascript"></script>
+      <script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
 </head>
 
 <body>
 	<div id="frame">
 		<!--header start here -->
  	  <div id="headcontainer">
-		<a href="<?php echo _SITE ?>"><img src="images/logo.png" alt="Protecci&oacute;n Cat&oacute;dica del Comahue" title="Protecci&oacute;n Cat&oacute;dica del Comahue" width="190" height="87" class="logo" /></a>
+		<a href="<?php echo _SITE ?>"><img src="images/logo.png" alt="Protecci&oacute;n Cat&oacute;dica del Comahue" title="Protecci&oacute;n Cat&oacute;dica del Comahue" class="logo" /></a>
         
 		<ul>
         	<?php pages(); ?>
  		</ul>
 		<img src="images/frente2.png" alt="Protecci&oacute;n Cat&oacute;dica del Comahue" class="foto_header" />
-		<h1><?php //echo s('website_title'); ?></h1>
+		<h1><?php echo s('website_title'); ?></h1>
 		<h2><?php echo s('website_description'); ?></h2> 
 	  </div>
 <!--header end here -->
@@ -99,7 +99,7 @@
 						<div id="crumbs"><?php breadcrumbs(); ?> </div>
 						<?php }
 						else if(isset($_GET['category']) && $_GET['category']!='Home'){?>
-							<div id="camino"><?php breadcrumbs(); ?></div>
+							<!--div id="camino"><?php breadcrumbs(); ?></div-->
 						<?php } ?>
 						<?php center(); ?>
 									

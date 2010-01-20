@@ -22,8 +22,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body {
   line-height: 1;
-	/*fuente de estas paginas*/
-   font: normal normal normal 62.5% Arial, Verdana, Helvetica, sans-serif; 
+/*fuente de estas paginas*/
+  font: normal normal normal 62.5% Arial, Verdana, Helvetica, sans-serif; 
   
 }
 ol, ul {
@@ -62,15 +62,16 @@ table {
 /* CSS Document */
 
 body{
-	margin:0px; background:url(images/bodybg.jpg) repeat-x left top #FFF;
-	color:#4D4747;
+  background:url(images/bodybg.jpg) repeat-x left top #FFF;
+  color:#4D4747;
+  margin:0px; 
 }
 
 .spacer {
 	clear:both; padding:0; margin:0;
 	}
 
-#frame{
+div#frame{
 	width:768px; padding:0 5px; margin:0 auto;
 	color:#4D4747;
 	background: transparent url(images/framebg.png) repeat-y left top;
@@ -89,28 +90,30 @@ img {
 	position:relative;
 }
 #headcontainer h1 {
-	font-size:2em;
-	font-weight:bold;
-	color:transparent;
+	font: italic bold 1.7em "Times New Roman", Times, serif;
+	text-align: center;
+	color:green;
 	position:absolute;
-	right:20px;bottom:50px; 
-	background: transparent url(images/titulo.png) no-repeat 0 0; 
+	left:15px;bottom:0px;
 	display:block;
-	width:499px; height:31px;
+	width:210px; height:70px;
 }
 #headcontainer h2 {
-	font-size:1.3em;
-	font-weight:bold;
-	color:white;
-	position:absolute;
-	right:27px;bottom:20px; 
-	
+ font-family: 'Lucida Console', Monaco, monospace;
+  bottom:13px;
+  color:black;
+  font-size:1.4em;
+  font-weight:bolder;
+  position:absolute;
+  right:20px;
+  text-align:center;
+  width:500px;
 }
 #headcontainer .logo {
-	margin:125px 0 0 25px;
+	margin:100px 0 0 20px;
 	padding:0;
 	position:absolute;
-	left: 1px;
+	left: 0px;
 	}
 #headcontainer ul {
 	padding:34px 35px 0px 0px; margin:0; list-style-type:none;
@@ -139,7 +142,7 @@ img {
 #headcontainer img.foto_header{
 	position:absolute;
 	/*width:400px; top:135px;*/
-	top: 65px; left:300px;
+	top: 65px; left:238px;
 }
 /* Header part style end here */
 
@@ -184,6 +187,8 @@ img {
 }	
 #leftnavcontainer ul li h5:hover{
 	text-decoration:none;
+        background-color:#40805D!important ;
+        color:#FFFFFF!important ;
 	}
 	
 
@@ -195,35 +200,35 @@ img {
 #leftnavcontainer ul li h5.color1 {
 	background-color:#005e29; color:#FFFFFF;
 	}
-#leftnavcontainer ul li h5.color1:hover {
-	background-color:#065981; color:#FFFFFF;
+#leftnavcontainer ul li h5:hover {
+	background-color:#40805D; color:#FFFFFF;
 	}
 #leftnavcontainer ul li h5.color2 {
 	background-color:#1b6d3f; color:#FFFFFF;
 	}
-#leftnavcontainer ul li h5.color2:hover {
-	background-color:#065981; color:#FFFFFF;
-	}
+/*#leftnavcontainer ul li h5.color2:hover {
+	background-color:#40805D; color:#FFFFFF;
+	}*/
 #leftnavcontainer ul li h5.color3 {
 	background-color:#407800; color:#FFFFFF;
 	}
-#leftnavcontainer ul li h5.color3:hover {
-	background-color:#065981; color:#FFFFFF;
-	}
+/*#leftnavcontainer ul li h5.color3:hover {
+	background-color:#40805D; color:#FFFFFF;
+	}*/
 #leftnavcontainer ul li h5.color4 {
 	background-color:#63b800; color:#FFFFFF;
 	}
-#leftnavcontainer ul li h5.color4:hover {
-	background-color:#065981; color:#FFFFFF;
-	}
+/*#leftnavcontainer ul li h5.color4:hover {
+	background-color:#40805D; color:#FFFFFF;
+	}*/
 #leftnavcontainer ul li h5.color5 {
 	background-color:#A4dc63; color:#FFFFFF;
 	}
-#leftnavcontainer ul li h5.color5:hover {
+/*#leftnavcontainer ul li h5.color5:hover {
 	background-color:#065981; color:#FFFFFF;
-	}
+	}*/
 #leftnavcontainer ul li.toggler-active h5{
-	background-color:#085981;
+	background-color:#004D24;
 	}	
 #leftnavcontainer ul#menu_interior li ul{
 	padding: 0;margin:0px;
@@ -242,7 +247,8 @@ img {
 	}
 #leftnavcontainer ul#menu_interior li ul li a:hover{
 	text-decoration:none;
-	background-color:#BAC6CC
+	background-color:#E6FFF1;
+        color: #000;
 	}
 
 	
@@ -267,7 +273,7 @@ img {
 }
 #body a{
 	color:#bb342D;
-	margin:10px 10px 10px 20px;
+	margin:10px 10px 10px 0px;
 }
 #body a:hover{
 	color:#2f6d36;
