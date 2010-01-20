@@ -225,6 +225,18 @@ img {
 	background-color:#5CCC90;
         color: #000;
 	}
+#leftnavcontainer ul#menu_interior li ul li a.current{
+	background-color:#E6FFF1;
+  color:#7A141F;
+  position:relative;
+  }
+  #leftnavcontainer ul#menu_interior li ul li a.current span{
+    background: transparent url(images/flechas.png) no-repeat 0 -10px;
+    display:inline-block;
+	width: 8px;height:10px;
+	position:absolute;
+	top:8px; right:10px;
+  }
 
 	
 /* left panel end from here */
