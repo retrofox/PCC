@@ -170,12 +170,24 @@ img {
 	width:190px; margin:0 10px; padding:0 0 2px;
 	}
 #leftnavcontainer ul li h5{
-	display:block; color:#FFFFFF; text-decoration:none; padding:4px 0 4px 8px;
+        background-color:#00632E;
+        border: 1px solid #000;
+	-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+       /* -moz-box-shadow: 5px 5px 5px #AAA, inset 0 0 0.7em rgba(255, 255, 255, 0.5);*/
+      
+        display:block; color:#FFFFFF; text-decoration:none; padding:4px 0 4px 8px;
 	font:bold 1.3em Arial, Verdana, Helvetica, sans-serif; 
-	background-color:inherit;
+	/*background-color:inherit;*/
 	margin:0;
 	cursor:pointer;
 	position:relative;
+
+	}
+        #leftnavcontainer ul li h5:hover{
+	text-decoration:none;
+        background-color:#83AC96;
+        color:#000;
 	}
 #leftnavcontainer ul li h5 span{
 	background: transparent url(images/flechas.png) no-repeat left -20px;
@@ -185,51 +197,11 @@ img {
 	top:10px; right:10px;
 	
 }	
-#leftnavcontainer ul li h5:hover{
-	text-decoration:none;
-        background-color:#40805D!important ;
-        color:#FFFFFF!important ;
-	}
-	
 
 #leftnavcontainer ul li.toggler-active h5 span {
 	background: transparent url(images/flechas.png) no-repeat 0 -28px;
 }
 
-
-#leftnavcontainer ul li h5.color1 {
-	background-color:#005e29; color:#FFFFFF;
-	}
-#leftnavcontainer ul li h5:hover {
-	background-color:#40805D; color:#FFFFFF;
-	}
-#leftnavcontainer ul li h5.color2 {
-	background-color:#1b6d3f; color:#FFFFFF;
-	}
-/*#leftnavcontainer ul li h5.color2:hover {
-	background-color:#40805D; color:#FFFFFF;
-	}*/
-#leftnavcontainer ul li h5.color3 {
-	background-color:#407800; color:#FFFFFF;
-	}
-/*#leftnavcontainer ul li h5.color3:hover {
-	background-color:#40805D; color:#FFFFFF;
-	}*/
-#leftnavcontainer ul li h5.color4 {
-	background-color:#63b800; color:#FFFFFF;
-	}
-/*#leftnavcontainer ul li h5.color4:hover {
-	background-color:#40805D; color:#FFFFFF;
-	}*/
-#leftnavcontainer ul li h5.color5 {
-	background-color:#A4dc63; color:#FFFFFF;
-	}
-/*#leftnavcontainer ul li h5.color5:hover {
-	background-color:#065981; color:#FFFFFF;
-	}*/
-#leftnavcontainer ul li.toggler-active h5{
-	background-color:#004D24;
-	}	
 #leftnavcontainer ul#menu_interior li ul{
 	padding: 0;margin:0px;
 	}
@@ -237,7 +209,10 @@ img {
 	padding: 2px 0 0; margin:0;
 	}
 #leftnavcontainer ul#menu_interior li ul li a{
-	background-color:#5c93ac;
+	background-color:#009946;
+        border: 1px solid #888;
+	-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
 	color: #fff;
 	display:block;
 	text-decoration:none; 
@@ -247,7 +222,7 @@ img {
 	}
 #leftnavcontainer ul#menu_interior li ul li a:hover{
 	text-decoration:none;
-	background-color:#E6FFF1;
+	background-color:#5CCC90;
         color: #000;
 	}
 
