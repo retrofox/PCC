@@ -133,11 +133,11 @@ class BaseCompraGeneratorHelper extends sfModelGeneratorHelper
   {
     $compra = $object;
     if (isset($params['ajax_request'])) {
-      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('edit'), $object)."', update: '_new', node_insert: 'content', execute: 'renderAjax'},\n";
+      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('edit'), $object)."', update: '_new', node_insert: 'content', winClass: 'renderAjax'},\n";
     }
 
     else if (isset($params['inWinPopUp'])) {
-      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('edit'), $object)."', link_content: '".url_for('compra/editWinContent?id='.$compra->getId())."', update: '_new', execute: 'renderAjaxEditWin'},\n";
+      return "{action: 'addWin', link: '".url_for($this->getUrlForAction('edit'), $object)."', link_content: '".url_for('compra/editWinContent?id='.$compra->getId())."', winClass: 'sfPropelEdit'},\n";
     }
     else {
         return "{type: 'Guarda ACA !!'}";
@@ -149,11 +149,11 @@ class BaseCompraGeneratorHelper extends sfModelGeneratorHelper
   {
     $compra = $object;
     if (isset($params['ajax_request'])) {
-      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('edit'), $object)."', update: '_new', node_insert: 'content', execute: 'renderAjax'},\n";
+      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('edit'), $object)."', update: '_new', node_insert: 'content', winClass: 'renderAjax'},\n";
     }
 
     else if (isset($params['inWinPopUp'])) {
-      return "{type: 'ajax_link', link: '".url_for('compra')."', link_content: '".url_for('compra/editWinContent?id='.$compra->getId())."', update: '_new', execute: 'renderAjaxListWin'},\n";
+      return "{type: 'ajax_link', link: '".url_for('compra')."', link_content: '".url_for('compra/editWinContent?id='.$compra->getId())."', update: '_new', winClass: 'sfPropelList'},\n";
     }
     else {
         return "{type: 'Guarda ACA !!'}";
@@ -163,18 +163,18 @@ class BaseCompraGeneratorHelper extends sfModelGeneratorHelper
 
   // Helpers para acciones de objetos en formato JSON - edit
   public function mooJsonDataToWinCancel($params) {
-    return "{type: 'cancel', execute: 'this.hideAndDestroy'},";
+    return "{action: 'close'},";
   }
 
   public function mooJsonDataToSave($object, $params)
   {
-    return "{type: 'ajax_link', action: 'save', link: '".url_for($this->getUrlForAction('edit'), $object)."', execute: 'this.save'},\n";
+    return "{action: 'save'},\n";
   }
 
   public function mooJsonDataToNew($params, $cssClass='btn_admin_actions')
   {
     if (isset($params['inWinPopUp'])) {
-      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('new'))."', update: '_new', node_insert: 'embedded_win-compra', execute: 'renderAjaxNewWin'},\n";
+      return "{type: 'ajax_link', link: '".url_for($this->getUrlForAction('new'))."', update: '_new', node_insert: 'embedded_win-compra', winClass: 'sfPropelNew'},\n";
     }
     else {
     };
