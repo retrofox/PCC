@@ -1,1 +1,0 @@
-<h3><?php echo __('Product Category', array(), 'messages') ?></h3>

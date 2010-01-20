@@ -13,6 +13,8 @@ generator:
     config:
       fields:
         password_again:               { label: "Password (again)" }
+        localidad_id:                 { label: "Localidad" }
+        provincia_id:                 { label: "Provincia" }
 
       filter:
         display:                      [ username, nombre, apellido, sf_guard_user_group_list, sf_guard_user_permission_list ]
@@ -41,7 +43,7 @@ generator:
           "Contacto":                  [ telefono, movil, email ]
           "Domicilio":                 [ domicilio_calle, domicilio_numero, domicilio_manzana, domicilio_barrio, domicilio_piso, domicilio_depto ]
           "Ubicación Geográfica":      [ localidad_id, provincia_id ]
-          "Permissions and groups":		 [is_active, is_super_admin, sf_guard_user_group_list, sf_guard_user_permission_list]
+          "Permissions and groups":		 [ is_active, is_super_admin, sf_guard_user_group_list, sf_guard_user_permission_list ]
 
       edit:
         title: Editando datos de usuario "%%username%%"
