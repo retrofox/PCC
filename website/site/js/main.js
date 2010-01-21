@@ -1,10 +1,24 @@
 window.addEvent('domready', function() {
-	
+
+/* console.debug('toggler, iT -> ', number_active);
+
+/*var togglers = $('menu_interior').getChildren('li'), number_active;
+  togglers.each (function (toggler, iT){
+    console.debug('toggler, iT -> ', toggler.hasClass('active'), iT);
+
+    if (toggler.hasClass('active')) {
+      number_active = iT;
+    }
+  })
+
+  console.debug('number_active -> ', number_active);
+
+  console.debug('togglers -> ', togglers);*/
+
 	//create our Accordion instance
 	var myAccordion = new Accordion($('leftnavcontainer'), 'li.toggler', 'ul.bloque', {
 		opacity: false,
-		show: false,
-		display: false,
+		show: number_active,
 		alwaysHide: true,
 		onActive: function(toggler, element){
 			toggler.addClass('toggler-active');
@@ -12,30 +26,10 @@ window.addEvent('domready', function() {
 		onBackground: function(toggler, element){
 			toggler.removeClass('toggler-active');
 		}
+                
+               
+
+
 	});
 
-/*
-	//add click event to the "add section" link
-	$('add_section').addEvent('click', function(event) {
-		event.stop();
-		
-		// create toggler
-		var toggler = new Element('h3', {
-			'class': 'toggler',
-			'html': 'Common descent'
-		});
-		
-		// create content
-		var content = new Element('div', {
-			'class': 'element',
-			'html': '<p>A group of organisms is said to have common descent if they have a common ancestor. In biology, the theory of universal common descent proposes that all organisms on Earth are descended from a common ancestor or ancestral gene pool.</p><p>A theory of universal common descent based on evolutionary principles was proposed by Charles Darwin in his book The Origin of Species (1859), and later in The Descent of Man (1871). This theory is now generally accepted by biologists, and the last universal common ancestor (LUCA or LUA), that is, the most recent common ancestor of all currently living organisms, is believed to have appeared about 3.9 billion years ago. The theory of a common ancestor between all organisms is one of the principles of evolution, although for single cell organisms and viruses, single phylogeny is disputed</p>'
-		});
-		
-		// position for the new section
-		var position = 0;
-		
-		// add the section to our myAccordion using the addSection method
-		myAccordion.addSection(toggler, content, position);
-	});
-*/
 });
