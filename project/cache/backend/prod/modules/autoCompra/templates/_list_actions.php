@@ -1,1 +1,0 @@
-<?php echo $helper->mooLinkToNew(array(  'inWinPopUp' => true,  'params' =>   array(  ),  'class_suffix' => 'new',  'label' => 'New',)) ?>
