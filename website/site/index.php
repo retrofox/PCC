@@ -8,9 +8,22 @@
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/style_old.css" rel="stylesheet" type="text/css" />
-    <script src="js/mootools.js" type="text/javascript"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core-yc.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/demo.js"></script>
+
+
+
+    <!--script src="js/mootools.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
+    <script type="text/javascript" src="js/iepngfix_tilebg.js"></script-->
+
+
+
+
   </head>
 
   <body>
@@ -52,11 +65,13 @@
 								ORDER BY c.catorder,c.id');
             if (mysql_num_rows($result) > 0) {
               $i=0;
+              $number=-1;
+
               while ($r = mysql_fetch_array($result)) {
                 $i++;
                 $category_title = $r['seftitle'];
                 $r['name'] = (s('language')!='EN' && $r['name'] == 'Uncategorized' && $r['parent']==1) ? l('uncategorised') : $r['name'];
-                
+              
                 if($category_title == $categorySEF)
                   $number = $i-1;
 
@@ -64,8 +79,8 @@
                   $num='('.$r['total'].')';
                 }
 
-                echo '<li class="toggler"><h5 class="color'.$i.'">'.$r['name'].'<span></span></h5> ';
-                $query_articles = 'SELECT
+                      echo '<li class="toggler"><h5 class="color'.$i.'">'.$r['name'].'<span></span></h5> ';
+                      $query_articles = 'SELECT
 											a.id AS aid,title,a.seftitle AS asef,text,a.date,
 											a.displaytitle,a.displayinfo,a.commentable,a.visible
 											FROM '._PRE.'articles'.' AS a
@@ -73,28 +88,32 @@
 											AND a.published =1
 											AND category = '.$r['parent'].'
 											ORDER BY artorder ASC,date DESC';
-                //echo $query_articles;
-                $articles= mysql_query($query_articles);
-                if (mysql_num_rows($articles) > 0) {
-                  echo '<ul class="bloque">';
-                  while ($a = mysql_fetch_array($articles)) {
-                    $item_title =$a['asef'];
-                    $active = ($item_title == $subcatSEF)? 'class="current"': '';
-
-
-                    echo '<li>
+                        //echo $query_articles;
+                        $articles= mysql_query($query_articles);
+                        if (mysql_num_rows($articles) > 0) {
+                          echo '<ul class="bloque">';
+                          while ($a = mysql_fetch_array($articles)) {
+                            $item_title =$a['asef'];
+                            $active = ($item_title == $subcatSEF)? 'class="current"': '';
+                            echo '<li>
 																	<a href="'.$r['seftitle'].'/'.$a['asef'].'"'.$active.' >'.$a['title'].'<span></span> </a>
 																  </li>';
-                  }
+                          }
 
-                  echo '</ul>';
-                }
-                echo '</li>';
-              }
-            } else {
-              echo '<li>'.l('no_categories').'</li>';
-}
+                          echo '</ul>';
+                        }
+
+                        echo '</li>';
+
+                      }
+
+                    } else {
+                      echo '<li>'.l('no_categories').'</li>';
+        }
+
 ?>
+
+          </ul>
             <br class="spacer" />
         </div>
         <!--left panel end here -->

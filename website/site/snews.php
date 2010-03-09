@@ -1146,9 +1146,143 @@ function sitemap() {
 		echo '</ul>';
 	}
 }
+//CONTACT MOD
+function get_contact_fields( $arrFields, &$code, $action ) {
+   $strResult = '';
+   $code = 0;
+   switch ($action) {
+      case 'output' :
+         foreach ( $arrFields as $fieldDef ) {
+            $fieldType    = $fieldDef[0];
+            $fieldName    = $fieldDef[1];
+            $fieldDefault = '';
+            $fieldLabel   = ($fieldDef[3] == 'required') ? '* ' . $fieldDef[2] : $fieldDef[2];
+            $fieldCSS     = $fieldType;
+            $strResult .= html_input( $fieldType, $fieldName, $fieldName, $fieldDefault, $fieldLabel, $fieldCSS, '', '', '', '', '', '', '', '', '');
+         }
+         break;
+      case 'submit' :
+         foreach ( $arrFields as $fieldDef ) {
+            $fieldName  = $fieldDef[1];
+            $fieldValue = cleanText( $fieldName );
+            $fieldLabel = $fieldDef[2];
+            $minLength  = $fieldDef[4];
+            if (!empty($fieldValue)) {
+               if ( $minLength > 0 ) {
+                  if ( strlen( $fieldValue ) < $minLength ) {
+                     $strResult = '';
+                     $code = 2;
+                     break;
+                  }
+               }
+               $strResult .= "$fieldLabel: $fieldValue\n\n";
+            }
+            else if ( $fieldDef[3] == 'required' ) {
+               $strResult = '';
+               $code = 1;
+               break;
+            }
+         }
+         break;
+      default :
+         break;
+   }
+   return $strResult;
+}
 
+
+function cleanText( $name ) {
+   $str = trim($_POST[$name]);
+   $str = clean( cleanXSS( $str ) );
+   return $str;
+}
 // CONTACT FORM
 function contact() {
+   //
+   // Custom fields definition array
+   $arrFields   = array();
+   // Add custom fields using following definition:
+   // $arrFields[] = array("<input type>", "<name>", "<label>", '<required/optional>', '<minlength/0>');
+   //
+   // Examples.
+   // To add mandatory field with label Phone No without string length checking:
+   $arrFields[] = array('text', 'domicilio', 'Domicilio', 'optional', 0);
+	 $arrFields[] = array('text', 'localidad', 'localidad', 'optional', 0);
+	 $arrFields[] = array('text', 'phone', 'Teléfono – Celular', 'optional', 0);
+
+   // To add optional field with label City with checking for minimal string length of 4 symbols:
+   //$arrFields[] = array('text', 'city', 'City', 'optional', 4);
+   //
+	if (!isset($_POST['contactform'])) {
+		// Display contact form
+		echo '<div class="contact"><h2>'.l('contact').'</h2>';
+		extra('contact');
+		echo '<p>'.l('required').'</p>';
+		echo html_input('form', '', 'post', '', '', '', '', '', '', '', '', '', 'post', db('website'), '');
+		echo html_input('text', 'name', 'name', '', '* '.l('name'), 'text', '', '', '', '', '', '', '', '', '');
+		echo html_input('text', 'email', 'email', '', '* '.l('email'), 'text', '', '', '', '', '', '', '', '', '');
+		echo html_input('hidden', 'weblink', 'weblink', '', l('url'), 'text', '', '', '', '', '', '', '', '', '');
+      //
+      // Get output for custom fields
+      $strHTML = get_contact_fields( $arrFields, $code, 'output' );
+      echo $strHTML;
+      //
+		echo html_input('textarea', 'message', 'message', '', '* '.l('message'), '', '', '', '', '', '5', '5', '', '', '');
+      //
+		echo mathCaptcha();
+		//
+		echo '<p>';
+		echo html_input('hidden', 'ip', 'ip', $_SERVER['REMOTE_ADDR'], '', '', '', '', '', '', '', '', '', '', '');
+		echo html_input('hidden', 'time', 'time', time(), '', '', '', '', '', '', '', '', '', '', '');
+		echo html_input('submit', 'contactform', 'contactform', l('submit'), '', 'button', '', '', '', '', '', '', '', '', '');
+		echo '</p></form></div>';
+		$_SESSION[db('website').'contact'] = 0;
+	}
+	else {
+		// Fetch and clean input data from default contact form
+		$to = s('website_email');
+		$subject = s('contact_subject');
+		$name = trim($_POST['name']);
+		$name = strlen($name) > 1 ? clean(cleanXSS($name)) : null;
+		$mail = trim($_POST['email']);
+		$mail = trim($_POST['email']);
+		$mail = (strlen($mail) > 7 && preg_match( '/^[A-Z0-9._-]+@[A-Z0-9][A-Z0-9.-]{0,61}[A-Z0-9]\.[A-Z.]{2,6}$/i' , $mail)) ? clean(cleanXSS($mail)) : null;
+		$url = trim($_POST['weblink']);
+		$url = (strlen($url) > 8 && strpos($url, '?') === false) ? clean(cleanXSS($url)) : null;
+		$message = trim($_POST['message']);
+		$message = strlen($message) > 9 ? stripslashes(cleanXSS($message)) : null;
+		$message = strip_tags($message);
+		$now = is_numeric($_POST['time']) ? $_POST['time'] : null;
+		$ip = (strlen($_POST['ip']) < 16) ? clean(cleanXSS($_POST['ip'])) : null;
+      //
+      // Fetch and clean data from added custom input fields
+      $validExtraFields = true;
+      $code = 0;
+      $strExtraFields = get_contact_fields( $arrFields, $code, 'submit' );
+      if ( $code == 1 || $code == 2 ) { // Required fields values missing/invalid
+         $validExtraFields = false;
+      }
+      //
+		if($_SESSION[db('website').'contact'] == 0) {
+         // Added $validExtraFields to if condition
+			if ($ip == $_SERVER['REMOTE_ADDR'] && (time() - $now) > 4 && $name && $mail && $message && mathCaptcha($_POST['calc'], $_POST['sum']) && $validExtraFields) {
+				$header = "MIME-Version: 1.0\n";
+				$header .= "Content-type: text/plain; charset=".s('charset')."\n";
+				$header .= "From: $name <$mail>\r\nReply-To: $name <$mail>\r\nReturn-Path: <$mail>\r\n";
+				$addUrl = isset($url) ? l('url').': '.$url."\n\n" : '';
+				$body = "Message from: ".$name." <$mail>\n".$addUrl.$strExtraFields.l('message').":\n".$message;
+				mail($to, $subject, $body, $header);
+				# notify of success
+				echo notification(0,l('contact_sent'),'home');
+				$_SESSION[db('website').'contact'] = 1;
+			}
+			else {echo notification(1,l('contact_not_sent'),'contact');}
+}}}
+
+///END CONTACT MOD
+
+// CONTACT FORM
+/*function contact() {
  	if (!isset($_POST['contactform'])) {
 		echo '<div class="commentsbox"><h2>'.l('contact').'</h2>';
 		echo '<p>'.l('required').'</p>';
@@ -1197,7 +1331,7 @@ function contact() {
 			}
 		}
 	}
-}
+}*/
 
 // MENU ARTICLES
 function menu_articles($start = 0, $size = 5, $cat_specific = 0) {
@@ -1545,7 +1679,7 @@ function html_input($type, $name, $id, $value, $label, $css, $script1, $script2,
 		case 'fieldset': $output = (!empty($legend) && $legend != 'end') ?
 			'<fieldset><legend'.$attribs.'>'.$legend.'</legend>' : '</fieldset>'; break;
 		case 'text':
-		case 'password': $output = '<p>'.$lbl.':<br />'.$input.$val.' /></p>'; break;
+		case 'password': $output = '<p>'.$lbl.': '.$input.$val.' /></p>'; break;
 		case 'checkbox':
 		case 'radio': $check = $checked == 'ok' ? ' checked="checked"' : ''; $output = '<p>'.$input.$check.' /> '.$lbl.'</p>'; break;
 		case 'hidden':

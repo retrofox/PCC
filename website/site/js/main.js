@@ -19,7 +19,8 @@ window.addEvent('domready', function() {
 	var myAccordion = new Accordion($('leftnavcontainer'), 'li.toggler', 'ul.bloque', {
 		opacity: false,
 		show: number_active,
-		alwaysHide: true,
+		alwaysHide: false,
+    initialDisplayFx: false,
 		onActive: function(toggler, element){
 			toggler.addClass('toggler-active');
 		},
