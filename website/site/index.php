@@ -17,8 +17,8 @@
 
 
 
-    <script src="js/mootools-1.2.4-core-yc" type="text/javascript"></script>
-    <script src="js/mootools-1.2.4.4-more" type="text/javascript"></script>
+    <script src="js/mootools-1.2.4-core-yc.js" type="text/javascript"></script>
+    <script src="js/mootools-1.2.4.4-more.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
 
@@ -143,7 +143,7 @@
         </div>
 
         <?php else: ?>
-          <div id="cont_slides">
+          
 
           <?php if (_ADMIN) { ?>
          
@@ -152,7 +152,8 @@
             else if(isset($_GET['category']) && $_GET['category']!='Home') {?>
             <!--div id="camino"><?php breadcrumbs(); ?></div-->
               <?php } ?>
-          <?php center(); ?>
+          <div id="cont_slides">
+              <?php center(); ?>
 
           <ul id="secciones">
           <?php categories(); ?>
@@ -161,7 +162,7 @@
         <?php endif; ?>
 
         <!--right panel end here -->
-        <br class="spacer" />
+        <div class="clear"></div>
 
         <!--footer start here -->
         <div id="footercontainer">

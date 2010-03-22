@@ -243,7 +243,7 @@ img {
 
 /* right panel start from here */
 #body{
-	width:537px; height: 420px; overflow: auto;
+	width:537px; /*height: 420px; overflow: auto;*/
   /*padding:0 0 10px 5px; */
   color:#4D4747;
 	float:left; margin:0 auto;
@@ -488,21 +488,37 @@ width:190px; padding:0 0 5px 0; float:left; margin:0 20px 0 0;
 }
 
 /*SLIDES*/
+#loader {
+background:transparent url(images/ajax-loader.gif) no-repeat 34px 0;
+font-size: 1.5em;
+color: #009946;
+padding: 32px 0 0 0;
+left:50%;
+margin-left:-50px;
+position:absolute;
+top:40%;
+width:100px;height:20px;
+text-align: center;
+}
+
 div#cont_slides{
+
   background: #DBEBC0 url('images/bg_slide.png') repeat;
-  margin:0 auto -13px;
-  width:744px;height: 420px;
+  margin:0 auto;
+  width:744px;height: 440px;
   position: relative;
 }
 div#slides {
-  
+    visibility: hidden;
     width:537px;height: 420px;
     overflow: hidden;
     margin:0 auto;
 }
 div#slides div {
-    background: transparent url('images/pictures.png') no-repeat;
+    background: #DBEBC0 url('images/pictures.png') no-repeat;
     width: 537px;height: 420px;
+    visibility: hidden;
+
 }
 
 ul#secciones{
@@ -519,13 +535,16 @@ ul#secciones li {
     text-align: center;
 }
 ul#secciones a{
-  font: bold 2em Arial, Verdana, Helvetica, sans-serif;
+  font: bold 1.6em/20px Arial, Verdana, Helvetica, sans-serif;
   color: #009946;
   position: absolute;
-  bottom: 0; left: 10px;
+  bottom: 5px; left: 10px;
+  width: 140px;
+  text-align: center;
+  display:block;
 
 }
-ul#secciones a:hover{font-size: 2.2em;color:#33bb79}
+ul#secciones a:hover{font-size: 1.8em;color:#33bb79}
 
 #textos{
   position: absolute;
@@ -540,4 +559,8 @@ ul#secciones a:hover{font-size: 2.2em;color:#33bb79}
   visibility: hidden;
   text-align: center;
   z-index: 10;
+}
+.clear{
+  clear: both;
+  width: 100%
 }

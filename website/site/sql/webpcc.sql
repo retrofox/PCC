@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-01-2010 a las 14:05:21
+-- Tiempo de generación: 19-03-2010 a las 11:04:39
 -- Versión del servidor: 5.1.37
 -- Versión de PHP: 5.2.10-2ubuntu6.4
 
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
 
 INSERT INTO `articles` (`id`, `title`, `seftitle`, `text`, `date`, `category`, `position`, `extraid`, `page_extra`, `displaytitle`, `displayinfo`, `commentable`, `published`, `description_meta`, `keywords_meta`, `show_on_home`, `show_in_subcats`, `artorder`, `visible`, `default_page`) VALUES
 (27, 'RincÃ³n de los Sauces', 'rincon-de-los-sauces', '<p>Rioja 336 - RincÃ³n de los Sauces</p>\r\n\r\n<p>Provincia de NeuquÃ©n </p>\r\n\r\n<p>TelÃ©fono: 0299-4887567</p>\r\n\r\n<p>Email: omenna@pccomahue.com.ar</p>', '2010-01-13 21:55:38', 5, 1, '', '', 'YES', 'NO', 'NO', 1, '', '', 'NO', 'NO', 2, 'YES', 'NO'),
-(2, 'home', 'home', '<img src="images/LogoBureauVeritas.jpg" alt="Certificacion" />\r\n<p>Sistema de gestiÃ³n Integrado<a href="la-empresa/sistema-de-gestion-integrado" title="mÃ¡s">... mÃ¡s</a> </p>\r\n\r\n<img src="images/bandera.png" alt="Argentino" />\r\n\r\n<h3>Producto Argentino</h3>\r\n\r\n', '2009-06-19 14:33:47', 0, 3, '', '', 'NO', 'NO', 'NO', 1, '', '', 'YES', 'NO', 1, 'YES', 'NO'),
+(2, 'home', 'home', '<div id="slides">\r\n    <div class="transition:blindRightFade"></div>\r\n    <div class="transition:blindDownFade"></div>\r\n    <div class="transition:blindLeftFade"></div>\r\n    <div class="transition:blindUpFade"></div>\r\n    <div class="transition:fadeThroughBackground"></div>\r\n    <div class="transition:blindLeftFade"></div>\r\n</div>\r\n<div id="textos">\r\n    <p>Ductos</p>\r\n<p>Casings</p>\r\n<p>ProtecciÃ³n galvÃ¡nica</p>\r\n<p>Tanques</p>\r\n<p>PAT</p>\r\n<p>Corriente impresa</p>\r\n<p>ACVG</p>\r\n<p>CIPS</p>\r\n<p>PH (suelos)</p>\r\n<p>DCVG</p>\r\n<p>PCM</p>\r\n<p>Resistencia especifica de revestimientos</p>\r\n<p>Sistema por corriente impresa</p>\r\n<p>PerforaciÃ³n pozos</p>\r\n<p>DetecciÃ³n de estructuras enterradas</p>\r\n<p>Sistemas galvÃ¡nicos</p>\r\n<p>Revestimientos por GPS</p>\r\n<p>Entrenamiento de personal</p>\r\n</div>', '2009-06-19 14:33:47', 0, 3, '', '', 'NO', 'NO', 'NO', 1, '', '', 'YES', 'NO', 1, 'YES', 'NO'),
 (25, 'Sistema de GestiÃ³n Integrado', 'sistema-de-gestion-integrado', '', '2009-06-19 19:14:39', 0, 3, '', '', 'YES', 'NO', 'NO', 1, '', '', 'YES', 'NO', 3, 'NO', 'NO'),
 (24, 'ProtecciÃ³n CatÃ³dica', 'proteccion-catodica', '<p>ProtecciÃ³n catÃ³dica es un metodo basado en un principio electroquÃ­mico, que permite preservar contra la corrosiÃ³n galvÃ¡nica, estructuras metÃ¡licas, enterradas Ã³ sumergidas.</p>', '2009-06-19 18:42:51', 0, 3, '', '', 'YES', 'NO', 'NO', 1, '', '', 'YES', 'NO', 2, 'YES', 'NO'),
 (3, 'Quienes Somos', 'quienes-somos', '<p>ProtecciÃ³n CatÃ³dica del Comahue naciÃ³ en Junio del aÃ±o 1987 con la finalidad de ofrecer los servicios de la especialidad en la Patagonia Argentina; zona de mayor explotaciÃ³n y producciÃ³n de gas y petrÃ³leo del paÃ­s.\r\n</p>\r\n<img src="images/gente.png" alt="Gente" class="left" />\r\n<p>Sin interrupciones durante todo este tiempo ha evolucionado tÃ©cnica y estructuralmente acorde a las exigencias del mercado argentino, logrando equiparse con mÃ¡quinas, herramientas, instrumental y equipos de Ãºltima tecnologÃ­a, que la posicionan dentro de las mÃ¡s preparadas para desarrollar los trabajos de la especialidad.\r\n</p>\r\n\r\n<p>Hoy no solo cuenta con trayectoria nacional, sino tambiÃ©n es reconocida y requerida, por distintos Clientes de paÃ­ses de SudamÃ©rica.</p>\r\n', '2009-06-19 14:47:25', 2, 1, '', '', 'YES', 'NO', 'NO', 1, '', '', 'NO', 'NO', 1, 'YES', 'NO'),
@@ -179,12 +179,12 @@ INSERT INTO `settings` (`id`, `name`, `value`) VALUES
 (7, 'language', 'ES'),
 (8, 'charset', 'UTF-8'),
 (9, 'date_format', 'd.m.Y. H:i'),
-(10, 'article_limit', '3'),
+(10, 'article_limit', '50'),
 (11, 'rss_limit', '5'),
 (12, 'display_page', '2'),
 (13, 'display_new_on_home', ''),
 (14, 'display_pagination', ''),
-(15, 'num_categories', 'on'),
+(15, 'num_categories', ''),
 (16, 'show_cat_names', ''),
 (17, 'approve_comments', 'on'),
 (18, 'mail_on_comments', ''),
@@ -199,7 +199,7 @@ INSERT INTO `settings` (`id`, `name`, `value`) VALUES
 (27, 'username', '5476095dd508f6304acab0212672df09'),
 (28, 'password', '4615c9efd5cb12358ab91fe7f1a4ef3a'),
 (29, 'enable_extras', 'NO'),
-(30, 'last_date', '2010-01-21 12:19:08'),
+(30, 'last_date', '2010-03-18 17:08:19'),
 (31, 'file_extensions', 'phps,php,txt,inc,htm,html'),
 (32, 'allowed_files', 'php,htm,html,txt,inc,css,js,swf,pdf'),
 (33, 'allowed_images', 'gif,jpg,jpeg,png');

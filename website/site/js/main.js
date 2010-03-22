@@ -19,46 +19,22 @@ var togglers = $('menu_interior').getChildren('li'), number_active;
 
 });*/
 
+window.addEvent ('load', function (){
+	/*var $miSlide = new mooDooSLS ('fotos');
 
-var mySlideShow, number_active;
-
-window.addEvent('domready',function() {
-  var togglers, t_parent, t_siblings;
-    
-    togglers = $$('ul#menu_interior a.current')
-    
-    t_parent=togglers.getParent().getParent().getParent();
-
-    t_parent.addClass('active');
-
-    t_siblings=t_parent.getParent().getChildren().flatten();
-
-    number_active=-1;
-
-    t_siblings.each (function (t_sibling, iT){
-     // console.debug('li current', t_sibling, iT);
-      if (t_sibling.hasClass('active')) {
-        number_active = iT;
-      }
-    })
-
-//  console.debug('number_active -> ', number_active, 'current->',togglers, 'hermanos->', t_siblings);
-
- 	//create our Accordion instance para el menu lateral
-	var myAccordion = new Accordion($('leftnavcontainer'), 'li.toggler', 'ul.bloque', {
-		opacity: false,
-		show: number_active,
-		onActive: function(toggler, element){
-			toggler.addClass('toggler-active');
-		},
-		onBackground: function(toggler, element){
-			toggler.removeClass('toggler-active');
-		}
-
-
-
-
+	$('rap').setStyles({
+		visibility: 'visible'
+	});*/
+	/*$('slides').setStyles({
+		display:'block'
+	});*/
+  
+  var loader = $('loader')
+  if (loader){
+  loader.setStyles({
+		display:'none'
 	});
+}
   var ctextos=$('textos');
   if (ctextos){
     var textos = ctextos.getChildren();
@@ -87,31 +63,7 @@ window.addEvent('domready',function() {
   }
 
 
-    var secciones=$('secciones');
-
    
-    if (secciones){
-      var links = secciones.getChildren();
-      var FxLinks = [];
-      links.each(function(link, iL){
-        
-        var fx = FxLinks[iL] = new Fx.Morph(link, {
-          duration: 2000,
-          transition: 'bounce:out',
-          onComplete: function(ev){
-            ev.setStyle('background-position','0 30px')
-          }
-        });
-
-        (function () {
-          fx.start({
-            top: 360,
-            opacity: [0, 1],
-            left: [150*iL, 150*iL]
-          });
-        }).delay(1000*iL);
-      })
-    }
     // instance with a few options
     var slides=$('slides');
     if (slides){
@@ -131,6 +83,75 @@ window.addEvent('domready',function() {
 
     });
     }
+
+});
+
+
+
+var mySlideShow, number_active;
+
+window.addEvent('domready',function() {
+  var togglers, t_parent, t_siblings;
+    
+    togglers = $$('ul#menu_interior a.current')
+    
+    t_parent=togglers.getParent().getParent().getParent();
+
+    t_parent.addClass('active');
+
+    t_siblings=t_parent.getParent().getChildren().flatten();
+
+    number_active=-1;
+
+    t_siblings.each (function (t_sibling, iT){
+     // console.debug('li current', t_sibling, iT);
+      if (t_sibling.hasClass('active')) {
+        number_active = iT;
+      }
+    })
+
+//  console.debug('number_active -> ', number_active, 'current->',togglers, 'hermanos->', t_siblings);
+ var secciones=$('secciones');
+
+
+    if (secciones){
+      var links = secciones.getChildren();
+      var FxLinks = [];
+      links.each(function(link, iL){
+
+        var fx = FxLinks[iL] = new Fx.Morph(link, {
+          duration: 2000,
+          transition: 'bounce:out',
+          onComplete: function(ev){
+            ev.setStyle('background-position','0 30px')
+          }
+        });
+
+        (function () {
+          fx.start({
+            top: 380,
+            opacity: [0, 1],
+            left: [150*iL, 150*iL]
+          });
+        }).delay(1000*iL);
+      })
+    }
+ 	//create our Accordion instance para el menu lateral
+	var myAccordion = new Accordion($('leftnavcontainer'), 'li.toggler', 'ul.bloque', {
+		opacity: false,
+		show: number_active,
+		onActive: function(toggler, element){
+			toggler.addClass('toggler-active');
+		},
+		onBackground: function(toggler, element){
+			toggler.removeClass('toggler-active');
+		}
+
+
+
+
+	});
+  
     // Event demonstration
    /* mySlideShow.addEvents({
         onShow: function(){ $('onShow').highlight(); },

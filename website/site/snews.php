@@ -1207,7 +1207,7 @@ function contact() {
    // Examples.
    // To add mandatory field with label Phone No without string length checking:
    $arrFields[] = array('text', 'domicilio', 'Domicilio', 'optional', 0);
-	 $arrFields[] = array('text', 'localidad', 'localidad', 'optional', 0);
+	 $arrFields[] = array('text', 'localidad', 'Localidad', 'optional', 0);
 	 $arrFields[] = array('text', 'phone', 'Teléfono – Celular', 'optional', 0);
 
    // To add optional field with label City with checking for minimal string length of 4 symbols:
@@ -1215,7 +1215,7 @@ function contact() {
    //
 	if (!isset($_POST['contactform'])) {
 		// Display contact form
-		echo '<div class="contact"><h2>'.l('contact').'</h2>';
+		echo '<div class="contact">'; //<h2>'.l('contact').'</h2>';
 		extra('contact');
 		echo '<p>'.l('required').'</p>';
 		echo html_input('form', '', 'post', '', '', '', '', '', '', '', '', '', 'post', db('website'), '');
