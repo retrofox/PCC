@@ -70,14 +70,14 @@ window.addEvent ('load', function (){
 
     var pictures=slides.getChildren();
     pictures.each (function(picture, iP){
-      picture.setStyle('background-position',iP*-537+'px 0px');
+      picture.setStyle('background-position',iP*-500+'px 0px');
     })
 
 
     mySlideShow = new SlideShow('slides',{
-        transition: 'blindDownFade',
-        duration: 2000,
-        delay: 2000,
+        transition: 'fadeThroughBackground',
+        duration: 4000,
+        delay: 4000,
         autoplay: true
 
 

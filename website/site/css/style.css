@@ -509,14 +509,15 @@ div#cont_slides{
   position: relative;
 }
 div#slides {
-    visibility: hidden;
-    width:537px;height: 420px;
+  background: transparent url('images/logo.png') no-repeat;
+   /* visibility: hidden;*/
+    width:500px;height: 400px;
     overflow: hidden;
     margin:0 auto;
 }
 div#slides div {
     background: #DBEBC0 url('images/pictures.png') no-repeat;
-    width: 537px;height: 420px;
+    width: 500px;height: 400px;
     visibility: hidden;
 
 }
